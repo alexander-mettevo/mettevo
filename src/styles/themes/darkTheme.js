@@ -1,16 +1,15 @@
 //TODO Реализовтаь стили для темы
-export const lightTheme = {
+export const darkTheme = {
   colors: {
-    light: {
-      mainBackground: '#fff',
-      footerBackground: '#000',
-      textPrimary: '#000',
-    },
-
-    dark: {
-      mainBackground: '#000',
-      footerBackground: '#fff',
-      textPrimary: '#fff',
-    }
+    mainBackground: '#101010',
+    footerBackground: '#F9F9F9',
+    primary: '#F9F9F9',
+    footerText: '#101010',
+    grayText: '#b2b2b2'
+  },
+  social: {
+    viber: 'url(/images/social_icons/viber_d.svg)',
+    whatsUp: 'url(/images/social_icons/whats-up_d.svg)',
+    telegram: 'url(/images/social_icons/telegram_d.svg)',
   }
 };

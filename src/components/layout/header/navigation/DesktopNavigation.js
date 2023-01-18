@@ -1,21 +1,26 @@
 import React from 'react';
-import {NavigationMenu, NavigationMenuLink} from "@/components/layout/header/styles";
 import {useSelector} from "react-redux";
-import Link from "next/link";
+import {
+  MobileNavigationWrapper,
+  NavigationMenu,
+  NavigationMenuLink
+} from "@/components/layout/header/navigation/styles";
 
 
-const Navigation = () => {
+const DesktopNavigation = () => {
   const links = useSelector(state => state.headerMenu.pageLinks)
 
-  return (
-    <NavigationMenu>
-      {
-        links.length > 0 && links.map(({href, title}) => (
-          <NavigationMenuLink href={href} key={href}>{title}</NavigationMenuLink>
+  if (links.length > 0) {
+    return (
+      <NavigationMenu>
+        {links.map(({href, title}, index) => (
+          <NavigationMenuLink href={href} key={href + index}>{title}</NavigationMenuLink>
         ))
-      }
-    </NavigationMenu>
-  );
+        }
+      </NavigationMenu>
+    );
+  }
+  return null;
 };
 
-export default Navigation;
+export default DesktopNavigation;

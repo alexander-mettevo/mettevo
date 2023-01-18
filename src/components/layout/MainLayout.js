@@ -1,17 +1,41 @@
-
-import React from 'react';
-import Header from "./header/Header";
+import React, {useEffect, useState} from 'react';
 import {Main} from "./header/styles";
+import FooterComponent from "@/components/layout/footer/FooterComponent";
+import HeaderComponent from "@/components/layout/header/HeaderComponent";
+import {StyledContainer} from "@/styles/assets/StyledContainer";
+import Menu from "@/components/layout/header/menu/Menu";
+import {MainFlex} from "@/components/layout/styles";
+import {lightTheme} from "@/styles/themes/lightTheme";
+import {darkTheme} from "@/styles/themes/darkTheme";
+import {ThemeProvider} from "styled-components";
+import {GlobalStyles} from "@/styles/global";
 
 
 const MainLayout = ({children}) => {
+  const [menuActive, setMenuActive] = useState(false);
+  const [theme, setTheme] = useState(lightTheme);
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem('theme');
+    if (localTheme === 'dark') {
+      setTheme(darkTheme);
+    }
+  }, [])
+
   return (
-    <>
-      <Header/>
-      <Main>
-        {children}
-      </Main>
-    </>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <HeaderComponent active={menuActive} setActive={setMenuActive}/>
+      <MainFlex>
+        <Main>
+          <StyledContainer>
+            {children}
+          </StyledContainer>
+        </Main>
+        <FooterComponent setTheme={setTheme}/>
+      </MainFlex>
+      <Menu active={menuActive}/>
+    </ThemeProvider>
   );
 };
 

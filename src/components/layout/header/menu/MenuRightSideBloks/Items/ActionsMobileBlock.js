@@ -1,19 +1,28 @@
 import React from 'react';
 import {TextTitle} from "@/components/layout/header/menu/MenuRightSideBloks/styles";
 import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsBlockForm";
+import {ActionsMobileBlockWrapper} from "@/components/layout/header/menu/MenuRightSideBloks/Items/styles";
+import {useSelector} from "react-redux";
 
-const ActionsMonileBlock = () => {
+const ActionsMobileBlock = ({currentData}) => {
+  const mobileShowContent = useSelector(state => state.headerMenu.mobileShowContent)
+
   return (
-    <div>
-      <div>
-        <TextTitle>{currentData.data.title}</TextTitle>
+    <ActionsMobileBlockWrapper mobileShowContent={mobileShowContent}>
+      {currentData && (
+      <>
         <div>
-          {currentData.data.text}
+          <TextTitle>{currentData.data.title}</TextTitle>
+          <div>
+            {currentData.data.text}
+          </div>
         </div>
-      </div>
-      <ActionsBlockForm title={currentData.title}/>
-    </div>
+        <ActionsBlockForm title={currentData.title}/>
+      </>
+        )}
+
+    </ActionsMobileBlockWrapper>
   );
 };
 
-export default ActionsMonileBlock;
+export default ActionsMobileBlock;

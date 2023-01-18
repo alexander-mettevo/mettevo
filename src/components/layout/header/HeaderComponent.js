@@ -1,16 +1,31 @@
-import React from 'react';
-import {BurgerBtn, Nav} from "./styles";
+import React, {useRef} from 'react';
+import {BurgerBtn, Header, HeaderContainer, NavigationMenu} from "./styles";
+import Logo from "@/components/reusable/Logo/Logo";
+import DesktopNavigation from "@/components/layout/header/navigation/DesktopNavigation";
+import {useSelector} from "react-redux";
 
-const Header = () => {
+const HeaderComponent = ({active, setActive}) => {
+  const ref = useRef(null);
+  const handleMenu = () => {
+    ref.current.classList.toggle('open');
+    setActive(!active)
+  };
+
   return (
-    <header>
-      <Nav>
-        <BurgerBtn>
-          <span/>
-        </BurgerBtn>
-      </Nav>
-    </header>
+      <Header>
+        <HeaderContainer>
+          <div>
+            <Logo/>
+          </div>
+          <DesktopNavigation/>
+          <BurgerBtn ref={ref} onClick={handleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </BurgerBtn>
+        </HeaderContainer>
+      </Header>
   );
 };
 
-export default Header;
+export default HeaderComponent;
