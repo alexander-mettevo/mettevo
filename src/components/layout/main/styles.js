@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const MainWrapper = styled.main`
   width: 100%;
   flex: 0 1 500vh;
-    background-color: ${({theme}) => theme.colors.mainBackground};
-  `
+  
+`
 export const Container = styled.div`
   position: absolute;
   top: 0;
@@ -12,7 +12,7 @@ export const Container = styled.div`
   width: 100%;
   height: 500vh;
   bottom: 0;
-  background-color: white;
+  background-color: ${({theme}) => theme.colors.mainBackground};
   overflow: hidden;
 `;
 

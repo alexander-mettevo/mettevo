@@ -62,7 +62,7 @@ export const CheckBox = styled.input`
       margin-left: 21px;
       transition: 0.2s;
       transform: translateX(-50%) translateY(3px);
-      background: #fff;
+      background: #F9F9F9;
       position: absolute;
       z-index: 10;
     }
