@@ -10,7 +10,7 @@ import {darkTheme} from "@/styles/themes/darkTheme";
 
 const ThemeSwitcher = ({setTheme}) => {
   const [checked, setChecked] = useState(false);
-  const handleTheme = () => {
+  const handleTheme = e => {
     const localTheme = localStorage.getItem('theme');
 
     if (localTheme === 'dark') {
@@ -31,11 +31,13 @@ const ThemeSwitcher = ({setTheme}) => {
     }
   }, [])
 
+
+
   return (
     <CheckBoxContainer>
       <CheckBoxWrapper>
-        <CheckBox onChange={handleTheme} id="checkbox" checked={checked} type="checkbox"/>
-        <CheckBoxLabel htmlFor="checkbox"/>
+        <CheckBox onChange={() => {}} id="checkbox" checked={checked} type="checkbox"/>
+        <CheckBoxLabel onClick={handleTheme} htmlFor="checkbox"/>
       </CheckBoxWrapper>
     </CheckBoxContainer>
   );

@@ -5,7 +5,8 @@ export const darkTheme = {
     footerBackground: '#F9F9F9',
     primary: '#F9F9F9',
     footerText: '#101010',
-    grayText: '#b2b2b2'
+    grayText: '#b2b2b2',
+    footerForm: '#000'
   },
   social: {
     viber: 'url(/images/social_icons/viber_d.svg)',

@@ -32,7 +32,6 @@ export const CustomCheckboxWrapper = styled.label`
   }
   
   input {
-    width: 0;
-    height: 0;
+    display: none;
   }
 `

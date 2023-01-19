@@ -19,11 +19,7 @@ export const HeaderContainer = styled(StyledContainer)`
   height: 60px;
   `
 
-export const Main = styled.main`
-  width: 100%;
-  height: 500px;
-  flex: 1;
-  `
+
 
 export const BurgerBtn = styled.div`
   width: 36px;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {FormsTextInput} from "@/components/reusable/forms/styles";
 
 export const FooterFormContainer = styled.div`
-  background: #fff;
+  background: ${({theme}) => theme.colors.footerForm};
   padding: 60px;
   position: absolute;
   left: 50%;

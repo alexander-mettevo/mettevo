@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import {Main} from "./header/styles";
 import FooterComponent from "@/components/layout/footer/FooterComponent";
 import HeaderComponent from "@/components/layout/header/HeaderComponent";
 import {StyledContainer} from "@/styles/assets/StyledContainer";
@@ -9,6 +8,7 @@ import {lightTheme} from "@/styles/themes/lightTheme";
 import {darkTheme} from "@/styles/themes/darkTheme";
 import {ThemeProvider} from "styled-components";
 import {GlobalStyles} from "@/styles/global";
+import MainComponent from "@/components/layout/main/Main";
 
 
 const MainLayout = ({children}) => {
@@ -27,11 +27,11 @@ const MainLayout = ({children}) => {
       <GlobalStyles />
       <HeaderComponent active={menuActive} setActive={setMenuActive}/>
       <MainFlex>
-        <Main>
+        <MainComponent>
           <StyledContainer>
             {children}
           </StyledContainer>
-        </Main>
+        </MainComponent>
         <FooterComponent setTheme={setTheme}/>
       </MainFlex>
       <Menu active={menuActive}/>
