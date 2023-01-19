@@ -20,7 +20,8 @@ export const HeaderContainer = styled(StyledContainer)`
   `
 
 export const Main = styled.main`
-  padding: 50px;
+  width: 100%;
+  height: 500px;
   flex: 1;
   `
 

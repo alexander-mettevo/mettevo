@@ -1,15 +1,16 @@
 import { HYDRATE } from "next-redux-wrapper";
 import { createSlice } from "@reduxjs/toolkit";
-import {menuItems, pageLinks, rightSideData} from "@/store/slices/headerMenuSlice/data";
+import {footerMenu, menuItems, pageLinks, rightSideData} from "@/store/slices/menuSlice/data";
 
-export const headerMenuSlice = createSlice({
-  name: "headerMenu",
+export const menuSlice = createSlice({
+  name: "menu",
   initialState: {
     menuItems,
     rightSideData,
     showContent: false,
     mobileShowContent: false,
-    pageLinks
+    pageLinks,
+    footerMenu
   },
   reducers: {
     switchShowContent: (state) => {
@@ -29,6 +30,6 @@ export const headerMenuSlice = createSlice({
   }
 });
 
-export default headerMenuSlice.reducer;
-export const { switchShowContent, switchMobileShowContent } = headerMenuSlice.actions;
+export default menuSlice.reducer;
+export const { switchShowContent, switchMobileShowContent } = menuSlice.actions;
 

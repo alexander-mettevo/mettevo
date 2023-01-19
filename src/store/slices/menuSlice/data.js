@@ -1,11 +1,13 @@
 export const menuItems = [
   {
     id: 1,
-    title: "seo"
+    title: "seo",
+    showInFooter: true,
   },
   {
     id: 2,
-    title: "smm"
+    title: "smm",
+    showInFooter: true,
   },
   {
     id: 3,
@@ -410,4 +412,264 @@ export const rightSideData = [
     id: 8,
     type: "simple",
   },
+]
+
+export const footerMenu = [
+  {
+    title: "what we do",
+    menuList: [
+      {
+        type: "dropdown",
+        title: "seo",
+        links: [
+          {
+            title: "seo services",
+            href: "/seo-services",
+          },
+          {
+            title: "e-commerce seo",
+            href: "/e-commerce-seo",
+          },
+          {
+            title: "on-page seo",
+            href: "/on-page-seo",
+          },
+          {
+            title: "keywords research",
+            href: "/keywords-research",
+          },
+          {
+            title: "content marketing",
+            href: "/content-marketing",
+          },
+          {
+            title: "mobile seo",
+            href: "/mobile-seo",
+          },
+          {
+            title: "international seo",
+            href: "/international-seo",
+          },
+        ]
+      },
+      {
+        type: "dropdown",
+        title: "smm",
+        links: [
+          {
+            id: 1,
+            title: "smm services",
+            href: "/smm-services"
+          },
+          {
+            id: 2,
+            title: "facebook management",
+            href: "/facebook-management"
+          },
+          {
+            id: 3,
+            title: "instagram management",
+            href: "/instagram-management"
+          },
+          {
+            id: 4,
+            title: "linkedin management",
+            href: "/linkedin-management"
+          },
+          {
+            id: 5,
+            title: "twitter management",
+            href: "/twitter-management"
+          },
+          {
+            id: 6,
+            title: "youtube management",
+            href: "/youtube-management"
+          },
+          {
+            id: 7,
+            title: "pinterest management",
+            href: "/pinterest-management"
+          }
+        ]
+      },
+      {
+        type: "dropdown",
+        title: "web development",
+        links: [
+          {
+            title: "web developments",
+            href: "/web-development",
+          },
+          {
+            title: "web design",
+            href: "/web-design",
+          },
+          {
+            title: "Website Maintenance",
+            href: "/website-maintenance",
+          },
+          {
+            title: "website speed optimization",
+            href: "/website-speed-optimization",
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: "Niches",
+    menuList: [
+      {
+        type: "link",
+        title: "e-commerce",
+        href: "/e-commerce"
+      },
+      {
+        type: "link",
+        title: "healthcare",
+        href: "/healthcare"
+      },
+      {
+        type: "link",
+        title: "saas",
+        href: "/saas"
+      },
+      {
+        type: "link",
+        title: "b2b",
+        href: "/b2b"
+      },
+      {
+        type: "link",
+        title: "saas",
+        href: "/saas"
+      },
+      {
+        type: "link",
+        title: "crypto",
+        href: "/crypto"
+      },
+      {
+        type: "link",
+        title: "finances",
+        href: "/finances"
+      },
+      {
+        type: "link",
+        title: "real estate",
+        href: "/real-estate"
+      },
+      {
+        type: "link",
+        title: "franchise",
+        href: "/franchise"
+      },
+    ]
+  },
+  {
+    title: "PRojects",
+    menuList: [
+      {
+        type: "link",
+        title: "all case studies",
+        href: "/all-case-studies"
+      },
+      {
+        type: "link",
+        title: "planet 925",
+        href: "/planet-925"
+      },
+      {
+        type: "link",
+        title: "yodoggo",
+        href: "/yodoggo"
+      },
+      {
+        type: "link",
+        title: "charter jets",
+        href: "/charter-jets"
+      },
+      {
+        type: "link",
+        title: "surgery",
+        href: "/surgery"
+      },
+      {
+        type: "link",
+        title: "droneii",
+        href: "/droneii"
+      }
+    ]
+  },
+  {
+    title: "Blog",
+    menuList: [
+      {
+        type: "link",
+        title: "all articles",
+        href: "/all-articles"
+      },
+      {
+        type: "link",
+        title: "seo basic",
+        href: "/seo-basic"
+      },
+      {
+        type: "link",
+        title: "internal optimization",
+        href: "/internal-optimization"
+      },
+      {
+        type: "link",
+        title: "external optimization",
+        href: "/external-optimization"
+      },
+      {
+        type: "link",
+        title: "content",
+        href: "/content"
+      },
+      {
+        type: "link",
+        title: "social signals",
+        href: "/social-signals"
+      },
+      {
+        type: "link",
+        title: "tools for seo",
+        href: "/tools-for-seo"
+      },
+      {
+        type: "link",
+        title: "online store",
+        href: "/online-store"
+      },
+      {
+        type: "link",
+        title: "web analytics",
+        href: "/web-analytics"
+      }
+      ]
+  },
+  {
+    title: "Company",
+    menuList: [
+      {
+        type: "link",
+        title: "about us",
+        href: "/about-us"
+      },
+      {
+        type: "link",
+        title: "certifications",
+        href: "/certifications"
+      },
+      {
+        type: "link",
+        title: "career",
+        href: "/career"
+      }
+      ]
+  }
 ]

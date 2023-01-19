@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { createWrapper } from "next-redux-wrapper";
-import {headerMenuSlice} from "@/store/slices/headerMenuSlice/HeaderMenuSlice";
+import {menuSlice} from "@/store/slices/menuSlice/MenuSlice";
 const makeStore = () => configureStore({
   reducer: {
-    [headerMenuSlice.name]: headerMenuSlice.reducer,
+    [menuSlice.name]: menuSlice.reducer
   },
   devTools: true,
 });

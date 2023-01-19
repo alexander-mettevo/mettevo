@@ -2,10 +2,10 @@ import React from 'react';
 import {MenuLeftSideList} from "@/components/layout/header/menu/styles";
 import MenuBtnsList from "@/components/reusable/MenuBtnsList/MenuBtnsList";
 import {useDispatch, useSelector} from "react-redux";
-import {switchShowContent} from "@/store/slices/headerMenuSlice/HeaderMenuSlice";
+import {switchShowContent} from "@/store/slices/menuSlice/MenuSlice";
 
 const MenuLeftSide = ({menuState, setMenuState}) => {
-  const menuItems = useSelector(state => state.headerMenu.menuItems)
+  const menuItems = useSelector(state => state.menu.menuItems)
   const dispatch = useDispatch()
   const handleMenuState = (id) => {
     setMenuState(id)

@@ -7,8 +7,8 @@ import MenuRightSideArrow from "@/components/layout/header/menu/MenuRightSideBlo
 import {ContentWrapper} from "@/components/layout/header/menu/MenuRightSideBloks/styles";
 
 const MenuRightSide = ({menuState}) => {
-  const rightSideData = useSelector(state => state.headerMenu.rightSideData)
-  const showContent = useSelector(state => state.headerMenu.showContent)
+  const rightSideData = useSelector(state => state.menu.rightSideData)
+  const showContent = useSelector(state => state.menu.showContent)
   const [currentData, setCurrentData] = useState(rightSideData[0])
 
   useEffect(() => {

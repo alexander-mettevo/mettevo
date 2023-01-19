@@ -5,7 +5,7 @@ import {ActionsMobileBlockWrapper} from "@/components/layout/header/menu/MenuRig
 import {useSelector} from "react-redux";
 
 const ActionsMobileBlock = ({currentData}) => {
-  const mobileShowContent = useSelector(state => state.headerMenu.mobileShowContent)
+  const mobileShowContent = useSelector(state => state.menu.mobileShowContent)
 
   return (
     <ActionsMobileBlockWrapper mobileShowContent={mobileShowContent}>

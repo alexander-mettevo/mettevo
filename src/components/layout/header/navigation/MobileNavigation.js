@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 import {MobileNavigationWrapper, NavigationMenuLink} from "@/components/layout/header/navigation/styles";
 
 const MobileNavigation = () => {
-  const links = useSelector(state => state.headerMenu.pageLinks)
+  const links = useSelector(state => state.menu.pageLinks)
 
   if (links.length > 0) {
     return (

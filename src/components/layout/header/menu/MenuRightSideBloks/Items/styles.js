@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+import {FormsTextInput} from "@/components/reusable/forms/styles";
 
 export const ActionsBlockFormWrapper = styled.form`
   label, span {
@@ -21,16 +22,7 @@ export const ActionsBlockFormWrapper = styled.form`
   }
 `
 
-export const ActionsBlockFormInput = styled.input`
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #b9b9b9;
-  margin: 0 10px 32px;
-  font-size: 14px;
-  width: 30%;
-  min-width: 200px;
-  color: ${({theme}) => theme.colors.primary};
-
+export const ActionsBlockFormInput = styled(FormsTextInput)`
   @media (max-width: 530px) {
     margin-bottom: 5px;
   }

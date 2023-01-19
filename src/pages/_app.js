@@ -1,6 +1,6 @@
 import MainLayout from "@/components/layout/MainLayout";
 import {GlobalStyles} from "@/styles/global";
-import {headerMenuSlice} from "@/store/slices/headerMenuSlice/HeaderMenuSlice";
+import {menuSlice} from "@/store/slices/menuSlice/MenuSlice";
 import {wrapper} from "@/store/store";
 // import localFont from "@next/font/local"
 //

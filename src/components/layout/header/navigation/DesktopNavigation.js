@@ -8,7 +8,7 @@ import {
 
 
 const DesktopNavigation = () => {
-  const links = useSelector(state => state.headerMenu.pageLinks)
+  const links = useSelector(state => state.menu.pageLinks)
 
   if (links.length > 0) {
     return (

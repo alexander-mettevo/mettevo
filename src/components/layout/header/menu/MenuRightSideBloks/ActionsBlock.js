@@ -9,7 +9,7 @@ import {
 } from "@/components/layout/header/menu/MenuRightSideBloks/styles";
 import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsBlockForm";
 import {useDispatch} from "react-redux";
-import {switchMobileShowContent} from "@/store/slices/headerMenuSlice/HeaderMenuSlice";
+import {switchMobileShowContent} from "@/store/slices/menuSlice/MenuSlice";
 import {ActionsDesktopBlockItems} from "@/components/layout/header/menu/MenuRightSideBloks/Items/styles";
 import ActionsMobileBlock from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsMobileBlock";
 
