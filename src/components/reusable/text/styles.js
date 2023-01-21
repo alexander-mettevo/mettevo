@@ -8,7 +8,7 @@ export const BlockTitle = styled.h2`
   
   @media(max-width: 1440px) {
     font-size: 5vw;
-    line-height: 50px;
+    line-height: 5.1vw;
   }
   
   @media(max-width: 768px) {

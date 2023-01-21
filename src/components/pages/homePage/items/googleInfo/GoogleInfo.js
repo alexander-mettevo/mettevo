@@ -2,8 +2,9 @@ import React from 'react';
 import {BlockTitle} from "@/components/reusable/text/styles";
 import Button from "@/components/reusable/button/Button";
 import {
+  GoogleInfoButton,
   GoogleInfoContainer,
-  GoogleInfoContent,
+  GoogleInfoContent, GoogleInfoText,
   GoogleInfoWrapper
 } from "@/components/pages/homePage/items/googleInfo/style";
 
@@ -15,13 +16,17 @@ const GoogleInfo = () => {
           We Make Google Love Your Brand
         </BlockTitle>
         <GoogleInfoContent>
-          <div>
-            Get comprehensive and aggressive digital marketing services driving more leads, customers and sales with our help. Grow your business faster than you ever thought possible!
+          <GoogleInfoText>
+            <p>
+              Get comprehensive and aggressive digital marketing services driving more leads,
+              customers and sales with our help.
+              Grow your business faster than you ever thought possible!
+            </p>
             Request a free consultation to see how we can help.
-          </div>
-          <div>
+          </GoogleInfoText>
+          <GoogleInfoButton>
             <Button text={'request a free consultation'}/>
-          </div>
+          </GoogleInfoButton>
         </GoogleInfoContent>
       </GoogleInfoContainer>
     </GoogleInfoWrapper>
