@@ -83,4 +83,5 @@ export const GlobalStyles = createGlobalStyle`
       scroll-behavior: auto !important;
     }
   }
+  
 `;

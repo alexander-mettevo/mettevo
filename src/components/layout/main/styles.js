@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const MainWrapper = styled.main`
   width: 100%;
   flex: 0 1 500vh;
+  padding-top: 60px;
+
   
 `
 export const Container = styled.div`
@@ -14,6 +16,7 @@ export const Container = styled.div`
   bottom: 0;
   background-color: ${({theme}) => theme.colors.mainBackground};
   overflow: hidden;
+  z-index: -1;
 `;
 
 export const Triangle = styled.div`
