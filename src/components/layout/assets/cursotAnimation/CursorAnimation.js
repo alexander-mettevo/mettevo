@@ -42,10 +42,10 @@ const CursorAnimation = () => {
 
 
   const handleMousePosition = (e) => {
-    if (!!e.target.closest && e.target.closest('[data-mouse]') && word !== e.target.closest('[data-mouse]')) {
+    if (!!(!!e.target.closest && e.target.closest('[data-mouse]') && word !== e.target.closest('[data-mouse]'))) {
       setWord(e.target.closest('[data-mouse]').dataset.mouse)
       ref.current.classList.add('show')
-    } else if  (word !== '') {
+    } else if  (ref.current.classList.contains('show')) {
       setWord('')
       ref.current.classList.remove('show')
     }
