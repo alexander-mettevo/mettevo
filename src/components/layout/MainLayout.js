@@ -10,7 +10,7 @@ import {ThemeProvider} from "styled-components";
 import {GlobalStyles} from "@/styles/global";
 import MainComponent from "@/components/layout/main/Main";
 import CursorAnimation from "@/components/layout/assets/cursotAnimation/CursorAnimation";
-// import LettersLoader from "@/components/reusable/lettersLoader/LettersLoader";
+import LettersLoader from "@/components/reusable/lettersLoader/LettersLoader";
 
 
 const MainLayout = ({children}) => {
@@ -37,7 +37,7 @@ const MainLayout = ({children}) => {
         <FooterComponent setTheme={setTheme}/>
       </MainFlex>
       <Menu active={menuActive}/>
-      {/*<LettersLoader/>*/}
+      <LettersLoader/>
       <CursorAnimation/>
     </ThemeProvider>
   );
