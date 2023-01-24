@@ -9,7 +9,7 @@ const animationBeforeRotationLettersScript = (mm, wrapperTL, textRef, titlePageC
 
     const mediaWrapperProps = {
       scale: 1.5,
-      height: '225px'
+      // height: '225px'
     }
 
     if (isTablet) {

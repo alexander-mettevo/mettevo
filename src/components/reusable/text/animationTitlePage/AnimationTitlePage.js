@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useLayoutEffect, useRef} from 'react';
 import {TitlePageSubtitle, TitlePageText, TitlePageWrapper} from "@/components/reusable/text/titlePage/styles";
 import LettersLoader from "@/components/reusable/lettersLoader/LettersLoader";
 import {useSelector} from "react-redux";
@@ -10,7 +10,7 @@ const AnimationTitlePage = ({subtitle, text}) => {
   const titlePageContentRef = useRef(null)
   const textRef = useRef(null)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     titlePageAnimationScript(rowLetters, titlePageWrapperRef, titlePageContentRef, textRef
     )
   }, [])
