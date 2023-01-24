@@ -4,7 +4,6 @@ export const TitlePageWrapper = styled.div`
   text-align: center;
   margin-bottom: 110px;
   margin-top: 40px;
-  height: 100vh;
 
   @media(max-width: 768px) {
     margin-bottom: 120px;

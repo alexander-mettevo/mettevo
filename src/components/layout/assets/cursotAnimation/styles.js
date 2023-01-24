@@ -17,7 +17,7 @@ export const CursorAnimationWrapper = styled.div`
   font-weight: 500;
   font-size: 1.125rem;
   transition: all 0.3s ease;
-  color: ${({theme}) => theme.colors.footerText};
+  color: ${({theme}) => theme.colors.primary};
   
   &.show {
     width: 90px;

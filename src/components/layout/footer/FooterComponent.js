@@ -13,7 +13,7 @@ const FooterComponent = ({setTheme}) => {
   const {width} = useWindowSize();
 
   return (
-    <Footer data-mouse={'Hello!!'}>
+    <Footer>
       <FooterContainer>
         <FooterForm/>
         <FooterLogo setTheme={setTheme}/>
