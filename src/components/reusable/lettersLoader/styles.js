@@ -5,7 +5,14 @@ export const LettersLoaderText = styled.div`
   overflow: hidden;
   justify-content: center;
   display: flex;
+  height: 225px;
+  @media(max-width: 1440px) {
+    height: 13vw;
+  }
   
+  @media(max-width: 768px) {
+    height: 4.6rem;
+  }
   
   div {
     display: flex;

@@ -5,7 +5,7 @@ const animationBeforeRotationLettersScript = (mm, wrapperTL, textRef, titlePageC
     isTablet: "(max-width: 767px)",
     reduceMotion: "(prefers-reduced-motion: reduce)"
   }, (context) => {
-    let {isDesktop, isSmallDesktop, isTablet} = context.conditions;
+    let {isSmallDesktop, isTablet} = context.conditions;
 
     const mediaWrapperProps = {
       scale: 1.5,
@@ -13,16 +13,16 @@ const animationBeforeRotationLettersScript = (mm, wrapperTL, textRef, titlePageC
     }
 
     if (isTablet) {
-      mediaWrapperProps.height = '4.6rem'
+      // mediaWrapperProps.height = '4.6rem'
       mediaWrapperProps.scale = 1.05
     } else if (isSmallDesktop) {
       mediaWrapperProps.scale = 1.05
-      mediaWrapperProps.height = '13vw'
+      // mediaWrapperProps.height = '13vw'
     }
 
     wrapperTL.from(textRef.current, {
       scale: mediaWrapperProps.scale,
-      height: mediaWrapperProps.height
+      // height: mediaWrapperProps.height
     })
     wrapperTL.from(titlePageWrapperRef.current, {
       position: 'fixed',
