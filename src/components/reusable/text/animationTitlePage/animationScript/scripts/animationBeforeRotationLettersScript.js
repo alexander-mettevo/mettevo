@@ -8,14 +8,14 @@ const animationBeforeRotationLettersScript = (mm, wrapperTL, textRef, titlePageC
     let {isSmallDesktop, isTablet} = context.conditions;
 
     const mediaWrapperProps = {
-      scale: 1.5,
+      scale: 1.1,
     }
 
-    // if (isTablet) {
-    //   mediaWrapperProps.scale = 1.05
-    // } else if (isSmallDesktop) {
-    //   mediaWrapperProps.scale = 1.05
-    // }
+    if (isTablet) {
+      mediaWrapperProps.scale = 1.05
+    } else if (isSmallDesktop) {
+      mediaWrapperProps.scale = 1.03
+    }
 
     // titlePageWrapperRef.current.style.transform = `scale(${mediaWrapperProps.scale})`
     wrapperTL.to(titlePageWrapperRef.current, {
