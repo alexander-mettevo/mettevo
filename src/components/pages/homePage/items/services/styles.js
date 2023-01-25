@@ -42,4 +42,5 @@ export const ServicesItemTitle = styled.h5`
 
 export const ServicesItemContainer = styled.div`
   text-align: right;
+  flex: 0 0 30%;
 `
