@@ -9,29 +9,18 @@ const animationBeforeRotationLettersScript = (mm, wrapperTL, textRef, titlePageC
 
     const mediaWrapperProps = {
       scale: 1.5,
-      // height: '225px'
     }
 
-    if (isTablet) {
-      // mediaWrapperProps.height = '4.6rem'
-      mediaWrapperProps.scale = 1.05
-    } else if (isSmallDesktop) {
-      mediaWrapperProps.scale = 1.05
-      // mediaWrapperProps.height = '13vw'
-    }
+    // if (isTablet) {
+    //   mediaWrapperProps.scale = 1.05
+    // } else if (isSmallDesktop) {
+    //   mediaWrapperProps.scale = 1.05
+    // }
 
-    wrapperTL.from(textRef.current, {
+    // titlePageWrapperRef.current.style.transform = `scale(${mediaWrapperProps.scale})`
+    wrapperTL.to(titlePageWrapperRef.current, {
       scale: mediaWrapperProps.scale,
-      // height: mediaWrapperProps.height
-    })
-    wrapperTL.from(titlePageWrapperRef.current, {
-      position: 'fixed',
-      width: '100vw',
-      height: '100vh',
-      top: '50%',
-      margin: '0 auto',
-      left: '0',
-      right: '0'
+      yPercent: 30,
     })
   })
 }

@@ -1,7 +1,11 @@
 import React from 'react';
 import GoogleInfo from "@/components/pages/homePage/items/googleInfo/GoogleInfo";
-import AnimationTitlePage from "@/components/reusable/text/animationTitlePage/AnimationTitlePage";
+// import AnimationTitlePage from "@/components/reusable/text/animationTitlePage/AnimationTitlePage";
+import dynamic  from "next/dynamic";
 
+const AnimationTitlePage = dynamic(() => import('@/components/reusable/text/animationTitlePage/AnimationTitlePage'), {
+  ssr: false
+} )
 const HomePage = () => {
   return (
     <>
