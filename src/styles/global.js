@@ -24,6 +24,10 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Mona Sans', 'sans-serif';
     color: ${({theme}) => theme.colors.primary};
   }
+  
+  body {
+    overflow-x: hidden;
+  }
 
   body,
   h1,
