@@ -4,14 +4,22 @@ import {
   ServicesMenuImage,
   ServicesMenuItems
 } from "@/components/pages/homePage/items/services/items/styles";
+import ServiceMenuList from "@/components/pages/homePage/items/services/items/ServiceMenuList";
+import Image from "next/image";
 
-const ServicesMenu = () => {
+const ServicesMenu = ({links, image}) => {
   return (
     <ServicesMenuContainer>
+      <ServicesMenuItems>
+        <ServiceMenuList list={links}/>
+      </ServicesMenuItems>
       <ServicesMenuImage>
-        <Image/>
+        <Image src={image}
+               width={700}
+               height={475}
+               sizes="100vw"
+               alt={'service'}/>
       </ServicesMenuImage>
-      <ServicesMenuItems></ServicesMenuItems>
     </ServicesMenuContainer>
   );
 };

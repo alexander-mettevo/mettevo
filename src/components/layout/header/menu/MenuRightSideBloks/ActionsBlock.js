@@ -3,7 +3,6 @@ import MenuBtnsList from "@/components/reusable/MenuBtnsList/MenuBtnsList";
 import {
   ActionBlockContainer,
   ActionBlockList,
-  ActionBlockText,
   ActionBlockWrapper,
   TextTitle
 } from "@/components/layout/header/menu/MenuRightSideBloks/styles";

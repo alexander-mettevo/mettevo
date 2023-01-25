@@ -2,11 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   compiler: {
-    styledComponents: true,
+    styledComponents: true
   },
-  // experimental: {
-  //   appDir: true,
-  // }
+  experimental: {
+    // appDir: true,
+  }
 }
 
 module.exports = nextConfig
