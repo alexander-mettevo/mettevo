@@ -9,7 +9,13 @@ import {darkTheme} from "@/styles/themes/darkTheme";
 import {ThemeProvider} from "styled-components";
 import {GlobalStyles} from "@/styles/global";
 import MainComponent from "@/components/layout/main/Main";
-import CursorAnimation from "@/components/layout/assets/cursotAnimation/CursorAnimation";
+import dynamic  from "next/dynamic";
+
+
+const CursorAnimation = dynamic(() =>
+  import('@/components/layout/assets/cursotAnimation/CursorAnimation'), {
+  ssr: false
+});
 
 
 const MainLayout = ({children}) => {

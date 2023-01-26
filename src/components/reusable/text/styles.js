@@ -36,4 +36,9 @@ export const ItemText = styled.div`
   font-style: italic;
   font-size: 1.25rem;
   line-height: 32px;
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 24px;
+  }
   `

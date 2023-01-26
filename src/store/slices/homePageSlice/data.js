@@ -93,3 +93,22 @@ export const homePageServiceList = [
     ]
   }
 ]
+export const homePageStandOutContent = [
+  {
+    title: 'Exclusively trust-based partnership',
+    text: 'Long-term relationships with our partners are our priority so that you will receive the first practical and exclusively useful insights on how you can improve your website just before signing up for a long-term contract.',
+    effect: 'bounce-graphic'
+  },
+  {
+    title: 'Exceeding partner’s expectations',
+    text: 'Our commitment is to become a true ally, consistently delivering on our promise in an efficient, effective, and timely manner. We understand our partner\'s problems, thereby we try to find the best possible ways to solve them.'
+  },
+  {
+    title: 'Team with a load of experience',
+    text: 'An experienced team can make all the difference, enabling you to achieve results quickly and efficiently. Our team has a host of expertise which gives them the edge when it comes to meeting your needs efficiently. With years of experience in various niches, we can guarantee the best possible outcome for your project.'
+  },
+  {
+    title: 'Website\'s ROI is our benchmark',
+    text: 'Increasing a website\'s ROI is the ultimate goal for any business, and with us it\'s our primary benchmark. Every action that we take - from digital marketing to content creation - is designed to boost your website\'s return on investment. From understanding your target audience to analyzing user feedback, we strive to maximize your ROI potential.'
+  },
+]

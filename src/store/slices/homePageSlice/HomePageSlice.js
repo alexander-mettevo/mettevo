@@ -1,11 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {HYDRATE} from "next-redux-wrapper";
-import {homePageServiceList} from "@/store/slices/homePageSlice/data";
+import {homePageServiceList, homePageStandOutContent} from "@/store/slices/homePageSlice/data";
 
 export const HomePageSlice = createSlice({
   name: "homePage",
   initialState: {
-    homePageServiceList
+    homePageServiceList,
+    homePageStandOutContent
   },
   reducers: {
 

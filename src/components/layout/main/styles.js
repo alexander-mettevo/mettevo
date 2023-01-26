@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.main`
   width: 100%;
-  flex: 0 1 1000vh;
+  flex: 0 1 100%;
   padding-top: 60px;
-
+  padding-bottom: 400px;
   
 `
 export const Container = styled.div`
@@ -12,7 +12,8 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 1000vh;
+  min-height: 100vh;
+  height: ${({height}) => height}px;
   bottom: 0;
   background-color: ${({theme}) => theme.colors.mainBackground};
   overflow: hidden;
