@@ -16,3 +16,24 @@ export const BlockTitle = styled.h2`
     line-height: 40px;
   }
 `
+
+export const ItemTitle = styled.h5`
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 38px;
+  margin: 0;
+
+  @media (max-width: 1440px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+  `
+
+export const ItemText = styled.div`
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 32px;
+  `

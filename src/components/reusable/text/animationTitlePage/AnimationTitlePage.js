@@ -1,8 +1,9 @@
 import React, {useEffect, useRef} from 'react';
-import {TitlePageSubtitle, TitlePageText, TitlePageWrapper} from "@/components/reusable/text/titlePage/styles";
+import {TitlePageSubtitle, TitlePageWrapper} from "@/components/reusable/text/titlePage/styles";
 import LettersLoader from "@/components/reusable/lettersLoader/LettersLoader";
 import {useSelector} from "react-redux";
 import titlePageAnimationScript from "@/components/reusable/text/animationTitlePage/animationScript";
+import {ItemText} from "@/components/reusable/text/styles";
 
 const AnimationTitlePage = ({subtitle, text}) => {
   const rowLetters = useSelector((state) => state.animation.homePageRowLetters)
@@ -22,7 +23,7 @@ const AnimationTitlePage = ({subtitle, text}) => {
 
         <div ref={titlePageContentRef}>
           {!!subtitle && <TitlePageSubtitle>{subtitle}</TitlePageSubtitle>}
-          {!!text && <TitlePageText>{text}</TitlePageText>}
+          {!!text && <ItemText>{text}</ItemText>}
         </div>
       </div>
     </TitlePageWrapper>

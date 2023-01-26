@@ -53,14 +53,3 @@ export const TitlePageSubtitle = styled.h2`
     font-weight: 500;
   }
 `
-
-export const TitlePageText = styled.p`
-  font-style: italic;
-  line-height: 32px;
-  font-size: 1.25rem;
-
-  @media(max-width: 1440px) {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-`

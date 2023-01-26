@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {ItemTitle} from "@/components/reusable/text/styles";
 
 export const ServicesWrapper = styled.div`
   margin-top: 240px;
@@ -36,19 +37,9 @@ export const ServicesRow = styled.div`
   }
 `
 
-export const ServicesItemTitle = styled.h5`
-  font-size: 2.5rem;
-  font-weight: 500;
+export const ServicesItemTitle = styled(ItemTitle)`
   margin: 0 0 20px 0;
   text-align: center;
-
-  @media (max-width: 1440px) {
-    font-size: 1.8rem;
-  }
-  
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
   `
 
 export const ServicesItemContainer = styled.div`

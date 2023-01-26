@@ -1,17 +1,11 @@
 import MainLayout from "@/components/layout/MainLayout";
-import {GlobalStyles} from "@/styles/global";
-import {menuSlice} from "@/store/slices/menuSlice/MenuSlice";
 import {wrapper} from "@/store/store";
 import {useEffect, useState} from "react";
-import {useRouter} from "next/router";
 import {Preloader} from "@/styles/assets/Preloader";
-// import localFont from "@next/font/local"
-//
-// const monaSans = localFont({
-//   src: "./fonts/mona-sans-1.0/MonaSans.woff2",
-// })
+import {Provider} from "react-redux";
 
-function App({Component, pageProps}) {
+function App({ Component, ...rest }) {
+  const { store, props } = wrapper.useWrappedStore(rest);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,15 +15,15 @@ function App({Component, pageProps}) {
   }, []);
 
   return (
-    <>
+    <Provider store={store}>
       {
         loading && <Preloader/>
       }
       <MainLayout>
-        <Component {...pageProps} />
+        <Component {...props.pageProps} />
       </MainLayout>
-    </>
+    </Provider>
   )
 }
 
-export default wrapper.withRedux(App);
+export default App;

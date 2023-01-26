@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {ItemText} from "@/components/reusable/text/styles";
 
 
 export const GoogleInfoWrapper = styled.div`
@@ -37,7 +38,7 @@ export const GoogleInfoContent = styled.div`
   
 `
 
-export const GoogleInfoText = styled.div`
+export const GoogleInfoText = styled(ItemText)`
 flex: 0 0 64%;  
   
   p{
