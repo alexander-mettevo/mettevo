@@ -101,7 +101,9 @@ export const homePageStandOutContent = [
   },
   {
     title: 'Exceeding partner’s expectations',
-    text: 'Our commitment is to become a true ally, consistently delivering on our promise in an efficient, effective, and timely manner. We understand our partner\'s problems, thereby we try to find the best possible ways to solve them.'
+    text: 'Our commitment is to become a true ally, consistently delivering on our promise in an efficient, effective, and timely manner. We understand our partner\'s problems, thereby we try to find the best possible ways to solve them.',
+    effect: 'double-bounce'
+
   },
   {
     title: 'Team with a load of experience',

@@ -12,19 +12,19 @@ export const StandOutHeader = styled.div`
 
 
 export const StandOutContentRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+column-count: 2;
 
- // у каждого второго элемента padding-top: 100px;
-  & > div:nth-child(2) {
-    padding-top: 280px;
+
+  & > div:nth-child(1) {
+    padding-top: 0;
   }
 
   & > div {
-    padding-bottom: 280px
+     padding-top: 280px;
   }
   
   @media (max-width: 1100px) {
+    column-count: 1;
     display: block;
 
     & > div {
@@ -38,10 +38,11 @@ export const StandOutContentRow = styled.div`
       padding-bottom: 80px
     }
   }
+  
   `
 
 export const StandOutContentItemWrapper = styled.div`
-  width: 50%;
+  display: inline-block;
   
   @media (max-width: 1100px) {
     width: 100%;
