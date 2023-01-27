@@ -1,8 +1,8 @@
 import {Container, Triangle} from "@/components/layout/main/styles";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useRef} from "react";
 import gsap from "gsap";
 
-const Animation = ({ triangleCount, height }) => {
+const Animation = ({ triangleCount }) => {
   const ref = useRef(null);
 
 
@@ -40,7 +40,7 @@ const Animation = ({ triangleCount, height }) => {
   }, []);
 
   return (
-    <Container height={height} ref={ref}>
+    <Container ref={ref}>
       {Array.from({ length: triangleCount }, (_, i) => (
         <Triangle key={i} className="triangle" />
       ))}

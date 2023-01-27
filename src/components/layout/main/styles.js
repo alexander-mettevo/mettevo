@@ -5,6 +5,7 @@ export const MainWrapper = styled.main`
   flex: 0 1 100%;
   padding-top: 60px;
   padding-bottom: 400px;
+  position: relative;
   
 `
 export const Container = styled.div`
@@ -12,8 +13,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
-  height: ${({height}) => height}px;
+  height: 100%;
   bottom: 0;
   background-color: ${({theme}) => theme.colors.mainBackground};
   overflow: hidden;

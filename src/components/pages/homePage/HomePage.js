@@ -4,6 +4,7 @@ import AnimationTitlePage from "@/components/reusable/text/animationTitlePage/An
 import Services from "@/components/pages/homePage/items/services/Services";
 import Numbers from "@/components/pages/homePage/items/numbers/Numbers";
 import StandOut from "@/components/pages/homePage/items/standOut/StandOut";
+import CollectionBtns from "@/components/reusable/collectionBtns/CollectionBtns";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Services/>
       <Numbers/>
       <StandOut/>
+      <CollectionBtns/>
     </>
   );
 };
