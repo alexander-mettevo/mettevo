@@ -9,9 +9,10 @@ import {
 const StoriesItem = ({item}) => {
   return (
     <div>
-      <StoriesItemImageWrapper>
-        <Image fill src={item.image} alt={item.title}/>
+      <StoriesItemImageWrapper href={item.href} data-mouse={'View'} width={item.image.size.width} height={item.image.size.height}>
+        <Image fill src={item.image.src} alt={item.title} />
       </StoriesItemImageWrapper>
+
       <div>
         <StoriesItemTitle>{item.title} </StoriesItemTitle>
         -
