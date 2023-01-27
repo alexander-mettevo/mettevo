@@ -7,9 +7,9 @@ import {
   ArrowLinkWrapper
 } from "@/components/reusable/links/styles";
 
-const ArrowLink = ({href, title}) => {
+const ArrowLink = ({href, title, isMarginRight}) => {
   return (
-    <ArrowLinkWrapper>
+    <ArrowLinkWrapper isMarginRight={isMarginRight}>
       <ArrowLinkItem href={href}>
         {title}
       </ArrowLinkItem>

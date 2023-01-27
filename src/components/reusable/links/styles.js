@@ -12,6 +12,10 @@ export const ArrowLinkWrapper = styled.div`
       }
     }
   }
+
+  @media(max-width: 1440px) {
+    margin-right: ${({isMarginRight}) => isMarginRight ? '75px' : '0'};
+  }
 `
 
 export const ArrowLinkItemsWrapper = styled.div`

@@ -179,3 +179,24 @@ export const homePageStories = [
     }
   },
 ]
+
+export const homePageBlog = [
+  {
+    title: 'Venenatis tincidunt phasellus nec aliquam.',
+    theme: 'theme 1',
+    date: '2022-12-01T00:00:00.000Z',
+    image: '/images/home_page/blog/first.png'
+  },
+  {
+    title: 'Venenatis tincidunt phasellus nec aliquam.',
+    theme: 'theme 1',
+    date: '2022-12-01T00:00:00.000Z',
+    image: '/images/home_page/blog/second.png'
+  },
+  {
+    title: 'Venenatis tincidunt phasellus nec aliquam.',
+    theme: 'theme 1',
+    date: '2022-12-01T00:00:00.000Z',
+    image: '/images/home_page/blog/last.png'
+  }
+]

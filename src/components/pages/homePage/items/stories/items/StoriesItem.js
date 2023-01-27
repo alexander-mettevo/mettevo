@@ -5,6 +5,7 @@ import {
   StoriesItemSubtitle,
   StoriesItemTitle
 } from "@/components/pages/homePage/items/stories/styles";
+import {ItemText} from "@/components/reusable/text/styles";
 
 const StoriesItem = ({item}) => {
   return (
@@ -13,11 +14,11 @@ const StoriesItem = ({item}) => {
         <Image fill src={item.image.src} alt={item.title} />
       </StoriesItemImageWrapper>
 
-      <div>
+      <ItemText>
         <StoriesItemTitle>{item.title} </StoriesItemTitle>
         -
         <StoriesItemSubtitle> {item.subtitle}</StoriesItemSubtitle>
-      </div>
+      </ItemText>
     </div>
   );
 };

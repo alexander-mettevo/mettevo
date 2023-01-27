@@ -5,7 +5,6 @@ export const StoriesWrapper = styled.div`
   position: relative;
   margin-top: 160px;
   text-transform: lowercase;
-  font-size: 1.25rem;
 `
 
 export const StoriesGridWrapper = styled.div`
