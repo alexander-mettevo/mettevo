@@ -8,8 +8,9 @@ const bounceAnimationScript = (ref) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ref.current,
-      start: "top 80%",
-      end: "bottom 20%",
+      // start: "top 80%",
+      // end: "bottom 20%",
+      // scrub: 2,
       markers: false
     },
   });
@@ -21,7 +22,7 @@ const bounceAnimationScript = (ref) => {
   } )
   tl.to(ref.current, {
     scale: 1,
-    duration: .5,
+    duration: 1,
     ease: "bounce.out",
   })
   // ==================================

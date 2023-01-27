@@ -185,18 +185,21 @@ export const homePageBlog = [
     title: 'Venenatis tincidunt phasellus nec aliquam.',
     theme: 'theme 1',
     date: '2022-12-01T00:00:00.000Z',
-    image: '/images/home_page/blog/first.png'
+    image: '/images/home_page/blog/first.png',
+    href: '/'
   },
   {
     title: 'Venenatis tincidunt phasellus nec aliquam.',
     theme: 'theme 1',
     date: '2022-12-01T00:00:00.000Z',
-    image: '/images/home_page/blog/second.png'
+    image: '/images/home_page/blog/second.png',
+    href: '/'
   },
   {
     title: 'Venenatis tincidunt phasellus nec aliquam.',
     theme: 'theme 1',
     date: '2022-12-01T00:00:00.000Z',
-    image: '/images/home_page/blog/last.png'
+    image: '/images/home_page/blog/last.png',
+    href: '/'
   }
 ]

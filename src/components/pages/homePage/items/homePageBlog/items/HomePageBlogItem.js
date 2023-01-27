@@ -1,16 +1,25 @@
 import React from 'react';
 import Image from "next/image";
-import {HomePageBlogItemImage} from "@/components/pages/homePage/items/homePageBlog/styles";
+import {
+  HomePageBlogItemDate,
+  HomePageBlogItemImage,
+  HomePageBlogItemTheme,
+  HomePageBlogItemTitle, HomePageBlogItemWrapper
+} from "@/components/pages/homePage/items/homePageBlog/styles";
+import dayjs from "dayjs";
 const HomePageBlogItem = ({item}) => {
-  console.log('HomePageBlogItem', item)
 
   return (
-    <div>
-      <HomePageBlogItemImage>
+    <HomePageBlogItemWrapper href={item.href}>
+      <HomePageBlogItemImage data-mouse={'Read'}>
         <Image src={item.image} fill alt={'post image'}/>
       </HomePageBlogItemImage>
-
-    </div>
+      <div>
+        <HomePageBlogItemTheme>{item.theme}</HomePageBlogItemTheme>
+        <HomePageBlogItemTitle>{item.title}</HomePageBlogItemTitle>
+        <HomePageBlogItemDate>{dayjs(item.date).format('MMM D, YYYY')}</HomePageBlogItemDate>
+      </div>
+    </HomePageBlogItemWrapper>
   );
 };
 
