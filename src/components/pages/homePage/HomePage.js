@@ -5,6 +5,7 @@ import Services from "@/components/pages/homePage/items/services/Services";
 import Numbers from "@/components/pages/homePage/items/numbers/Numbers";
 import StandOut from "@/components/pages/homePage/items/standOut/StandOut";
 import CollectionBtns from "@/components/reusable/collectionBtns/CollectionBtns";
+import Stories from "@/components/pages/homePage/items/stories/Stories";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Numbers/>
       <StandOut/>
       <CollectionBtns/>
+      <Stories/>
     </>
   );
 };

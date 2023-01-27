@@ -116,3 +116,36 @@ export const homePageStandOutContent = [
     effect: 'benchmark'
   },
 ]
+
+export const homePageStories = [
+  {
+    title: 'planet 925',
+    subtitle: 'web design, web development',
+    href: '/services/seo',
+    image: '/images/home_page/stories/girl.png',
+  },
+  {
+    title: 'yodoggo',
+    subtitle: 'web design, web development',
+    href: '/services/seo',
+    image: '/images/home_page/stories/dog.png',
+  },
+  {
+    title: 'charter jets',
+    subtitle: 'Seo optimization',
+    href: '/services/seo',
+    image: '/images/home_page/stories/air.png',
+  },
+  {
+    title: 'Surgery',
+    subtitle: 'web  design, web development',
+    href: '/services/seo',
+    image: '/images/home_page/stories/health.png',
+  },
+  {
+    title: 'droneii',
+    subtitle: 'web design, web  development',
+    href: '/services/seo',
+    image: '/images/home_page/stories/quad.png',
+  },
+]
