@@ -9,6 +9,14 @@ export const GlobalStyles = createGlobalStyle`
     font-stretch: 75% 125%;
   }
 
+  @font-face {
+    font-family: 'Helvetica';
+    src: url('/fonts/helvetica/helvetica-neue-lt-com-77-bold-condensed.woff') format('woff supports variations'),
+    url('/fonts/helvetica/helvetica-neue-lt-com-77-bold-condensed.woff') format('woff-variations');
+    font-weight: 600;
+    font-stretch: 75% 125%;
+  }
+
   *,
   *::before,
   *::after {

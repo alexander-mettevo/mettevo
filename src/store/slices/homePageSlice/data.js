@@ -112,6 +112,7 @@ export const homePageStandOutContent = [
   },
   {
     title: 'Website\'s ROI is our benchmark',
-    text: 'Increasing a website\'s ROI is the ultimate goal for any business, and with us it\'s our primary benchmark. Every action that we take - from digital marketing to content creation - is designed to boost your website\'s return on investment. From understanding your target audience to analyzing user feedback, we strive to maximize your ROI potential.'
+    text: 'Increasing a website\'s ROI is the ultimate goal for any business, and with us it\'s our primary benchmark. Every action that we take - from digital marketing to content creation - is designed to boost your website\'s return on investment. From understanding your target audience to analyzing user feedback, we strive to maximize your ROI potential.',
+    effect: 'benchmark'
   },
 ]
