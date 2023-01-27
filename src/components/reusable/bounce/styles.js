@@ -10,10 +10,10 @@ export const BounceWrapper = styled.div`
   top: ${({top}) => top};
   left: ${({left}) => left};
   color: ${({color}) => color === '#101010' ? '#fff' : '#101010'};
-  transition: transform 0.5s ease-in-out;
   
-  &:hover {
-    transform: scale(1.2) !important;
+  @media(max-width: 650px) {
+    width: ${({mobileSize, size}) => mobileSize ? mobileSize : size};
+    height: ${({mobileSize, size}) => mobileSize ? mobileSize : size};
   }
 `
 export const BounceItem = styled.div`

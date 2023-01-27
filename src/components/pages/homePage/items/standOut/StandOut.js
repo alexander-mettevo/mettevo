@@ -4,6 +4,7 @@ import {StandOutHeader, StandOutWrapper} from "@/components/pages/homePage/items
 import StandOutContent from "@/components/pages/homePage/items/standOut/StandOutContent";
 
 const StandOut = () => {
+
   return (
     <StandOutWrapper>
       <StandOutHeader>

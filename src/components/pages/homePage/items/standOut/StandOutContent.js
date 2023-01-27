@@ -12,9 +12,7 @@ const StandOutContent = () => {
     <StandOutContentRow>
       {
         width < 1100 ? data && data.map((item, index) => (
-          <>
              <StandOutItem  key={index + 'standOutContent'} item={item}/>
-          </>
         )) :
           <>
             {data && data.map((item, index) => {

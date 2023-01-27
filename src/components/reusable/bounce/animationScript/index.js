@@ -10,7 +10,6 @@ const bounceAnimationScript = (ref) => {
       trigger: ref.current,
       start: "top 80%",
       end: "bottom 20%",
-      scrub: 1,
       markers: false
     },
   });
@@ -22,10 +21,9 @@ const bounceAnimationScript = (ref) => {
   } )
   tl.to(ref.current, {
     scale: 1,
-    duration: 1,
+    duration: .5,
     ease: "bounce.out",
   })
-
   // ==================================
 }
 

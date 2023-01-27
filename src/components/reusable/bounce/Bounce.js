@@ -7,7 +7,8 @@ const Bounce = ({
                   size,
                   color,
                   top,
-                  left
+                  left,
+                  mobileSize
 }) => {
   const ref = useRef(null);
   useEffect(() => {bounceAnimationScript(ref);}, []);
@@ -19,6 +20,7 @@ const Bounce = ({
       color={color}
       top={top}
       left={left}
+      mobileSize={mobileSize}
     >
       <BounceItem>
         {children}
