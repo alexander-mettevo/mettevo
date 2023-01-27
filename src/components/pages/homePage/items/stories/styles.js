@@ -38,6 +38,19 @@ export const StoriesGridWrapper = styled.div`
     align-self: center;
   }
  
+
+  @media (max-width: 992px) {
+    grid-gap: 5px;
+  }
+
+  @media (max-width: 900px) {
+    display: block;
+    
+    & > div {
+      width: 90vw;
+      margin: 40px auto 0;
+    }
+  }
 `
 
 export const StoriesTitle = styled.div`
@@ -45,6 +58,12 @@ export const StoriesTitle = styled.div`
   top: 0;
   right: 0;
   width: 50%;
+
+  @media (max-width: 900px) {
+    position: relative;
+    text-align: right;
+    width: 100%;
+  }
 `
 
 export const StoriesItemImageWrapper = styled(Link)`
@@ -63,6 +82,12 @@ export const StoriesItemImageWrapper = styled(Link)`
     img {
       transform: scale(1.1);
     }
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    height: ${({height, width}) => (height / width) * 90}vw;
+    margin: 0 auto;
   }
  
   `
