@@ -107,7 +107,8 @@ export const homePageStandOutContent = [
   },
   {
     title: 'Team with a load of experience',
-    text: 'An experienced team can make all the difference, enabling you to achieve results quickly and efficiently. Our team has a host of expertise which gives them the edge when it comes to meeting your needs efficiently. With years of experience in various niches, we can guarantee the best possible outcome for your project.'
+    text: 'An experienced team can make all the difference, enabling you to achieve results quickly and efficiently. Our team has a host of expertise which gives them the edge when it comes to meeting your needs efficiently. With years of experience in various niches, we can guarantee the best possible outcome for your project.',
+    effect: 'experience'
   },
   {
     title: 'Website\'s ROI is our benchmark',

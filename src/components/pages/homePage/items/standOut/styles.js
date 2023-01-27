@@ -48,3 +48,11 @@ export const StandOutContentItemWrapper = styled.div`
     width: 100%;
   }
   `
+
+export const StandOutEffectWrapper = styled.div`
+  margin-top: 80px;
+  
+  @media(max-width: 768px) {
+    margin-top: 24px;
+  } 
+`

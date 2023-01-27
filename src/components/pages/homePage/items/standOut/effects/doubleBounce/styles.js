@@ -1,13 +1,12 @@
 import styled from 'styled-components'
+import {StandOutEffectWrapper} from "@/components/pages/homePage/items/standOut/styles";
 
-export const DoubleBounceWrapper = styled.div`
+export const DoubleBounceWrapper = styled(StandOutEffectWrapper)`
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
   align-items: flex-end;
 
   @media(max-width: 480px) {
-    margin-top: 24px;
     
     & > div:nth-child(1) {
       & > div {
