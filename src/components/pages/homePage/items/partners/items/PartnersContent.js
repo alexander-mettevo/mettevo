@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 import dynamic  from "next/dynamic";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Controller} from "swiper";
-import {PartnerLink} from "@/components/pages/homePage/items/partners/styles";
+import {PartnerLink, PartnersSliderWrapper} from "@/components/pages/homePage/items/partners/styles";
 import Image from "next/image";
 
 const PartnersSlider = dynamic(() => import('@/components/pages/homePage/items/partners/items/PartnersSlider'), {ssr: false});
@@ -18,17 +18,16 @@ const PartnersContent = () => {
 
 if (!firstHomePagePartners || !secondHomePagePartners) return null
   return (
-    <div data-mouse={'Drag'}>
+    <PartnersSliderWrapper data-mouse={'Drag'}>
       <Swiper
         slidesPerView={7}
         loop
         modules={[Controller]}
         onSwiper={setFirstSliderController}
-        controller={{ control: secondSliderController }}
-        // slidesPerGroup={7}
-        // onSlideChange={() => console.log('slide change')}
-        // onSwiper={(swiper) => console.log(swiper)}
-      >
+        controller={{
+          control: secondSliderController,
+          inverse: true,
+        }}>
         {firstHomePagePartners.map((item, index) => (
           <SwiperSlide key={index + item.image}>
             <PartnerLink href={item.href}>
@@ -42,11 +41,10 @@ if (!firstHomePagePartners || !secondHomePagePartners) return null
         loop
         modules={[Controller]}
         onSwiper={setSecondSliderController}
-        controller={{ control: firstSliderController }}
-        // slidesPerGroup={7}
-        // onSlideChange={() => console.log('slide change')}
-        // onSwiper={(swiper) => console.log(swiper)}
-      >
+        controller={{
+          control: firstSliderController,
+          inverse: true,
+      }}>
         {secondHomePagePartners.map((item, index) => (
           <SwiperSlide key={index + item.image}>
             <PartnerLink href={item.href}>
@@ -55,7 +53,7 @@ if (!firstHomePagePartners || !secondHomePagePartners) return null
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </PartnersSliderWrapper>
   );
 };
 

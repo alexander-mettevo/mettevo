@@ -13,5 +13,8 @@ export const PartnerLink = styled(Link)`
 `
 
 export const PartnersSliderWrapper = styled.div`
-  margin-top: 80px;
+  &>div {
+    margin-top: 80px;
+  }
+   
   `
