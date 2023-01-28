@@ -41,7 +41,6 @@ if (typeof window === 'undefined') return null
       <Swiper
         slidesPerView={7}
         loop
-        centeredSlides
         breakpoints={breakpoints}
         modules={[Controller]}
         onSwiper={setFirstSliderController}
