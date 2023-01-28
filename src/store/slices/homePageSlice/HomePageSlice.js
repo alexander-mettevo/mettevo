@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {HYDRATE} from "next-redux-wrapper";
 import {
-  homePageBlog,
+  homePageBlog, homePageBrands,
   homePageServiceList,
   homePageStandOutContent,
   homePageStories
@@ -13,7 +13,8 @@ export const HomePageSlice = createSlice({
     homePageServiceList,
     homePageStandOutContent,
     homePageStories,
-    homePageBlog
+    homePageBlog,
+    homePageBrands
   },
   reducers: {
 

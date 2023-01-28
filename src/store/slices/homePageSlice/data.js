@@ -203,3 +203,70 @@ export const homePageBlog = [
     href: '/'
   }
 ]
+
+export const homePageBrands = [
+  {
+    image: '/images/home_page/brands/algorand.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/asana.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/clutch.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/disney.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/kroger.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/pitch.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/pluto.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/sortlist.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/Vector.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/yummu.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/algorand.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/asana.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/clutch.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/disney.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/kroger.svg',
+    href: '/'
+  },
+  {
+    image: '/images/home_page/brands/pitch.svg',
+    href: '/'
+  },
+]
