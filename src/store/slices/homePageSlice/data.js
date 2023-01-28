@@ -204,69 +204,71 @@ export const homePageBlog = [
   }
 ]
 
-export const homePageBrands = [
+export const firstHomePagePartners = [
   {
-    image: '/images/home_page/brands/algorand.svg',
+    image: '/images/home_page/partners/algorand.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/asana.svg',
+    image: '/images/home_page/partners/asana.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/clutch.svg',
+    image: '/images/home_page/partners/clutch.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/disney.svg',
+    image: '/images/home_page/partners/disney.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/kroger.svg',
+    image: '/images/home_page/partners/kroger.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/pitch.svg',
+    image: '/images/home_page/partners/pitch.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/pluto.svg',
+    image: '/images/home_page/partners/pluto.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/sortlist.svg',
+    image: '/images/home_page/partners/sortlist.svg',
+    href: '/'
+  },
+]
+export const secondHomePagePartners = [
+  {
+    image: '/images/home_page/partners/Vector.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/Vector.svg',
+    image: '/images/home_page/partners/yummu.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/yummu.svg',
+    image: '/images/home_page/partners/algorand.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/algorand.svg',
+    image: '/images/home_page/partners/asana.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/asana.svg',
+    image: '/images/home_page/partners/clutch.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/clutch.svg',
+    image: '/images/home_page/partners/disney.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/disney.svg',
+    image: '/images/home_page/partners/kroger.svg',
     href: '/'
   },
   {
-    image: '/images/home_page/brands/kroger.svg',
-    href: '/'
-  },
-  {
-    image: '/images/home_page/brands/pitch.svg',
+    image: '/images/home_page/partners/pitch.svg',
     href: '/'
   },
 ]

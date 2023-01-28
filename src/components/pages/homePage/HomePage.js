@@ -8,6 +8,7 @@ import CollectionBtns from "@/components/reusable/collectionBtns/CollectionBtns"
 import Stories from "@/components/pages/homePage/items/stories/Stories";
 import AreYouReady from "@/components/reusable/areYouRedy/AreYouReady";
 import HomePageBlog from "@/components/pages/homePage/items/homePageBlog/HomePageBlog";
+import Partners from "@/components/pages/homePage/items/partners/Partners";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <StandOut/>
       <CollectionBtns/>
       <Stories/>
+      <Partners/>
       <HomePageBlog/>
       <AreYouReady/>
     </>
