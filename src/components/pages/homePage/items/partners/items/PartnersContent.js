@@ -8,6 +8,24 @@ import Image from "next/image";
 
 const PartnersSlider = dynamic(() => import('@/components/pages/homePage/items/partners/items/PartnersSlider'), {ssr: false});
 
+const breakpoints = {
+  1440: {
+    slidesPerView: 7
+  },
+  1100: {
+    slidesPerView: 5
+  },
+  768: {
+    slidesPerView: 4
+  },
+  420: {
+    slidesPerView: 3
+  },
+  320: {
+    slidesPerView: 2
+  }
+}
+
 const PartnersContent = () => {
   const [firstSliderController, setFirstSliderController] = useState(null)
   const [secondSliderController, setSecondSliderController] = useState(null)
@@ -16,12 +34,15 @@ const PartnersContent = () => {
   const secondHomePagePartners = useSelector(state => state.homePage.secondHomePagePartners)
 
 
-if (!firstHomePagePartners || !secondHomePagePartners) return null
+if (typeof window === 'undefined') return null
+
   return (
     <PartnersSliderWrapper data-mouse={'Drag'}>
       <Swiper
         slidesPerView={7}
         loop
+        centeredSlides
+        breakpoints={breakpoints}
         modules={[Controller]}
         onSwiper={setFirstSliderController}
         controller={{
@@ -29,7 +50,7 @@ if (!firstHomePagePartners || !secondHomePagePartners) return null
           inverse: true,
         }}>
         {firstHomePagePartners.map((item, index) => (
-          <SwiperSlide key={index + item.image}>
+          <SwiperSlide key={index + 'partnerLogo2'}>
             <PartnerLink href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
             </PartnerLink>
@@ -41,12 +62,13 @@ if (!firstHomePagePartners || !secondHomePagePartners) return null
         loop
         modules={[Controller]}
         onSwiper={setSecondSliderController}
+        breakpoints={breakpoints}
         controller={{
           control: firstSliderController,
           inverse: true,
       }}>
         {secondHomePagePartners.map((item, index) => (
-          <SwiperSlide key={index + item.image}>
+          <SwiperSlide key={index + 'partnerLogo1'}>
             <PartnerLink href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
             </PartnerLink>

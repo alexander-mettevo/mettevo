@@ -5,7 +5,7 @@ import {
   homePageBlog,
   homePageServiceList,
   homePageStandOutContent,
-  homePageStories,
+  homePageStories, reviewsHomePage,
   secondHomePagePartners
 } from "@/store/slices/homePageSlice/data";
 
@@ -17,7 +17,8 @@ export const HomePageSlice = createSlice({
     homePageStories,
     homePageBlog,
     firstHomePagePartners,
-    secondHomePagePartners
+    secondHomePagePartners,
+    reviewsHomePage
   },
   reducers: {
 

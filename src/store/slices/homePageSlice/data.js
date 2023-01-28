@@ -272,3 +272,36 @@ export const secondHomePagePartners = [
     href: '/'
   },
 ]
+
+export const reviewsHomePage = [
+  {
+    rating: 5,
+    logs: {
+      mainLogo: '/images/home_page/reviews/Logo.png',
+      smallLogo: '/images/home_page/reviews/Clutch.svg'
+    },
+    bio: 'Peter Moeller, Director of Marketing & Business Dev',
+    date: '01/06',
+    text: 'Although the project is still ongoing, Mettevo has fixed thousands of broken links, updated plug-ins, and increased the page load speed. They communicate through Microsoft Teams, and the team is responsive to the client\'s queries. Overall, the client is pleased with their growing partnership.'
+  },
+  {
+    rating: 5,
+    logs: {
+      mainLogo: '/images/home_page/reviews/Logo.png',
+      smallLogo: '/images/home_page/reviews/Clutch.svg'
+    },
+    bio: 'Peter Moeller, Director of Marketing & Business Dev',
+    date: '01/06',
+    text: 'Although the project is still ongoing, Mettevo has fixed thousands of broken links, updated plug-ins, and increased the page load speed. They communicate through Microsoft Teams, and the team is responsive to the client\'s queries. Overall, the client is pleased with their growing partnership.'
+  },
+  {
+    rating: 5,
+    logs: {
+      mainLogo: '/images/home_page/reviews/Logo.png',
+      smallLogo: '/images/home_page/reviews/Clutch.svg'
+    },
+    bio: 'Peter Moeller, Director of Marketing & Business Dev',
+    date: '01/06',
+    text: 'Although the project is still ongoing, Mettevo has fixed thousands of broken links, updated plug-ins, and increased the page load speed. They communicate through Microsoft Teams, and the team is responsive to the client\'s queries. Overall, the client is pleased with their growing partnership.'
+  }
+]

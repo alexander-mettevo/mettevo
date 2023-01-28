@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const StandOutWrapper = styled.div`
-  margin-top: 280px;
-`
-
 export const StandOutHeader = styled.div`
   display: flex;
   justify-content: flex-end;

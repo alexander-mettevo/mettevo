@@ -9,6 +9,7 @@ import Stories from "@/components/pages/homePage/items/stories/Stories";
 import AreYouReady from "@/components/reusable/areYouRedy/AreYouReady";
 import HomePageBlog from "@/components/pages/homePage/items/homePageBlog/HomePageBlog";
 import Partners from "@/components/pages/homePage/items/partners/Partners";
+import Reviews from "@/components/pages/homePage/items/reviews/Reviews";
 
 const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ const HomePage = () => {
       <CollectionBtns/>
       <Stories/>
       <Partners/>
+      <Reviews/>
       <HomePageBlog/>
       <AreYouReady/>
     </>

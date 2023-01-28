@@ -1,10 +1,13 @@
 import styled from "styled-components";
+import {MainBlockWrapper} from "@/components/reusable/bloks/styles";
 
-export const NumbersWrapper = styled.div`
-  margin: 280px 20px 0;
+export const NumbersWrapper = styled(MainBlockWrapper)`
+  margin-left: 20px;
+  margin-right: 20px;
 
   @media(max-width: 1440px) {
-    margin: 280px 80px 0;
+    margin-left: 80px;
+    margin-right: 80px;
   }
   
   @media(max-width: 1100px) {
