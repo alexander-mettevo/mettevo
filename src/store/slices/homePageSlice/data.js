@@ -292,7 +292,7 @@ export const reviewsHomePage = [
     },
     bio: 'Peter Moeller, Director of Marketing & Business Dev',
     date: '01/06',
-    text: 'Although the project is still ongoing, Mettevo has fixed thousands of broken links, updated plug-ins, and increased the page load speed. They communicate through Microsoft Teams, and the team is responsive to the client\'s queries. Overall, the client is pleased with their growing partnership.'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nisl nisl aliquam purus, et lacinia nisl lorem vel nisl. Sed euismod, nunc ut aliquam tincidunt, nisl nisl aliquam purus, et lacinia nisl lorem vel nisl.'
   },
   {
     rating: 5,

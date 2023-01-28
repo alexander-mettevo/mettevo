@@ -5,6 +5,7 @@ export const BlockTitle = styled.h2`
   line-height: 68px;
   text-transform: lowercase;
   font-size: 3.75rem;
+  text-align: ${({align}) => align || 'left'};
   
   @media(max-width: 1440px) {
     font-size: 5vw;

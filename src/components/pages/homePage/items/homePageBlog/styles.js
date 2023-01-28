@@ -88,7 +88,7 @@ export const HomePageBlogItemImage = styled.div`
 `
 
 export const HomePageBlogItemTheme = styled.div`
-  color: #606060;
+  color: ${({theme}) => theme.colors.grayText};
   font-style: italic;
   text-transform: lowercase;
 `

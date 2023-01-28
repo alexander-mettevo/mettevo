@@ -1,15 +1,16 @@
 import React from 'react';
 import {BlockTitle} from "@/components/reusable/text/styles";
 import ReviewsContent from "@/components/pages/homePage/items/reviews/items/ReviewsContent";
+import {MainBlockWrapper} from "@/components/reusable/bloks/styles";
 
 const Reviews = () => {
   return (
-    <div>
-      <BlockTitle>
+    <MainBlockWrapper>
+      <BlockTitle align={'right'}>
         reviews
       </BlockTitle>
       <ReviewsContent/>
-    </div>
+    </MainBlockWrapper>
   );
 };
 
