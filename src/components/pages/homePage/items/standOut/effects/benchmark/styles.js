@@ -9,7 +9,6 @@ export const BenchmarkArrow = styled.div`
   width: 100%;
   height: 5px;
   background-color: ${({theme}) => theme.colors.primary};
-  transform: rotate(-10deg) translateY(20px) translateX(-5px);
   position: relative;
   
   &::after {
@@ -33,30 +32,41 @@ export const BenchmarkArrow = styled.div`
 `
 
 export const BenchmarkWordWrapper = styled.div`
+  @media (max-width: 768px) {
+    margin-top: 40px;
+    }
+    
+      @media (max-width: 468px) {
+    margin-top: 60px;
+    }
+
 & span:nth-child(4) {
   margin-right: 16px;
 }
 `
 
 export const BenchmarkWord = styled.span`
+display: inline-block;
+
   text-transform: uppercase;
   font-weight: 600;
   font-family: Helvetica,sans-serif;
-  font-size: ${({index}) => index === 0 ? '8.75rem' : 8.75 + (index * 1.25) + 'rem'};
-  line-height: ${({index}) => index === 0 ? '8.75rem' : 8.75 + (index * 1.25) + 'rem'};
+  font-size: ${({index}) => index === 0 ? '7.55rem' : 7.75 + (index * 1.25) + 'rem'};
+  line-height: ${({index}) => index === 0 ? '7.55rem' : 7.75 + (index * 1.25) + 'rem'};
   
   @media (max-width: 1440px) {
-    font-size: ${({index}) => index === 0 ? '9vw' : 9 + (index * 1.5) + 'vw'};
-    line-height: ${({index}) => index === 0 ? '9vw' : 9 + (index * 1.5) + 'vw'};
+    font-size: ${({index}) => index === 0 ? '8vw' : 8 + (index * 1.5) + 'vw'};
+    line-height: ${({index}) => index === 0 ? '8vw' : 8 + (index * 1.5) + 'vw'};
   }
 
   @media (max-width: 1100px) {
-    font-size: ${({index}) => index === 0 ? '15vw' : 15 + (index * 4) + 'vw'};
-    line-height: ${({index}) => index === 0 ? '15vw' : 15 + (index * 4) + 'vw'};
+    font-size: ${({index}) => index === 0 ? '12vw' : 12 + (index * 4) + 'vw'};
+    line-height: ${({index}) => index === 0 ? '12vw' : 12 + (index * 4) + 'vw'};
   }
 
   @media (max-width: 768px) {
-    font-size: ${({index}) => index === 0 ? '13vw' : 13 + (index * 4) + 'vw'};
-    line-height: ${({index}) => index === 0 ? '13vw' : 13 + (index * 4) + 'vw'};
+    font-size: ${({index}) => index === 0 ? '11vw' : 11 + (index * 4) + 'vw'};
+    line-height: ${({index}) => index === 0 ? '11vw' : 11 + (index * 4) + 'vw'};
+
   }
 `
