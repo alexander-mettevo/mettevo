@@ -24,6 +24,10 @@ const animationAfterRotationLettersScript = (
     scale: 1,
     yPercent: 0,
   })
+
+  wrapperTL.to('body', {
+    overflow: 'auto'
+  })
 }
 
 export default animationAfterRotationLettersScript

@@ -17,7 +17,9 @@ const animationBeforeRotationLettersScript = (mm, wrapperTL, textRef, titlePageC
       mediaWrapperProps.scale = 1.03
     }
 
-    // titlePageWrapperRef.current.style.transform = `scale(${mediaWrapperProps.scale})`
+    wrapperTL.to('body', {
+      overflow: 'hidden'
+    })
     wrapperTL.to(titlePageWrapperRef.current, {
       scale: mediaWrapperProps.scale,
       yPercent: 30,
