@@ -26,7 +26,7 @@ const animationAfterRotationLettersScript = (
   })
 
   wrapperTL.to('body', {
-    overflow: 'auto'
+    overflowY: 'auto'
   })
 }
 

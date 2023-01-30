@@ -1,12 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useSelector} from "react-redux";
-import dynamic  from "next/dynamic";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Controller} from "swiper";
 import {PartnerLink, PartnersSliderWrapper} from "@/components/pages/homePage/items/partners/styles";
 import Image from "next/image";
-
-const PartnersSlider = dynamic(() => import('@/components/pages/homePage/items/partners/items/PartnersSlider'), {ssr: false});
+import partnersSliderAnimationScript from "@/components/pages/homePage/items/partners/animationScript";
 
 const breakpoints = {
   1440: {
@@ -33,12 +31,17 @@ const PartnersContent = () => {
   const firstHomePagePartners = useSelector(state => state.homePage.firstHomePagePartners)
   const secondHomePagePartners = useSelector(state => state.homePage.secondHomePagePartners)
 
+  const firstSlider = useRef(null);
+  const secondSlider = useRef(null);
 
-if (typeof window === 'undefined') return null
+  useEffect(() => {
+    partnersSliderAnimationScript(firstSlider, secondSlider)
+  }, [])
 
   return (
     <PartnersSliderWrapper data-mouse={'Drag'}>
       <Swiper
+        ref={firstSlider}
         slidesPerView={7}
         loop
         breakpoints={breakpoints}
@@ -57,6 +60,7 @@ if (typeof window === 'undefined') return null
         ))}
       </Swiper>
       <Swiper
+        ref={secondSlider}
         slidesPerView={7}
         loop
         modules={[Controller]}

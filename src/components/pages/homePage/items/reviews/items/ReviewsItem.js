@@ -8,9 +8,15 @@ import {
 } from "@/components/pages/homePage/items/reviews/styles";
 import {CustomImage} from "@/components/reusable/image/styles";
 import {ItemText} from "@/components/reusable/text/styles";
-import {Rating} from "react-simple-star-rating";
 import FullStar from "@/components/reusable/stars/FullStar";
 import EmptyStar from "@/components/reusable/stars/EmptyStar";
+import dynamic  from "next/dynamic";
+
+const Rating = dynamic(
+  () => import("react-simple-star-rating")
+    .then((module => module.Rating)),
+  {ssr: false});
+
 
 const ReviewsItem = ({item}) => {
   return (

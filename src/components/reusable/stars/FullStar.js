@@ -4,7 +4,7 @@ const FullStar = () => {
   return (
     <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_1027_17331)">
-        <path d="M11.4999 1.83301L14.3324 7.57134L20.6666 8.49718L16.0833 12.9613L17.1649 19.268L11.4999 16.2888L5.83492 19.268L6.91659 12.9613L2.33325 8.49718L8.66742 7.57134L11.4999 1.83301Z" fill="#303030" stroke="#303030" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.4999 1.83301L14.3324 7.57134L20.6666 8.49718L16.0833 12.9613L17.1649 19.268L11.4999 16.2888L5.83492 19.268L6.91659 12.9613L2.33325 8.49718L8.66742 7.57134L11.4999 1.83301Z" fill="#303030" stroke="#303030" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       </g>
       <defs>
         <clipPath id="clip0_1027_17331">
