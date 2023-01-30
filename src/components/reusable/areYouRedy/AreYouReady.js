@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {ItemText} from "@/components/reusable/text/styles";
 import {AreYouReadyTitle, AreYouReadyWrapper} from "@/components/reusable/areYouRedy/styles";
+import showFromBottom from "@/components/reusable/animations/showFromBottom";
 
 const AreYouReady = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {showFromBottom(ref)}, [])
+
   return (
-    <AreYouReadyWrapper>
+    <AreYouReadyWrapper ref={ref}>
       <AreYouReadyTitle>
         Are You Ready To Grow Your Website?
       </AreYouReadyTitle>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import Button from "@/components/reusable/button/Button";
 import {
@@ -7,15 +7,20 @@ import {
   GoogleInfoContent, GoogleInfoText,
   GoogleInfoWrapper
 } from "@/components/pages/homePage/items/googleInfo/style";
+import showFromBottom from "@/components/reusable/animations/showFromBottom";
 
 const GoogleInfo = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {showFromBottom(ref)}, [])
+
   return (
     <GoogleInfoWrapper>
       <GoogleInfoContainer>
         <BlockTitle>
           We Make Google Love Your Brand
         </BlockTitle>
-        <GoogleInfoContent>
+        <GoogleInfoContent ref={ref}>
           <GoogleInfoText>
             <p>
               Get comprehensive and aggressive digital marketing services driving more leads,

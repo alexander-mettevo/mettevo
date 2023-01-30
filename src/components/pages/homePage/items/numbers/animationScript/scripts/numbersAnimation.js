@@ -1,14 +1,17 @@
 const numbersAnimation = (tl, num, ref) => {
+  console.log(tl, num, ref)
   const initObj = {
     value: 0
   }
-  console.log('numbersAnimation', num)
+
+  const span = ref.current.querySelector('.int')
+
   tl.to(initObj, {
     value: num,
     duration: 3,
     ease: 'power4.out',
     onUpdate: () => {
-      ref.current.innerHTML = Math.floor(initObj.value)
+      span.innerHTML = Math.floor(initObj.value)
     }
   })
 }
