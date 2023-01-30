@@ -1,5 +1,5 @@
 import React from 'react';
-import {BlockTitle} from "@/components/reusable/text/styles";
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import ReviewsContent from "@/components/pages/homePage/items/reviews/items/ReviewsContent";
 import {MainBlockWrapper} from "@/components/reusable/bloks/styles";
 

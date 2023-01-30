@@ -2,17 +2,7 @@ import styled from "styled-components";
 import {MainBlockWrapper} from "@/components/reusable/bloks/styles";
 
 export const NumbersWrapper = styled(MainBlockWrapper)`
-  margin-left: 20px;
-  margin-right: 20px;
 
-  @media(max-width: 1440px) {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  
-  @media(max-width: 1100px) {
-    margin: 160px 0 0;
-  }
 `
 export const NumbersHeader = styled.div`
   display: flex;

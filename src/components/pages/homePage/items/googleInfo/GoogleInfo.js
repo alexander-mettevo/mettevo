@@ -1,5 +1,5 @@
 import React from 'react';
-import {BlockTitle} from "@/components/reusable/text/styles";
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import Button from "@/components/reusable/button/Button";
 import {
   GoogleInfoButton,

@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import {BlockTitle} from "@/components/reusable/text/styles";
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import CollectionBtnsItem from "@/components/reusable/collectionBtns/CollectionBtnsItem";
 import {CollectionBtnsRow, CollectionBtnsWrapper} from "@/components/reusable/collectionBtns/styles";
 

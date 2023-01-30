@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {BlockTitle} from "@/components/reusable/text/styles";
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 
 export const AreYouReadyWrapper = styled.div`
   margin-top: 300px;

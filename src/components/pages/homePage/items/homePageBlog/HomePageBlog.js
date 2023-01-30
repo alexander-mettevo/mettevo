@@ -1,5 +1,5 @@
 import React from 'react';
-import {BlockTitle} from "@/components/reusable/text/styles";
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import ArrowLink from "@/components/reusable/links/ArrowLink";
 import {HomePageBlogHeader, HomePageBlogWrapper} from "@/components/pages/homePage/items/homePageBlog/styles";
 import HomePageBlogItems from "@/components/pages/homePage/items/homePageBlog/items/HomePageBlogItems";

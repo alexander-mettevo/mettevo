@@ -1,5 +1,5 @@
-import React from 'react';
-import {BlockTitle} from "@/components/reusable/text/styles";
+import React, {useEffect, useRef} from 'react';
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import {NumbersHeader, NumbersRow, NumbersWrapper} from "@/components/pages/homePage/items/numbers/styles";
 import ArrowLink from "@/components/reusable/links/ArrowLink";
 import NumbersItem from "@/components/pages/homePage/items/numbers/NumbersItem";

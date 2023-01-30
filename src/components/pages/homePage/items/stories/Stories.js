@@ -1,6 +1,6 @@
 import React from 'react';
 import {StoriesGridWrapper, StoriesTitle, StoriesWrapper} from "@/components/pages/homePage/items/stories/styles";
-import {BlockTitle} from "@/components/reusable/text/styles";
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import {useSelector} from "react-redux";
 import StoriesItem from "@/components/pages/homePage/items/stories/items/StoriesItem";
 import ArrowLink from "@/components/reusable/links/ArrowLink";

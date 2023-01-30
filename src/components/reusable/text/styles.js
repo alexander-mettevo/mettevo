@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const BlockTitle = styled.h2`
+export const BlockTitleWrapper = styled.h2`
   font-weight: 500;
   line-height: 68px;
   text-transform: lowercase;

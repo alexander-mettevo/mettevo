@@ -1,5 +1,5 @@
 import React from 'react';
-import {BlockTitle} from "@/components/reusable/text/styles";
+import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import {ServicesRow, ServicesWrapper} from "@/components/pages/homePage/items/services/styles";
 import ServicesItem from "@/components/pages/homePage/items/services/items/ServicesItem";
 import {useSelector} from "react-redux";

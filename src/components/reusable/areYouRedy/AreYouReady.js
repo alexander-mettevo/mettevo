@@ -1,5 +1,5 @@
 import React from 'react';
-import {BlockTitle, ItemText} from "@/components/reusable/text/styles";
+import {ItemText} from "@/components/reusable/text/styles";
 import {AreYouReadyTitle, AreYouReadyWrapper} from "@/components/reusable/areYouRedy/styles";
 
 const AreYouReady = () => {
