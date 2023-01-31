@@ -10,6 +10,7 @@ export const BenchmarkArrow = styled.div`
   height: 5px;
   background-color: ${({theme}) => theme.colors.primary};
   position: relative;
+  //transform: rotate(-10deg);
   
   &::after {
     content: '';
@@ -26,9 +27,9 @@ export const BenchmarkArrow = styled.div`
   }
   
   
-  @media (max-width: 480px) {
-    transform: rotate(-10deg) translateY(-5px) translateX(-5px);
-  }
+  //@media (max-width: 480px) {
+  //  transform: rotate(-10deg) translateY(-5px) translateX(-5px);
+  //}
 `
 
 export const BenchmarkWordWrapper = styled.div`

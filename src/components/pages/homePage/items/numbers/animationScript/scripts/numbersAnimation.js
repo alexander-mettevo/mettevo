@@ -1,5 +1,4 @@
 const numbersAnimation = (tl, num, ref) => {
-  console.log(tl, num, ref)
   const initObj = {
     value: 0
   }
