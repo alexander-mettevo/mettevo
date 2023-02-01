@@ -2,7 +2,7 @@ export const homePageServiceList = [
   {
     title: 'seo services',
     href: '/services/seo',
-    image: '/images/home_page/services/rocket.png',
+    image: 'rocket',
     links: [
       {
         title: "e-commerce seo",
@@ -33,7 +33,7 @@ export const homePageServiceList = [
   {
     title: 'smm services',
     href: '/service/smm',
-    image: '/images/home_page/services/loud-speaker.png',
+    image: 'loud-speaker',
     links: [
       {
         title: "facebook management",
@@ -64,7 +64,7 @@ export const homePageServiceList = [
   {
     title: 'web development',
     href: '/service/web',
-    image: '/images/home_page/services/computer.png',
+    image: 'computer',
     links: [
       {
         title: "e-commerce seo",

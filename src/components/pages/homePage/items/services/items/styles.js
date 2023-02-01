@@ -26,24 +26,24 @@ export const ServicesMenuImage = styled.div`
   transition: transform 0.5s ease;
   transform: translateX(-100%);
   padding-bottom: 80%;
-
-  img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    width: 30%;
-  }
-
+  //
+  // img {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   height: auto;
+  //   width: 30%;
+  // }
+  //
   @media (max-width: 500px) {
     flex: 0 0 30%;
     transform: translateX(0);
 
-    img {
-      top: 20%;
-      width: 100%;
-    }
+    // img {
+    //   top: 20%;
+    //   width: 100%;
+    // }
   }
 `
 
@@ -107,3 +107,14 @@ export const ServicesMenuList = styled.ul`
     }
   }
 `
+
+export const ServiceSVGWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  `

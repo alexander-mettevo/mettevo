@@ -5,7 +5,8 @@ import {
   ServicesMenuItems
 } from "@/components/pages/homePage/items/services/items/styles";
 import ServiceMenuList from "@/components/pages/homePage/items/services/items/ServiceMenuList";
-import Image from "next/image";
+import renderContent from "@/components/pages/homePage/items/services/items/ServicesSVGImages/renderContent";
+
 
 const ServicesMenu = ({links, image}) => {
   return (
@@ -14,11 +15,7 @@ const ServicesMenu = ({links, image}) => {
         <ServiceMenuList list={links}/>
       </ServicesMenuItems>
       <ServicesMenuImage>
-        <Image src={image}
-               width={700}
-               height={475}
-               sizes="100vw"
-               alt={'service'}/>
+        {renderContent(image)}
       </ServicesMenuImage>
     </ServicesMenuContainer>
   );
