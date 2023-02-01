@@ -4,14 +4,14 @@ import {
   CollectionBtnsItemWrapper,
   CollectionBtnsTitle
 } from "@/components/reusable/collectionBtns/styles";
-import Image from "next/image";
+import renderContent from "@/components/reusable/collectionBtns/items/CollectionBtnsSVGImages/renderContent";
 
 const CollectionBtnsItem = ({item}) => {
 
   return (
     <CollectionBtnsItemWrapper href={item.href}>
       <CollectionBtnsImageWrapper>
-        <Image fill src={item.image} alt={item.title}/>
+        {renderContent(item.image)}
       </CollectionBtnsImageWrapper>
       <CollectionBtnsTitle>
         {item.title}

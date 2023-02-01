@@ -1,7 +1,7 @@
 import React from 'react';
 import {useSelector} from "react-redux";
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
-import CollectionBtnsItem from "@/components/reusable/collectionBtns/CollectionBtnsItem";
+import CollectionBtnsItem from "@/components/reusable/collectionBtns/items/CollectionBtnsItem";
 import {CollectionBtnsRow, CollectionBtnsWrapper} from "@/components/reusable/collectionBtns/styles";
 
 

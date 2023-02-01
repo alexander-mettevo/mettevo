@@ -5,8 +5,10 @@ import {
   ServicesMenuItems
 } from "@/components/pages/homePage/items/services/items/styles";
 import ServiceMenuList from "@/components/pages/homePage/items/services/items/ServiceMenuList";
-import renderContent from "@/components/pages/homePage/items/services/items/ServicesSVGImages/renderContent";
-
+import dynamic from 'next/dynamic';
+const ServiceImage = dynamic(() => import('@/components/pages/homePage/items/services/items/ServiceImage'), {
+  ssr: false
+});
 
 const ServicesMenu = ({links, image}) => {
   return (
@@ -14,9 +16,7 @@ const ServicesMenu = ({links, image}) => {
       <ServicesMenuItems>
         <ServiceMenuList list={links}/>
       </ServicesMenuItems>
-      <ServicesMenuImage>
-        {renderContent(image)}
-      </ServicesMenuImage>
+      <ServiceImage image={image}/>
     </ServicesMenuContainer>
   );
 };
