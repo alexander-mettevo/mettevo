@@ -22,7 +22,7 @@ const showBenchmarkAnimationScript = (lettersRef, lineRef) => {
 
   const lineTl = gsap.timeline({
     scrollTrigger: {
-      trigger: lettersRef.current,
+      trigger: lineRef.current,
       markers: false
     },
   } );
