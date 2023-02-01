@@ -36,8 +36,8 @@ export const BenchmarkWordWrapper = styled.div`
     margin-top: 40px;
     }
     
-      @media (max-width: 468px) {
-    margin-top: 60px;
+    @media (max-width: 468px) {
+      margin-top: 60px;
     }
 
 & span:nth-child(4) {
