@@ -1,34 +1,33 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {showLineAnimation} from "@/components/reusable/animations/showLineAnimation";
+import React, {useEffect, useRef} from 'react';
 import gsap from "gsap";
+import useInitAnimation from "@/hooks/useInitAnimation";
+
+const handleAnimation = (ref) => {
+  gsap.set(ref.current.querySelectorAll('.animation-line'), {
+    transformOrigin: "top left",
+    scale: 0,
+  })
+  return gsap.to(ref.current.querySelectorAll('.animation-line'), {
+    scale: 1,
+    duration: 1,
+    ease: "power4.out",
+    paused: true
+  })
+}
 
 const Box = () => {
-  const ref = useRef(null)
-  const timelineRef = useRef(null)
+  const [ref, timelineRef, handleOnMouseEnter, handleOnMouseLeave] = useInitAnimation(handleAnimation)
 
-  useEffect(() => {
+  // useEffect(() => {
+  //
+  //   // timelineRef.current.to(ref.current.querySelectorAll('.animation-figure'), {
+  //   //   scale: 1,
+  //   //   duration: 2.5,
+  //   //   ease: "power4.out"
+  //   // }, "-=75%")
+  //   // showLineAnimation(ref,  timelineRef.current, 'bottom left')
+  // }, [])
 
-    gsap.set(ref.current.querySelectorAll('.animation-line'), {
-      transformOrigin: "top left",
-      drawSVG: 0,
-    })
-    timelineRef.current = gsap.to(ref.current.querySelectorAll('.animation-line'), {
-      drawSVG: '100%',
-      duration: 1,
-      ease: "power4.out",
-      paused: true
-    })
-    // timelineRef.current.to(ref.current.querySelectorAll('.animation-figure'), {
-    //   scale: 1,
-    //   duration: 2.5,
-    //   ease: "power4.out"
-    // }, "-=75%")
-    // showLineAnimation(ref,  timelineRef.current, 'bottom left')
-  }, [])
-
-  const handleOnMouseEnter = () => timelineRef.current.play()
-
-  const handleOnMouseLeave = () => timelineRef.current.reverse()
 
 
   return (
