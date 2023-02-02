@@ -1,24 +1,13 @@
 import React, {useEffect, useRef} from 'react';
-import servicesAnimationScript
-  from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript";
-import {showLineAnimation, showLineAnimationWithCircle} from "@/components/reusable/animations/showLineAnimation";
+import {showLineAnimation} from "@/components/reusable/animations/showLineAnimation";
 import gsap from "gsap";
+import useInitAnimation from "@/hooks/useInitAnimation";
+import {
+  callbackAnimation, callbackAnimationLine
+} from "@/components/reusable/collectionBtns/items/CollectionBtnsSVGImages/callbacksAnimations";
 
 const Crypto = () => {
-  const ref = useRef(null)
-  const tl = useRef(null)
-
-  useEffect(() => {
-    tl.current = gsap.timeline({
-      paused: true,
-      delay: .5,
-    })
-    showLineAnimation(ref, tl.current, 'bottom left')
-  }, [])
-
-  const handleOnMouseEnter = () => tl.current.play()
-
-  const handleOnMouseLeave = () => tl.current.reverse()
+  const [ref, timelineRef, handleOnMouseEnter, handleOnMouseLeave] = useInitAnimation(callbackAnimationLine, ['bottom left'])
 
   return (
     <svg onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} ref={ref} width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
