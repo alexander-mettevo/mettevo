@@ -9,6 +9,7 @@ const servicesAnimationScript = (ref) => {
   return gsap.timeline({
     scrollTrigger: {
       trigger: ref.current,
+
     },
     delay: .5,
   })

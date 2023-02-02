@@ -1,34 +1,26 @@
 import React, {useEffect, useRef} from 'react';
 import gsap from "gsap";
 import useInitAnimation from "@/hooks/useInitAnimation";
-
-const handleAnimation = (ref) => {
-  gsap.set(ref.current.querySelectorAll('.animation-line'), {
-    transformOrigin: "top left",
-    scale: 0,
-  })
-  return gsap.to(ref.current.querySelectorAll('.animation-line'), {
-    scale: 1,
-    duration: 1,
-    ease: "power4.out",
-    paused: true
-  })
-}
+import {
+  showLineAnimationWithCircle,
+  showLineAnimationWithCircleOnHover
+} from "@/components/reusable/animations/showLineAnimation";
 
 const Box = () => {
-  const [ref, timelineRef, handleOnMouseEnter, handleOnMouseLeave] = useInitAnimation(handleAnimation)
+  const ref = useRef(null)
+  const tl = useRef(null)
 
-  // useEffect(() => {
-  //
-  //   // timelineRef.current.to(ref.current.querySelectorAll('.animation-figure'), {
-  //   //   scale: 1,
-  //   //   duration: 2.5,
-  //   //   ease: "power4.out"
-  //   // }, "-=75%")
-  //   // showLineAnimation(ref,  timelineRef.current, 'bottom left')
-  // }, [])
+  useEffect(() => {
+    tl.current = gsap.timeline({
+      paused: true,
+      delay: .5,
+    })
+    showLineAnimationWithCircle(ref, tl.current, 'center left')
+  }, [])
 
+  const handleOnMouseEnter = () => tl.current.play()
 
+  const handleOnMouseLeave = () => tl.current.reverse()
 
   return (
     <svg onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} ref={ref} width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,11 +56,6 @@ const Box = () => {
               d="M5.89059 74.8902H4.84233V73.8408C4.84233 73.2338 4.35058 72.7432 3.74467 72.7432C3.13877 72.7432 2.64702 73.2338 2.64702 73.8408V74.8902H1.59766C0.99175 74.8902 0.5 75.3808 0.5 75.9878C0.5 76.5948 0.99175 77.0855 1.59766 77.0855H2.64702V78.1338C2.64702 78.7408 3.13877 79.2314 3.74467 79.2314C4.35058 79.2314 4.84233 78.7408 4.84233 78.1338V77.0855H5.89059C6.4965 77.0855 6.98825 76.5948 6.98825 75.9878C6.98825 75.3819 6.4965 74.8902 5.89059 74.8902Z"
               fill="#BEBEBE"/>
       </g>
-      <defs>
-        <clipPath id="clip0_1027_16707">
-          <rect width="100" height="100" fill="white" transform="translate(0.5)"/>
-        </clipPath>
-      </defs>
     </svg>
 
   );

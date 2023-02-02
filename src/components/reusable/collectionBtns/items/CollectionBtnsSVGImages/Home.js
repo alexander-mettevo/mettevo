@@ -2,17 +2,26 @@ import React, {useEffect, useRef} from 'react';
 import servicesAnimationScript
   from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript";
 import {showLineAnimationWithCircle} from "@/components/reusable/animations/showLineAnimation";
+import gsap from "gsap";
 
 const Home = () => {
   const ref = useRef(null)
+  const tl = useRef(null)
 
   useEffect(() => {
-    const tl = servicesAnimationScript(ref)
-    showLineAnimationWithCircle(ref, tl, 'bottom left')
+    tl.current = gsap.timeline({
+      paused: true,
+      delay: .5,
+    })
+    showLineAnimationWithCircle(ref, tl.current, 'center left')
   }, [])
 
+  const handleOnMouseEnter = () => tl.current.play()
+
+  const handleOnMouseLeave = () => tl.current.reverse()
+
   return (
-    <svg ref={ref} width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg  onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} ref={ref} width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_1027_16661)">
         <path className="animation-line"
               d="M79.0009 29.7658L67.8871 40.8797C67.4579 41.3089 66.764 41.3089 66.3348 40.8797C65.9055 40.4505 65.9055 39.7566 66.3348 39.3274L77.4486 28.2135C77.8778 27.7843 78.5717 27.7843 79.0009 28.2135C79.4301 28.6427 79.4301 29.3366 79.0009 29.7658Z"

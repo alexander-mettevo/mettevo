@@ -2,17 +2,26 @@ import React, {useEffect, useRef} from 'react';
 import servicesAnimationScript
     from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript";
 import {showLineAnimationWithCircle} from "@/components/reusable/animations/showLineAnimation";
+import gsap from "gsap";
 
 const Dollar = () => {
     const ref = useRef(null)
+    const tl = useRef(null)
 
     useEffect(() => {
-        const tl = servicesAnimationScript(ref)
-        showLineAnimationWithCircle(ref, tl, 'top left')
+        tl.current = gsap.timeline({
+            paused: true,
+            delay: .5,
+        })
+        showLineAnimationWithCircle(ref, tl.current, 'center left')
     }, [])
 
+    const handleOnMouseEnter = () => tl.current.play()
+
+    const handleOnMouseLeave = () => tl.current.reverse()
+
   return (
-    <svg ref={ref} width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} ref={ref} width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path className="animation-circle"
             d="M50.3825 65.2759C58.8599 65.2759 65.7322 58.4037 65.7322 49.9263C65.7322 41.4489 58.8599 34.5767 50.3825 34.5767C41.9052 34.5767 35.0329 41.4489 35.0329 49.9263C35.0329 58.4037 41.9052 65.2759 50.3825 65.2759Z"
             fill="#DCDCDC"/>
