@@ -46,7 +46,10 @@ export const CollectionBtnsImageWrapper = styled.div`
   width: 100px;
   height: 100px;
   margin-bottom: 24px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   @media (max-width: 880px) {
     width: 70px;
     height: 70px;
