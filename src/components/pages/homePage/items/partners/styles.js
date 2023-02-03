@@ -17,6 +17,9 @@ export const PartnerLink = styled(Link)`
   }
 `
 export const PartnersSliderWrapper = styled.div`
+  max-width: 100vw;
+  overflow: hidden;
+
   &>div {
     margin-top: 80px;
   }

@@ -1,4 +1,5 @@
 export const showSliders = (tl, firstSlider, secondSlider) => {
+
   tl.fromTo(firstSlider.current, {
     duration: 2,
     xPercent: 100,
