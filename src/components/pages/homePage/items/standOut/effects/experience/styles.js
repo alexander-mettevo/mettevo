@@ -33,7 +33,7 @@ export const ExperienceWrapper = styled(StandOutEffectWrapper)`
 
 export const ExperienceBackground = styled.div`
   text-align: center;
-  color: #EEEEEE;
+  color: ${({theme}) => theme.isDark ? theme.colors.grayText : '#EEEEEE'};
   font-weight: 900;
   
   
