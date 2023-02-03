@@ -6,7 +6,6 @@ export const MainWrapper = styled.main`
   padding-top: 60px;
   padding-bottom: 400px;
   position: relative;
-  
 `
 export const Container = styled.div`
   position: absolute;

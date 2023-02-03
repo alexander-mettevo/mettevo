@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "^13.1.2",
+    "@next/font": "^13.1.6",
     "@reduxjs/toolkit": "^1.9.1",
     "dayjs": "^1.11.7",
     "eslint": "8.31.0",
@@ -23,5 +23,8 @@
     "react-simple-star-rating": "^5.1.7",
     "styled-components": "^5.3.6",
     "swiper": "^8.4.6"
+  },
+  "devDependencies": {
+    "sass": "^1.58.0"
   }
 }

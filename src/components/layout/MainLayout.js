@@ -18,7 +18,7 @@ const CursorAnimation = dynamic(() =>
 });
 
 
-const MainLayout = ({children}) => {
+const MainLayout = ({children, fonts}) => {
   const [menuActive, setMenuActive] = useState(false);
   const [theme, setTheme] = useState(lightTheme);
 
@@ -36,17 +36,19 @@ const MainLayout = ({children}) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <HeaderComponent active={menuActive} setActive={setMenuActive}/>
-      <MainFlex>
-        <MainComponent>
-          <StyledContainer>
-            {children}
-          </StyledContainer>
-        </MainComponent>
-        <FooterComponent setTheme={setTheme}/>
-      </MainFlex>
-      <Menu active={menuActive}/>
-      <CursorAnimation/>
+      <div className={fonts.join(' ')}>
+        <HeaderComponent active={menuActive} setActive={setMenuActive}/>
+        <MainFlex>
+          <MainComponent>
+            <StyledContainer>
+              {children}
+            </StyledContainer>
+          </MainComponent>
+          <FooterComponent setTheme={setTheme}/>
+        </MainFlex>
+        <Menu active={menuActive}/>
+        <CursorAnimation/>
+      </div>
     </ThemeProvider>
   );
 };
