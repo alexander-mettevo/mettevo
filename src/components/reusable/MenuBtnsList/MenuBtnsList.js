@@ -28,7 +28,7 @@ const MenuBtnsList = ({
               key={index + keyWord}
               rectangleSize={rectangleSize}
               adaptiveRectangleSize={adaptiveRectangleSize}
-            >{item.title}</MenuBtnsListItem>
+            ><span>{item.title}</span></MenuBtnsListItem>
           )
         } else {
           return (

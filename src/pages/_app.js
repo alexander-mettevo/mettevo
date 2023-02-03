@@ -15,6 +15,11 @@ function App({ Component, ...rest }) {
     }, 500)
   }, []);
 
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
+
+
   return (
     <Provider store={store}>
       {

@@ -2,13 +2,11 @@ import styled from "styled-components";
 
 export const TitlePageWrapper = styled.div`
   text-align: center;
-  margin-bottom: 110px;
-  padding-top: 40px;
   height: 100vh;
-
-  @media(max-width: 768px) {
-    margin-bottom: 120px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
 `
 
 export const TitlePageHeader = styled.h1`

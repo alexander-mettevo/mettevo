@@ -29,6 +29,10 @@ const MainLayout = ({children}) => {
     }
   }, [])
 
+  useEffect(() => {
+    menuActive ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
+  }, [menuActive])
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

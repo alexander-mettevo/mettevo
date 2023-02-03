@@ -18,7 +18,8 @@ export const MenuBtnsListItem = styled.li`
   cursor: pointer;
   position: relative;
   transition: 0.3s;
-  
+
+   
   &:before {
     content: '';
     display: ${({checked}) => checked ? 'block' : 'none'};
@@ -51,5 +52,29 @@ export const MenuBtnsListItem = styled.li`
       left: -12px;
     }
   }
+  
+  
+  span {
+      position: relative;
+  
+      &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: ${({theme}) => theme.colors.primary};
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover::after {
+      transform: scaleX(1);
+    }
+  }
+
   
 `

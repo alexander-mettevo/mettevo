@@ -21,7 +21,7 @@ export const MenuContent = styled(StyledContainer)`
   width: 100%;
   height: 100%;
   overflow: ${({active}) => active ? 'scroll' : 'hidden'};
-  
+  overflow-x: hidden;
   @media(max-width: 768px) {
     padding: 0;
   }
