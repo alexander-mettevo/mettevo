@@ -1,6 +1,6 @@
 export const CircleAnimation = [
   {
-    scale: 0.2,
+    scale: 0,
     transformOrigin: "center center",
   }, {
     scale: 1,

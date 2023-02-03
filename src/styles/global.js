@@ -96,4 +96,30 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
   
+  .dark-line {
+    fill: ${({theme}) => theme.colors.primary};
+  }
+  
+  * {
+      &::-webkit-scrollbar {
+      width: 7px;
+    }
+    
+    /* Track */
+      &::-webkit-scrollbar-track {
+      background: ${({theme}) => theme.colors.primary};
+    }
+    
+    /* Handle */
+      &::-webkit-scrollbar-thumb {
+      background: ${({theme}) => theme.colors.grayText};
+      border-radius: 5px;
+      
+    }
+    
+    /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
 `;

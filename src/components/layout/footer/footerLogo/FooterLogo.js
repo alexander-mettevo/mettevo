@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "@/components/reusable/Logo/Logo";
+import Logo from "@/components/reusable/logo/Logo";
 import ThemeSwitcher from "@/components/layout/footer/themeSwitcher/ThemeSwitcher";
 import {FooterLogoThemeSwitcher, FooterLogoWrapper} from "@/components/layout/footer/footerLogo/styles";
 

@@ -1,5 +1,6 @@
 //TODO Реализовтаь стили для темы
 export const darkTheme = {
+  isDark: true,
   colors: {
     mainBackground: '#101010',
     footerBackground: '#F9F9F9',

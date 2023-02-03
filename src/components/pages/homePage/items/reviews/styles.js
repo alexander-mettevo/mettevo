@@ -68,6 +68,9 @@ export const ReviewsItemLeft = styled.div`
     display: flex;
     flex-direction: column-reverse;
   }
+  
+  background: ${({theme}) => theme.isDark ? theme.colors.footerBackground : 'transparent'};
+  padding: 3px;
   `
 
 export const ReviewsItemRight = styled.div`

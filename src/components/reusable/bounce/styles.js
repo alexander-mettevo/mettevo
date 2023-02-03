@@ -10,6 +10,7 @@ export const BounceWrapper = styled.div`
   top: ${({top}) => top};
   left: ${({left}) => left};
   color: ${({color}) => color === '#101010' ? '#fff' : '#101010'};
+  border: ${({color}) => color === '#101010' ? '#fff' : 'transparent'} 1px solid;
   
   @media(max-width: 650px) {
     width: ${({mobileSize, size}) => mobileSize ? mobileSize : size};

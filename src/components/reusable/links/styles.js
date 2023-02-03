@@ -30,7 +30,7 @@ export const ArrowLinkItemsWrapper = styled.div`
 export const ArrowLinkLine = styled.span`
   width: 0;
   height: 2px;
-  background-color: #000;
+  background-color: ${({theme}) => theme.colors.primary};
   display: inline-block;
   transform-origin: left;
   transition: width 0.3s ease-in-out;
@@ -41,7 +41,7 @@ export const ArrowLinkRectangle = styled.span`
   display: inline-block;
   height: 12px;
   width: 8px;
-  background-image: url('/images/assets/rectangle.svg');
+  background-image: url('/images/assets/${({theme}) => theme.isDark ? 'rectangle-w' : 'rectangle'}.svg');
   background-repeat: no-repeat;
   background-size: contain;
   transform: scaleX(1) translateX(-1px);
@@ -65,7 +65,7 @@ export const ArrowLinkItem = styled(Link)`
     right: -100%;
     width: 100%;
     height: 2px;
-    background: #000;
+    background:${({theme}) => theme.colors.primary};
     transform: scaleX(-1);
     transform-origin: left;
     transition: transform 0.3s ease-in-out;

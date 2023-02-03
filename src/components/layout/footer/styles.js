@@ -21,6 +21,7 @@ export const FooterContainer = styled(StyledContainer)`
   `
 export const FooterLink = styled(UnderlineLink)`
   &:before {
+    bottom: -5px;
     background-color: ${({theme}) => theme.colors.footerText};
   }
 

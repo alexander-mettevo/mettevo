@@ -7,7 +7,7 @@ export const MenuWrapper = styled.div`
   min-height: 100vh;
   height: 100%;
   padding-bottom: 50px;
-  top: 50px;
+  top: 55px;
   left: 0;
   transform: ${({active}) => active ? 'translateY(0)' : 'translateY(-100%)'};
   transition: transform 0.3s ease-in-out;
@@ -20,7 +20,7 @@ export const MenuWrapper = styled.div`
 export const MenuContent = styled(StyledContainer)`
   width: 100%;
   height: 100%;
-  overflow: ${({active}) => active ? 'scroll' : 'hidden'};
+  overflow: ${({active}) => active ? 'auto' : 'hidden'};
   overflow-x: hidden;
   @media(max-width: 768px) {
     padding: 0;

@@ -10,7 +10,7 @@ export const UnderlineLink = styled(Link)`
     display: block;
     width: 100%;
     height: 2px;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     background-color: ${({theme}) => theme.colors.primary};
     transform: scaleX(0);

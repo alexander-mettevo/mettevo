@@ -59,6 +59,8 @@ export const CollectionBtnsImageWrapper = styled.div`
     width: 50px;
     height: 50px;
   }
+  
+
   `
 export const CollectionBtnsTitle = styled.div`
   font-size: 1.625rem;

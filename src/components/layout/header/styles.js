@@ -3,7 +3,7 @@ import {StyledContainer} from "@/styles/assets/StyledContainer";
 import {UnderlineLink} from "@/styles/assets/links/styles";
 
 export const Header = styled.header`
-  height: 50px;
+  // height: 50px;
   width: 100%;
   background: ${({theme}) => theme.colors.mainBackground};
   position: fixed;
@@ -17,6 +17,7 @@ export const HeaderContainer = styled(StyledContainer)`
   justify-content: space-between;
   align-items: center;
   height: 60px;
+
   `
 
 

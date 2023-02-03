@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import {BurgerBtn, Header, HeaderContainer, NavigationMenu} from "./styles";
-import Logo from "@/components/reusable/Logo/Logo";
+import Logo from "@/components/reusable/logo/Logo";
 import DesktopNavigation from "@/components/layout/header/navigation/DesktopNavigation";
 import {useSelector} from "react-redux";
 
