@@ -1,21 +1,6 @@
 import {createGlobalStyle} from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'Mona Sans';
-    src: url('/fonts/mona-sans-1.0/MonaSans.woff2') format('woff2 supports variations'),
-    url('/fonts/mona-sans-1.0/MonaSans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-  }
-
-  @font-face {
-    font-family: 'Helvetica';
-    src: url('/fonts/helvetica/helvetica-neue-lt-com-77-bold-condensed.woff') format('woff supports variations'),
-    url('/fonts/helvetica/helvetica-neue-lt-com-77-bold-condensed.woff') format('woff-variations');
-    font-weight: 600;
-    font-stretch: 75% 125%;
-  }
 
   *,
   *::before,

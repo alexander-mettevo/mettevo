@@ -8,11 +8,11 @@ import 'swiper/css';
 import '@/styles/scss/style.scss';
 
 const MonaSans = localFont({
-  src: '/fonts/mona-sans-1.0/MonaSans.woff2' ,
+  src: '/fonts/mona-sans-1.0/MonaSans.woff2',
   variable: '--main-font',
 })
 const Helvetica = localFont({
-  src: '/fonts/helvetica/helvetica-neue-lt-com-77-bold-condensed.woff' ,
+  src: '/fonts/helvetica/helvetica-neue-lt-com-77-bold-condensed.woff',
   variable: '--helvetica-font',
 })
 
