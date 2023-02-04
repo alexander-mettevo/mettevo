@@ -5,7 +5,6 @@ import {
   StoriesItemSubtitle,
   StoriesItemTitle
 } from "@/components/pages/homePage/items/stories/styles";
-import {ItemText} from "@/components/reusable/text/styles";
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
 
 const StoriesItem = ({item}) => {
@@ -19,11 +18,11 @@ const StoriesItem = ({item}) => {
         <Image fill src={item.image.src} alt={item.title} />
       </StoriesItemImageWrapper>
 
-      <ItemText>
+      <p className='item-text'>
         <StoriesItemTitle>{item.title} </StoriesItemTitle>
         -
         <StoriesItemSubtitle> {item.subtitle}</StoriesItemSubtitle>
-      </ItemText>
+      </p>
     </div>
   );
 };

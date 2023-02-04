@@ -27,3 +27,12 @@
   --opposite-bg-color: var(--light-opposite-bg-color);
   --main-opposite-color: var(--light-main-opposite-color);
 }
+
+
+#theme-switch:checked ~ .wrapper {
+  --text-color: var(--dark-text-color);
+  --opposite-text-color: var(--dark-opposite-text-color);
+  --bg-color: var(--dark-bg-color);
+  --opposite-bg-color: var(--dark-opposite-bg-color);
+  --main-opposite-color: var(--dark-main-opposite-color);
+}

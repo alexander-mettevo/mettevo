@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-import {FormsTextInput} from "@/components/reusable/forms/styles";
 
 export const ActionsBlockFormWrapper = styled.form`
   label, span {
@@ -22,7 +21,7 @@ export const ActionsBlockFormWrapper = styled.form`
   }
 `
 
-export const ActionsBlockFormInput = styled(FormsTextInput)`
+export const ActionsBlockFormInput = styled.input`
   @media (max-width: 530px) {
     margin-bottom: 5px;
   }

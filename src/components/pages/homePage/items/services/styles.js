@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {ItemTitle} from "@/components/reusable/text/styles";
 
 export const ServicesWrapper = styled.div`
   margin-top: 240px;
@@ -37,7 +36,7 @@ export const ServicesRow = styled.div`
   }
 `
 
-export const ServicesItemTitle = styled(ItemTitle)`
+export const ServicesItemTitle = styled.h5`
   margin: 0 0 20px 0;
   text-align: center;
   `

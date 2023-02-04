@@ -1,25 +1,17 @@
 import React from 'react';
-import {
-  ArrowLinkItem,
-  ArrowLinkItemsWrapper,
-  ArrowLinkLine,
-  ArrowLinkRectangle,
-  ArrowLinkWrapper
-} from "@/components/reusable/links/styles";
+import Link from "next/link";
 
 const ArrowLink = ({href, title, isMarginRight}) => {
   return (
-    <ArrowLinkWrapper isMarginRight={isMarginRight}>
-      <ArrowLinkItem href={href}>
+    <div className={`arrow-link ${isMarginRight && 'arrow-link_mr'}`}>
+      <Link className={'arrow-link__link-item'} href={href}>
         {title}
-      </ArrowLinkItem>
-      <ArrowLinkItemsWrapper>
-        <ArrowLinkLine/>
-        <ArrowLinkRectangle/>
-      </ArrowLinkItemsWrapper>
-
-
-    </ArrowLinkWrapper>
+      </Link>
+      <div className={'arrow-link__items-wrapper'}>
+        <span className={'arrow-link__link-line'}/>
+        <span className={'arrow-link__link-rectangle'}/>
+      </div>
+    </div>
   );
 };
 

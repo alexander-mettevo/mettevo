@@ -1,21 +1,19 @@
 import React from 'react';
-import {LettersLoaderText} from "@/components/reusable/lettersLoader/styles";
-import {TitlePageHeader} from "@/components/reusable/text/titlePage/styles";
 
 const LettersLoader = ({textRef, rowLetters}) => (
-    <LettersLoaderText ref={textRef}>
+    <div className={'title-page__loader'} ref={textRef}>
       {
         rowLetters.map((item, i) => (
-          <TitlePageHeader key={i + 'a'}>
+          <h1 className={'title-page__header'} key={i + 'a'}>
             {item.map((letter, j) => (
               <span key={j + 'b'}>
                   {letter}
                 </span>
             ))}
-          </TitlePageHeader>
+          </h1>
         ))
       }
-    </LettersLoaderText>
+    </div>
   )
 
 export default LettersLoader;

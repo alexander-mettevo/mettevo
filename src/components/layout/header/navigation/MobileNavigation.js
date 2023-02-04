@@ -9,7 +9,7 @@ const MobileNavigation = () => {
     return (
       <MobileNavigationWrapper>
         {links.map(({href, title}, index) => (
-          <NavigationMenuLink href={href} key={href + index}>{title}</NavigationMenuLink>
+          <NavigationMenuLink className='underline-link' href={href} key={href + index}>{title}</NavigationMenuLink>
         ))
         }
       </MobileNavigationWrapper>

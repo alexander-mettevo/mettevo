@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {UnderlineLink} from "@/styles/assets/links/styles";
+import Link from "next/link";
 
 export const TextTitle = styled.h4`
   font-size: 1.5rem;
@@ -54,7 +54,7 @@ export const SimpleBlockText = styled.div`
   margin-bottom: 24px;
 `
 
-export const SimpleBlockMoreLink = styled(UnderlineLink)`
+export const SimpleBlockMoreLink = styled(Link)`
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 19px;

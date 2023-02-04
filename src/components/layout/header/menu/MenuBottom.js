@@ -1,14 +1,14 @@
 import React from 'react';
 import {MenuBottomRow} from "@/components/layout/header/menu/styles";
-import {UnderlineLink} from "@/styles/assets/links/styles";
+import Link from "next/link";
 
 const MenuBottom = () => {
   return (
     <MenuBottomRow>
-      <UnderlineLink href={'test'}>Facebook</UnderlineLink>
-      <UnderlineLink href={'test'}>Instagram</UnderlineLink>
-      <UnderlineLink href={'test'}>TikTok</UnderlineLink>
-      <UnderlineLink href={'test'}>Linkedin</UnderlineLink>
+      <Link className='underline-link' href={'test'}>Facebook</Link>
+      <Link className='underline-link' href={'test'}>Instagram</Link>
+      <Link className='underline-link' href={'test'}>TikTok</Link>
+      <Link className='underline-link' href={'test'}>Linkedin</Link>
     </MenuBottomRow>
   );
 };

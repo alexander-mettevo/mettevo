@@ -6,11 +6,10 @@ import {
   ReviewsItemRow,
   ReviewsItemRowBio, ReviewsItemSmallLogoWrapper
 } from "@/components/pages/homePage/items/reviews/styles";
-import {CustomImage} from "@/components/reusable/image/styles";
-import {ItemText} from "@/components/reusable/text/styles";
 import FullStar from "@/components/reusable/stars/FullStar";
 import EmptyStar from "@/components/reusable/stars/EmptyStar";
 import dynamic  from "next/dynamic";
+import Image from "next/image";
 
 const Rating = dynamic(
   () => import("react-simple-star-rating")
@@ -22,12 +21,12 @@ const ReviewsItem = ({item}) => {
   return (
     <ReviewsItemRow>
       <ReviewsItemLeft>
-        <ReviewsItemMainLogoWrapper>
-          <CustomImage src={item.logs.mainLogo} alt={'review logo'} fill/>
+        <ReviewsItemMainLogoWrapper className={'wrapper-img'}>
+          <Image className='custom-img' src={item.logs.mainLogo} alt={'review logo'} fill/>
         </ReviewsItemMainLogoWrapper>
         <ReviewsItemLeftBottom>
-          <ReviewsItemSmallLogoWrapper>
-            <CustomImage src={item.logs.smallLogo} alt={'review small logo'} fill/>
+          <ReviewsItemSmallLogoWrapper className={'wrapper-img'}>
+            <Image className='custom-img' src={item.logs.smallLogo} alt={'review small logo'} fill/>
           </ReviewsItemSmallLogoWrapper>
           <Rating className={'reviews-star'} emptyIcon={<EmptyStar size={50}/>} fillIcon={<FullStar size={50}/>} readonly fillColor={'#303030'} initialValue={item.rating} />
 
@@ -35,9 +34,9 @@ const ReviewsItem = ({item}) => {
       </ReviewsItemLeft>
       <ReviewsItemRight>
         <div>
-          <ItemText>
+          <p className='item-text'>
             {item.text}
-          </ItemText>
+          </p>
           <ReviewsItemRowBio>
             {item.bio}
           </ReviewsItemRowBio>

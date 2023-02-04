@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {MainBlockWrapper} from "@/components/reusable/bloks/styles";
 
-export const NumbersWrapper = styled(MainBlockWrapper)`
-
-`
 export const NumbersHeader = styled.div`
   display: flex;
   justify-content: space-between;

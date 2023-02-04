@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import {UnderlineLink} from "@/styles/assets/links/styles";
+import Link from "next/link";
 
 export const Footer = styled.footer`
   background-color: ${({theme}) => theme.colors.footerBackground};
   
   
-  * {
-    color: ${({theme}) => theme.colors.footerText};
-  }
+  // * {
+  //   color: ${({theme}) => theme.colors.footerText};
+  // }
 `
 
 export const FooterContainer = styled.div`
@@ -18,7 +18,7 @@ export const FooterContainer = styled.div`
     padding-top: 330px;
   }
   `
-export const FooterLink = styled(UnderlineLink)`
+export const FooterLink = styled(Link)`
   &:before {
     bottom: -5px;
     background-color: ${({theme}) => theme.colors.footerText};

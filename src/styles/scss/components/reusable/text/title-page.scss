@@ -1,0 +1,52 @@
+.title-page {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+
+  &__loader {
+    font-weight: 900;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+
+    @include adaptiveValue("height", 201, 57);
+
+    div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+    }
+
+    span {
+      display: block;
+      letter-spacing: -1rem;
+
+      @media(max-width: $mobile) {
+        letter-spacing: -8px;
+      }
+    }
+  }
+
+  &__header {
+    font-weight: 900;
+    font-size: 12.5rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+
+    @include adaptiveValue("font-size", 200, 55);
+    @include adaptiveValue("margin-bottom", 12, 4);
+    @include adaptiveValue("line-height", 193.4, 54);
+  }
+
+  &__subtitle {
+    text-transform: lowercase;
+    font-weight: 400;
+    @include adaptiveValue("font-size", 80, 26);
+    @include adaptiveValue("margin-bottom", 40, 32);
+    @include adaptiveValue("line-height", 77.36, 25.14);
+  }
+}

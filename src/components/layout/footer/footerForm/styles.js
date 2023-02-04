@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {FormsTextInput} from "@/components/reusable/forms/styles";
 
 export const FooterFormContainer = styled.div`
   background: ${({theme}) => theme.colors.footerForm};
@@ -21,7 +20,7 @@ export const FooterFormContainer = styled.div`
   `
 
 export const FooterFormContent = styled.form`
-  & span, input, label, div {
+  & span, input, div {
     color: ${({theme}) => theme.colors.primary};
     font-size: 1.5rem;
     
@@ -47,7 +46,7 @@ export const FooterFormContent = styled.form`
   
 `
 
-export const FooterFormInput = styled(FormsTextInput)`
+export const FooterFormInput = styled.input`
   width: 538px;
   margin-bottom: 0;
   

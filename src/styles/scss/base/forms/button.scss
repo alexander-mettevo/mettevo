@@ -2,12 +2,23 @@
 // Сніппет (HTML): btn
 
 .button {
+	background: var(--text-color);
+	color: var(--bg-color);
+	transition: all 0.3s ease;
+	border: 1px solid var(--text-color);
+	font-size: 1.125rem;
+	font-weight: 600;
+	padding: 10.5px 32px;
+	cursor: pointer;
 	display: inline-flex;
-	padding: 0px 0px;
+
 	@media (any-hover: hover) {
 		&:hover {
+			background: transparent;
+			color: var(--text-color);
 		}
 	}
+
 	&._fw {
 		width: 100%;
 	}

@@ -10,10 +10,17 @@ textarea {
 }
 .input {
 	border-radius: 0 !important;
-	width: 100%;
-	display: block;
-	padding: 0px 20px;
-	border: 1px solid #eee;
+	//display: block;
+	padding: 0 20px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #b9b9b9;
+	margin: 0 10px 32px;
+	font-size: 14px;
+	width: 30%;
+	min-width: 200px;
+	color: var(--text-color);
+
 	&._form-focus {
 	}
 	&._form-error {
@@ -28,7 +35,11 @@ textarea {
 	}
 }
 
+.input__label {
+	color: var(--text-color);
+}
+
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
+	padding: 0 0;
 }

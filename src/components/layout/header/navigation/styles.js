@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {UnderlineLink} from "@/styles/assets/links/styles";
+import Link from "next/link";
 
 export const NavigationMenu = styled.nav`
   display: flex;
@@ -9,7 +9,7 @@ export const NavigationMenu = styled.nav`
   }
 `
 
-export const NavigationMenuLink = styled(UnderlineLink)`
+export const NavigationMenuLink = styled(Link)`
   margin: 0 10px;
   font-weight: 500;
   line-height: 24px;

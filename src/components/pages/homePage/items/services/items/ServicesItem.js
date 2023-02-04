@@ -6,7 +6,7 @@ import ServicesMenu from "@/components/pages/homePage/items/services/items/Servi
 const ServicesItem = ({title, href, links, image}) => {
   return (
     <ServicesItemContainer>
-      <ServicesItemTitle>{title}</ServicesItemTitle>
+      <ServicesItemTitle className='item-title'>{title}</ServicesItemTitle>
       <ServicesMenu links={links} image={image}/>
       <ArrowLink href={href} title={'learn more'}/>
     </ServicesItemContainer>

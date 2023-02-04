@@ -17,7 +17,7 @@ const SimpleBlock = ({list, moreLink}) => {
           </li>
         ))}
       </ul>
-      {!!moreLink && <SimpleBlockMoreLink href={moreLink.href}>{moreLink.title}</SimpleBlockMoreLink>}
+      {!!moreLink && <SimpleBlockMoreLink className='underline-link' href={moreLink.href}>{moreLink.title}</SimpleBlockMoreLink>}
     </SimpleBlockWrapper>
 
   );

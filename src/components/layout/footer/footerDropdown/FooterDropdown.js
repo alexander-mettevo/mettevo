@@ -17,7 +17,7 @@ const FooterDropdown = ({list, title}) => {
       <FooterDropdownContent showContent={showContent}>
         {list.map((item, index) => (
           <li key={index + item.href}>
-            <FooterLink href={item.href}>
+            <FooterLink className='underline-link' href={item.href}>
               {item.title}
             </FooterLink>
           </li>

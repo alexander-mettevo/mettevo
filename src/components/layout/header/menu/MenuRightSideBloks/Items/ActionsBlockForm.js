@@ -1,25 +1,24 @@
 import React from 'react';
 import {
   ActionsBlockFormInput,
-  ActionsBlockFormWrapper, SocialRowsBlock
+  ActionsBlockFormWrapper,
 } from "@/components/layout/header/menu/MenuRightSideBloks/Items/styles";
 import SocialRows from "@/components/layout/header/menu/MenuRightSideBloks/Items/SocialRows";
-import Button from "@/components/reusable/button/Button";
 
 const ActionsBlockForm = ({title}) => {
   return (
 
       <ActionsBlockFormWrapper>
         <div>
-          <label>My name is <ActionsBlockFormInput placeholder='YOUR NAME' type="text"/></label>
-          <label>from <ActionsBlockFormInput placeholder='COMPANY NAME' type="text"/></label>
+          <label>My name is <ActionsBlockFormInput className={'input'} placeholder='YOUR NAME' type="text"/></label>
+          <label>from <ActionsBlockFormInput className={'input'} placeholder='COMPANY NAME' type="text"/></label>
         </div>
         <div>
-          <label>Contact me back at <ActionsBlockFormInput placeholder='YOUR PHONE' type="text"/></label>
+          <label>Contact me back at <ActionsBlockFormInput className={'input'} placeholder='YOUR PHONE' type="text"/></label>
           <span>or messengers </span>
           <SocialRows/>
         </div>
-        <Button text={'Get a free ' + title + ' qoute'}/>
+        <button className={'button'} >{'Get a free ' + title + ' qoute'}</button>
       </ActionsBlockFormWrapper>
   );
 };

@@ -83,6 +83,11 @@ export const StoriesItemImageWrapper = styled(Link)`
     }
   }
 
+  @media (min-width: 1440px) {
+    width: ${({width}) => width}px;
+    height: ${({height}) => height}px;
+  }
+  
   @media (max-width: 900px) {
     width: 100%;
     height: ${({height, width}) => (height / width) * 90}vw;

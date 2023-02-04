@@ -1,6 +1,6 @@
 import React from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
-import {NumbersHeader, NumbersRow, NumbersWrapper} from "@/components/pages/homePage/items/numbers/styles";
+import {NumbersHeader, NumbersRow} from "@/components/pages/homePage/items/numbers/styles";
 import ArrowLink from "@/components/reusable/links/ArrowLink";
 
 import dynamic from "next/dynamic";
@@ -8,7 +8,7 @@ const NumbersItem = dynamic(() => import('@/components/pages/homePage/items/numb
 
 const Numbers = () => {
   return (
-    <NumbersWrapper>
+    <div className='block-wrapper'>
       <NumbersHeader>
         <BlockTitle>
           Mettevo in numbers
@@ -21,7 +21,7 @@ const Numbers = () => {
         <NumbersItem text={'hours of experience of implementing SEO strategies'} value={'10k'}/>
         <NumbersItem text={'revenue of client’s companies per years'} value={'>$20M '}/>
       </NumbersRow>
-    </NumbersWrapper>
+    </div>
   );
 };
 

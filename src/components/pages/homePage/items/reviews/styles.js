@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {ImageWrapper} from "@/components/reusable/image/styles";
 
 export const ReviewsContentWrapper = styled.div`
   background: ${({theme}) => theme.colors.footerForm};
@@ -91,7 +90,7 @@ export const ReviewsItemRowBio = styled.div`
   }
 `
 
-export const ReviewsItemMainLogoWrapper = styled(ImageWrapper)`
+export const ReviewsItemMainLogoWrapper = styled.div`
   height: 236px;
   
   @media (max-width: 992px) {
@@ -105,7 +104,7 @@ export const ReviewsItemMainLogoWrapper = styled(ImageWrapper)`
   }
   `
 
-export const ReviewsItemSmallLogoWrapper = styled(ImageWrapper)`
+export const ReviewsItemSmallLogoWrapper = styled.div`
   height: 22px;
   flex: 0 0 30%;
   `

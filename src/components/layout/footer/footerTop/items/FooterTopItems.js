@@ -14,7 +14,7 @@ const FooterTopItems = ({item}) => {
           if (item.type === 'link') {
             return (
               <li key={index + 'footerTopItems'}>
-                <FooterLink href={item.href}>
+                <FooterLink className='underline-link' href={item.href}>
                   {item.title}
                 </FooterLink>
               </li>

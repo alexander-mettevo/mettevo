@@ -1,4 +1,4 @@
-//TODO Реализовтаь стили для темы
+
 export const darkTheme = {
   isDark: true,
   colors: {

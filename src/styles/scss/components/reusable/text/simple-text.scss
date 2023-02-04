@@ -1,0 +1,7 @@
+.simple-text {
+  display: inline-block;
+
+  &__title {
+    @include adaptiveValue("margin-bottom", 24, 16);
+  }
+}
