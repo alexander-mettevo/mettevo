@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {UnderlineLink} from "@/styles/assets/links/styles";
-import {StyledContainer} from "@/styles/assets/StyledContainer";
 
 export const Footer = styled.footer`
   background-color: ${({theme}) => theme.colors.footerBackground};
@@ -11,7 +10,7 @@ export const Footer = styled.footer`
   }
 `
 
-export const FooterContainer = styled(StyledContainer)`
+export const FooterContainer = styled.div`
   position: relative;
   padding-top: 474px;
   

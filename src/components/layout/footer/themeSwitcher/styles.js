@@ -32,39 +32,40 @@ export const CheckBoxLabel = styled.label`
 `
 
 export const CheckBox = styled.input`
-  opacity: 0;
-  z-index: 1;
+  opacity: 1;
+  z-index: 100000;
+  position: fixed;
   border-radius: 15px;
   width: 42px;
   height: 26px;
-  &:checked + ${CheckBoxLabel} {
-    background: transparent;
-    border: 1px solid #000;
-  
-    
-    &::after {
-      content: "";
-      display: block;
-      border-radius: 50%;
-      width: 18px;
-      height: 18px;
-      margin-left: 21px;
-      transition: 0.2s;
-      background: #000;
-    }
-    
-    &:before {
-      content: "";
-      display: block;
-      border-radius: 50%;
-      width: 25px;
-      height: 18px;
-      margin-left: 21px;
-      transition: 0.2s;
-      transform: translateX(-50%) translateY(3px);
-      background: #F9F9F9;
-      position: absolute;
-      z-index: 10;
-    }
-  }
+  // &:checked + ${CheckBoxLabel} {
+  //   background: transparent;
+  //   border: 1px solid #000;
+  //
+  //  
+  //   &::after {
+  //     content: "";
+  //     display: block;
+  //     border-radius: 50%;
+  //     width: 18px;
+  //     height: 18px;
+  //     margin-left: 21px;
+  //     transition: 0.2s;
+  //     background: #000;
+  //   }
+  //  
+  //   &:before {
+  //     content: "";
+  //     display: block;
+  //     border-radius: 50%;
+  //     width: 25px;
+  //     height: 18px;
+  //     margin-left: 21px;
+  //     transition: 0.2s;
+  //     transform: translateX(-50%) translateY(3px);
+  //     background: #F9F9F9;
+  //     position: absolute;
+  //     z-index: 10;
+  //   }
+  // }
 `

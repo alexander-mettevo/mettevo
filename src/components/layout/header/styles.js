@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import {StyledContainer} from "@/styles/assets/StyledContainer";
-import {UnderlineLink} from "@/styles/assets/links/styles";
 
 export const Header = styled.header`
-  // height: 50px;
   width: 100%;
   background: ${({theme}) => theme.colors.mainBackground};
   position: fixed;
@@ -12,7 +9,7 @@ export const Header = styled.header`
   align-items: center;
   `
 
-export const HeaderContainer = styled(StyledContainer)`
+export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;

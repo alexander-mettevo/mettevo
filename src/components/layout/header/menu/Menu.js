@@ -10,7 +10,7 @@ const Menu = ({active}) => {
 
   return (
     <MenuWrapper active={active}>
-      <MenuContent active={active}>
+      <MenuContent className='__container' active={active}>
         <MobileNavigation/>
         <MenuContentRow>
           <MenuLeftSide menuState={menuState} setMenuState={setMenuState}/>

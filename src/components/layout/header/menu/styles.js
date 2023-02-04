@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {StyledContainer} from "@/styles/assets/StyledContainer";
 
 export const MenuWrapper = styled.div`
   position: fixed;
@@ -17,8 +16,7 @@ export const MenuWrapper = styled.div`
   
   `
 
-export const MenuContent = styled(StyledContainer)`
-  width: 100%;
+export const MenuContent = styled.div`
   height: 100%;
   overflow: ${({active}) => active ? 'auto' : 'hidden'};
   overflow-x: hidden;

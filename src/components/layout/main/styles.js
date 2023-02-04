@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const MainWrapper = styled.main`
-  width: 100%;
-  flex: 0 1 100%;
-  padding-top: 60px;
-  padding-bottom: 400px;
-  position: relative;
-`
 export const Container = styled.div`
   position: absolute;
   top: 0;

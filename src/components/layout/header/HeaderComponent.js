@@ -13,7 +13,7 @@ const HeaderComponent = ({active, setActive}) => {
 
   return (
       <Header>
-        <HeaderContainer>
+        <HeaderContainer className={'__container'}>
           <div>
             <Logo/>
           </div>

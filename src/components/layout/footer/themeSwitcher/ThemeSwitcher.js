@@ -8,39 +8,12 @@ import {
 import {lightTheme} from "@/styles/themes/lightTheme";
 import {darkTheme} from "@/styles/themes/darkTheme";
 
-const ThemeSwitcher = ({setTheme}) => {
-  const [checked, setChecked] = useState(false);
-  const handleTheme = e => {
-    const localTheme = localStorage.getItem('theme');
-
-    if (localTheme === 'dark') {
-      setTheme(lightTheme);
-      localStorage.setItem('theme', 'light');
-      setChecked(false);
-    } else {
-      setTheme(darkTheme);
-      localStorage.setItem('theme', 'dark');
-      setChecked(true);
-    }
-  }
-
-  useEffect(() => {
-    const localTheme = localStorage.getItem('theme');
-    if (localTheme === 'dark') {
-      setChecked(true);
-    }
-  }, [])
-
-
-
-  return (
-    <CheckBoxContainer>
-      <CheckBoxWrapper>
-        <CheckBox onChange={() => {}} id="checkbox" checked={checked} type="checkbox"/>
-        <CheckBoxLabel onClick={handleTheme} htmlFor="checkbox"/>
-      </CheckBoxWrapper>
-    </CheckBoxContainer>
+const ThemeSwitcher = () => (
+    <div className='theme-handler__container'>
+      <div className='theme-handler__wrapper'>
+        <label className='theme-handler__label' htmlFor="theme-switch"/>
+      </div>
+    </div>
   );
-};
 
 export default ThemeSwitcher;

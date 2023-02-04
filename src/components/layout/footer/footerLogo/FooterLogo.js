@@ -3,12 +3,12 @@ import Logo from "@/components/reusable/logo/Logo";
 import ThemeSwitcher from "@/components/layout/footer/themeSwitcher/ThemeSwitcher";
 import {FooterLogoThemeSwitcher, FooterLogoWrapper} from "@/components/layout/footer/footerLogo/styles";
 
-const FooterLogo = ({setTheme}) => {
+const FooterLogo = () => {
   return (
     <FooterLogoWrapper>
       <Logo/>
       <FooterLogoThemeSwitcher>
-        <ThemeSwitcher setTheme={setTheme}/>
+        <ThemeSwitcher/>
       </FooterLogoThemeSwitcher>
     </FooterLogoWrapper>
   );
