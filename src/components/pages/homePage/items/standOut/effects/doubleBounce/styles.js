@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import {StandOutEffectWrapper} from "@/components/pages/homePage/items/standOut/styles";
 
-export const DoubleBounceWrapper = styled(StandOutEffectWrapper)`
+export const DoubleBounceWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

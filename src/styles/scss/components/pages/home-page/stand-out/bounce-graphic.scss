@@ -1,0 +1,65 @@
+.bounce-graphic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: $pc) {
+    transform: scale(0.8);
+  }
+
+  @media (max-width: 568px) {
+    transform: translateX(-60px) scale(0.6);
+    margin-top: -80px;
+    margin-bottom: -80px;
+  }
+  @media (max-width: 428px) {
+    transform: translateX(-70px) scale(0.5);
+  }
+
+  &__footer {
+    display: flex;
+
+    & > div {
+      position: relative;
+      margin-right: 30px;
+      padding-left: 38px;
+    }
+
+    &_left {
+      position: absolute;
+      top: 50%;
+      left: -120px;
+      transform: rotate(-90deg);
+    }
+
+    &_bottom {
+      span:nth-child(1) {
+        margin-right: 107px;
+      }
+
+      span:nth-child(2) {
+        margin-right: 254px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    height: 402px;
+    width: 582px;
+    margin-top: 80px;
+
+    @media (max-width: $pc) {
+      margin-top: 60px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: 10px;
+    }
+  }
+
+  &__circle-wrapper {
+    position: relative;
+    height: 90%;
+  }
+}

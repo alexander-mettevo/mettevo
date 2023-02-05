@@ -1,22 +1,18 @@
 import React from 'react';
-import {
-  BounceGraphicsContentWrapper, BounceGraphicsFooterBottomText,
-  BounceGraphicsFooterLeftSideText
-} from "@/components/pages/homePage/items/standOut/effects/bounce-graphics/styles";
 import BounceGraphicsCircleContainer
   from "@/components/pages/homePage/items/standOut/effects/bounce-graphics/items/BounceGraphicsCircleContainer";
 
 const BounceGraphicsContent = () => {
   return (
-    <BounceGraphicsContentWrapper>
+    <div className={'bounce-graphic__content'}>
       <BounceGraphicsCircleContainer/>
-      <BounceGraphicsFooterLeftSideText>result of digital transformation</BounceGraphicsFooterLeftSideText>
-      <BounceGraphicsFooterBottomText>
+      <div className={'bounce-graphic__footer_left'}>result of digital transformation</div>
+      <div className={'bounce-graphic__footer_bottom'}>
         <span>start</span>
         <span>1 year</span>
         <span>2 year</span>
-      </BounceGraphicsFooterBottomText>
-    </BounceGraphicsContentWrapper>
+      </div>
+    </div>
   );
 };
 

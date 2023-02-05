@@ -1,17 +1,16 @@
 import React from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
-import {StandOutHeader} from "@/components/pages/homePage/items/standOut/styles";
 import StandOutContent from "@/components/pages/homePage/items/standOut/StandOutContent";
 
 const StandOut = () => {
 
   return (
     <div className='block-wrapper'>
-      <StandOutHeader>
+      <div className='stand-out__header'>
         <BlockTitle>
           what makes us stand out
         </BlockTitle>
-      </StandOutHeader>
+      </div>
       <StandOutContent/>
     </div>
   );

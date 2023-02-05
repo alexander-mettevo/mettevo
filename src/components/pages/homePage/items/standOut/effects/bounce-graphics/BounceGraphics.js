@@ -1,6 +1,4 @@
-import React, {useEffect} from 'react';
-import Bounce from "@/components/reusable/bounce/Bounce";
-import {GraphicWrapper} from "@/components/pages/homePage/items/standOut/effects/bounce-graphics/styles";
+import React from 'react';
 import BounceGraphicsFooter
   from "@/components/pages/homePage/items/standOut/effects/bounce-graphics/items/BounceGraphicsFooter";
 import BounceGraphicsContent
@@ -8,10 +6,10 @@ import BounceGraphicsContent
 
 const BounceGraphics = () => {
   return (
-    <GraphicWrapper>
+    <div className={'bounce-graphic'}>
       <BounceGraphicsContent/>
       <BounceGraphicsFooter/>
-    </GraphicWrapper>
+    </div>
   );
 };
 

@@ -11,7 +11,7 @@ const Experience = () => {
   const handleMouseMove = (e) => experienceAnimationScript(e, wordsRef)
 
   return (
-    <ExperienceWrapper onMouseMove={handleMouseMove}>
+    <ExperienceWrapper className={'stand-out__effect'} onMouseMove={handleMouseMove}>
       <div ref={wordsRef}>
         <ExperienceWord>SEO ExpertS</ExperienceWord>
         <ExperienceWord>Web-developers</ExperienceWord>

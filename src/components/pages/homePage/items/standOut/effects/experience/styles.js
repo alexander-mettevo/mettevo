@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import {StandOutEffectWrapper} from "@/components/pages/homePage/items/standOut/styles";
 
-export const ExperienceWrapper = styled(StandOutEffectWrapper)`
+export const ExperienceWrapper = styled.div`
   position: relative;
 
   span:nth-child(1) {

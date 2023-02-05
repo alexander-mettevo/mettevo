@@ -8,7 +8,7 @@ import Bounce from "@/components/reusable/bounce/Bounce";
 
 const DoubleBounce = () => {
   return (
-    <DoubleBounceWrapper>
+    <DoubleBounceWrapper className={'stand-out__effect'}>
       <DoubleBounceItem>
         <Bounce color={'#EBEBEB'} mobileSize={'180px'} size={'260px'} top={0} left={0}>
           <DoubleBounceWordWrap>copywriting</DoubleBounceWordWrap>
