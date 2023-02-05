@@ -1,11 +1,5 @@
 import React, {useEffect, useRef} from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
-import {
-  GoogleInfoButton,
-  GoogleInfoContainer,
-  GoogleInfoContent, GoogleInfoText,
-  GoogleInfoWrapper
-} from "@/components/pages/homePage/items/googleInfo/style";
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
 
 const GoogleInfo = () => {
@@ -14,13 +8,13 @@ const GoogleInfo = () => {
   useEffect(() => {showFromBottom(ref)}, [])
 
   return (
-    <GoogleInfoWrapper>
-      <GoogleInfoContainer>
+    <div className={'google-info'}>
+      <div className={'google-info__wrapper'}>
         <BlockTitle>
           We Make Google Love Your Brand
         </BlockTitle>
-        <GoogleInfoContent ref={ref}>
-          <GoogleInfoText className='item-text'>
+        <div className={'google-info__content'} ref={ref}>
+          <div className='google-info__text item-text'>
             <p>
               Get comprehensive and aggressive digital marketing services driving more leads,
               customers and sales with our help.
@@ -29,13 +23,13 @@ const GoogleInfo = () => {
             <p>
               Request a free consultation to see how we can help.
             </p>
-          </GoogleInfoText>
-          <GoogleInfoButton>
+          </div>
+          <div className={'google-info__button'}>
             <button className={'button'}>request a free consultation</button>
-          </GoogleInfoButton>
-        </GoogleInfoContent>
-      </GoogleInfoContainer>
-    </GoogleInfoWrapper>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
