@@ -1,5 +1,4 @@
 import React from 'react';
-import {Footer, FooterContainer} from "@/components/layout/footer/styles";
 import ThemeSwitcher from "@/components/layout/footer/themeSwitcher/ThemeSwitcher";
 import FooterBottom from "@/components/layout/footer/footerBottom/FooterBottom";
 import FooterTop from "@/components/layout/footer/footerTop/FooterTop";
@@ -12,15 +11,15 @@ const FooterComponent = () => {
   const {width} = useWindowSize();
 
   return (
-    <Footer className='footer'>
-      <FooterContainer className="footer__container">
+    <footer className='footer'>
+      <div className="footer__container">
         <FooterForm/>
         <FooterLogo/>
         {typeof window !== "undefined" && width > 540 ? <FooterTop/> : <FooterTopMobile/>}
         {typeof window !== "undefined" && width > 768 && <ThemeSwitcher/>}
         <FooterBottom/>
-      </FooterContainer>
-    </Footer>
+      </div>
+    </footer>
   );
 };
 

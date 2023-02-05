@@ -1,16 +1,15 @@
 import React from 'react';
 import Logo from "@/components/reusable/logo/Logo";
 import ThemeSwitcher from "@/components/layout/footer/themeSwitcher/ThemeSwitcher";
-import {FooterLogoThemeSwitcher, FooterLogoWrapper} from "@/components/layout/footer/footerLogo/styles";
 
 const FooterLogo = () => {
   return (
-    <FooterLogoWrapper>
+    <div className={'footer-logo'}>
       <Logo/>
-      <FooterLogoThemeSwitcher>
+      <div className={'footer-logo__switcher'}>
         <ThemeSwitcher/>
-      </FooterLogoThemeSwitcher>
-    </FooterLogoWrapper>
+      </div>
+    </div>
   );
 };
 
