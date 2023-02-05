@@ -1,24 +1,20 @@
 import React from 'react';
-import {
-  SimpleBlockMoreLink,
-  SimpleBlockText,
-  SimpleBlockTitle, SimpleBlockWrapper
-} from "@/components/layout/header/menu/MenuRightSideBloks/styles";
+import Link from "next/link";
 
 const SimpleBlock = ({list, moreLink}) => {
 
   return (
-    <SimpleBlockWrapper>
+    <div className={'simple-block'}>
       <ul>
         {list?.length > 0 && list.map((item, index) => (
           <li key={index + 'simpleBlock'}>
-            <SimpleBlockTitle>{item.title}</SimpleBlockTitle>
-            <SimpleBlockText>{item.description}</SimpleBlockText>
+            <div className={'simple-block__title'}>{item.title}</div>
+            <div className={'simple-block__text'}>{item.description}</div>
           </li>
         ))}
       </ul>
-      {!!moreLink && <SimpleBlockMoreLink className='underline-link' href={moreLink.href}>{moreLink.title}</SimpleBlockMoreLink>}
-    </SimpleBlockWrapper>
+      {!!moreLink && <Link className='simple-block__link-more underline-link' href={moreLink.href}>{moreLink.title}</Link>}
+    </div>
 
   );
 };

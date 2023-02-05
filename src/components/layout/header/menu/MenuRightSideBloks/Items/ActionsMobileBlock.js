@@ -1,18 +1,16 @@
 import React from 'react';
-import {TextTitle} from "@/components/layout/header/menu/MenuRightSideBloks/styles";
 import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsBlockForm";
-import {ActionsMobileBlockWrapper} from "@/components/layout/header/menu/MenuRightSideBloks/Items/styles";
 import {useSelector} from "react-redux";
 
 const ActionsMobileBlock = ({currentData}) => {
   const mobileShowContent = useSelector(state => state.menu.mobileShowContent)
 
   return (
-    <ActionsMobileBlockWrapper mobileShowContent={mobileShowContent}>
+    <div className={`right-side__mobile-wrapper ${mobileShowContent && 'right-side__mobile-wrapper_show'}`}>
       {currentData && (
       <>
         <div>
-          <TextTitle>{currentData.data.title}</TextTitle>
+          <h4 className={'right-side__title'}>{currentData.data.title}</h4>
           <div>
             {currentData.data.text}
           </div>
@@ -21,7 +19,7 @@ const ActionsMobileBlock = ({currentData}) => {
       </>
         )}
 
-    </ActionsMobileBlockWrapper>
+    </div>
   );
 };
 

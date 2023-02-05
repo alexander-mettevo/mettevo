@@ -3,6 +3,7 @@ import MenuLeftSide from "@/components/layout/header/menu/MenuLeftSide";
 import MenuRightSide from "@/components/layout/header/menu/MenuRightSide";
 import MenuBottom from "@/components/layout/header/menu/MenuBottom";
 import MobileNavigation from "@/components/layout/header/navigation/MobileNavigation";
+import {useSelector} from "react-redux";
 
 const Menu = ({active}) => {
   const [menuState, setMenuState] = useState(1)
@@ -15,9 +16,8 @@ const Menu = ({active}) => {
           <MenuLeftSide menuState={menuState} setMenuState={setMenuState}/>
           <MenuRightSide menuState={menuState}/>
         </div>
-        <MenuBottom/>
+     <MenuBottom/>
       </div>
-
     </div>
   );
 };

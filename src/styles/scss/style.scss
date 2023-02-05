@@ -154,8 +154,8 @@ body {
 @import "common";
 
 // Підключення стилів окремих блоків
-@import "header";
-@import "footer";
+@import "layout/header/header";
+@import "layout/footer/footer";
 
 // Підключення стилів окремих сторінок
 @import "home";

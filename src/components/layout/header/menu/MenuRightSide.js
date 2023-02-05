@@ -3,7 +3,6 @@ import ActionsBlock from "@/components/layout/header/menu/MenuRightSideBloks/Act
 import {useSelector} from "react-redux";
 import SimpleBlock from "@/components/layout/header/menu/MenuRightSideBloks/SimpleBlock";
 import MenuRightSideArrow from "@/components/layout/header/menu/MenuRightSideBloks/Items/MenuRightSideArrow";
-import {ContentWrapper} from "@/components/layout/header/menu/MenuRightSideBloks/styles";
 
 const MenuRightSide = ({menuState}) => {
   const rightSideData = useSelector(state => state.menu.rightSideData)
@@ -19,10 +18,10 @@ const MenuRightSide = ({menuState}) => {
     <div className={`top-menu__right-side ${showContent && 'top-menu__right-side_show'}`}>
       <div className={'right-side__content'}>
         <MenuRightSideArrow/>
-        <ContentWrapper>
+        <div className={'right-side__wrapper'}>
           {currentData.type === 'actions' && !!currentData?.menuList && <ActionsBlock list={currentData.menuList}/>}
           {currentData.type === 'simple' && !!currentData?.list && <SimpleBlock list={currentData?.list} moreLink={currentData.moreLink}/>}
-        </ContentWrapper>
+        </div>
       </div>
     </div>
   )

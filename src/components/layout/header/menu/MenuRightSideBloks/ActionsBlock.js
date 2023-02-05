@@ -1,15 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import MenuBtnsList from "@/components/reusable/MenuBtnsList/MenuBtnsList";
-import {
-  ActionBlockContainer,
-  ActionBlockList,
-  ActionBlockWrapper,
-  TextTitle
-} from "@/components/layout/header/menu/MenuRightSideBloks/styles";
 import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsBlockForm";
 import {useDispatch} from "react-redux";
 import {switchMobileShowContent} from "@/store/slices/menuSlice/MenuSlice";
-import {ActionsDesktopBlockItems} from "@/components/layout/header/menu/MenuRightSideBloks/Items/styles";
 import ActionsMobileBlock from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsMobileBlock";
 
 const ActionsBlock = ({list}) => {
@@ -28,9 +21,9 @@ const ActionsBlock = ({list}) => {
   }
 
   return (
-    <ActionBlockContainer>
-      <ActionBlockWrapper>
-        <ActionBlockList>
+    <div className={'action-block'}>
+      <div className={'action-block__wrapper'}>
+        <div className={'action-block__list'}>
           <MenuBtnsList
             currentState={currentItem}
             list={list}
@@ -42,20 +35,20 @@ const ActionsBlock = ({list}) => {
             rectangleSize={'4.5px 0 4.5px 6px'}
             adaptiveRectangleSize={'4.5px 0 4.5px 6px'}
           />
-        </ActionBlockList>
+        </div>
 
-        <ActionsDesktopBlockItems>
-          <TextTitle>{currentData.data.title}</TextTitle>
+        <div className={'action-block__desktop'}>
+          <h4 className={'right-side__title'}>{currentData.data.title}</h4>
           <div>
             {currentData.data.text}
           </div>
-        </ActionsDesktopBlockItems>
-      </ActionBlockWrapper>
-      <ActionsDesktopBlockItems>
+        </div>
+      </div>
+      <div className={'action-block__desktop'}>
         <ActionsBlockForm title={currentData.title}/>
-      </ActionsDesktopBlockItems>
+      </div>
       <ActionsMobileBlock currentData={currentData}/>
-    </ActionBlockContainer>
+    </div>
   );
 };
 
