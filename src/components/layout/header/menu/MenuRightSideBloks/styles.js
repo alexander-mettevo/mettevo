@@ -25,6 +25,7 @@ export const ContentWrapper = styled.div`
   height: 100%;
   @media(max-width: 768px) {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 `
 

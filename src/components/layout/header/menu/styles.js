@@ -1,21 +1,5 @@
 import styled from "styled-components";
 
-export const MenuWrapper = styled.div`
-  position: fixed;
-  width: 100vw;
-  min-height: 100vh;
-  height: 100%;
-  padding-bottom: 50px;
-  top: ${({active}) => active ? '55px' : '0'};
-  left: 0;
-  transform: ${({active}) => active ? 'translateY(0)' : 'translateY(-100%)'};
-  transition: transform 0.3s ease-in-out;
-  background: ${({theme}) => theme.colors.mainBackground};
-  z-index: 11;
-  
-  
-  `
-
 export const MenuContent = styled.div`
   height: 100%;
   overflow: ${({active}) => active ? 'auto' : 'hidden'};
