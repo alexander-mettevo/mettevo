@@ -6,7 +6,7 @@ export const MenuWrapper = styled.div`
   min-height: 100vh;
   height: 100%;
   padding-bottom: 50px;
-  top: 55px;
+  top: ${({active}) => active ? '55px' : '0'};
   left: 0;
   transform: ${({active}) => active ? 'translateY(0)' : 'translateY(-100%)'};
   transition: transform 0.3s ease-in-out;

@@ -5,9 +5,9 @@ export const Footer = styled.footer`
   background-color: ${({theme}) => theme.colors.footerBackground};
   
   
-  // * {
-  //   color: ${({theme}) => theme.colors.footerText};
-  // }
+  div, span, a, p {
+    color: ${({theme}) => theme.colors.footerText};
+  }
 `
 
 export const FooterContainer = styled.div`

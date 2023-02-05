@@ -1,23 +1,18 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import {
-  MobileNavigationWrapper,
-  NavigationMenu,
-  NavigationMenuLink
-} from "@/components/layout/header/navigation/styles";
-
+import Link from "next/link";
 
 const DesktopNavigation = () => {
   const links = useSelector(state => state.menu.pageLinks)
 
   if (links.length > 0) {
     return (
-      <NavigationMenu>
+      <nav className='desktop-nav'>
         {links.map(({href, title}, index) => (
-          <NavigationMenuLink className='underline-link' href={href} key={href + index}>{title}</NavigationMenuLink>
+          <Link className='nav-link  underline-link' href={href} key={href + index}>{title}</Link>
         ))
         }
-      </NavigationMenu>
+      </nav>
     );
   }
   return null;
