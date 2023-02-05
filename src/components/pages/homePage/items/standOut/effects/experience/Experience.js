@@ -1,9 +1,4 @@
 import React, {useRef} from 'react';
-import {
-  ExperienceBackground,
-  ExperienceWord,
-  ExperienceWrapper
-} from "@/components/pages/homePage/items/standOut/effects/experience/styles";
 import experienceAnimationScript from "@/components/pages/homePage/items/standOut/effects/experience/animationScript";
 
 const Experience = () => {
@@ -11,20 +6,20 @@ const Experience = () => {
   const handleMouseMove = (e) => experienceAnimationScript(e, wordsRef)
 
   return (
-    <ExperienceWrapper className={'stand-out__effect'} onMouseMove={handleMouseMove}>
+    <div className={'experience stand-out__effect'} onMouseMove={handleMouseMove}>
       <div ref={wordsRef}>
-        <ExperienceWord>SEO ExpertS</ExperienceWord>
-        <ExperienceWord>Web-developers</ExperienceWord>
-        <ExperienceWord>Designers</ExperienceWord>
-        <ExperienceWord>Project managers</ExperienceWord>
-        <ExperienceWord>CopywriterS</ExperienceWord>
-        <ExperienceWord>Proofreaders</ExperienceWord>
+        <span className={'experience__word'}>SEO ExpertS</span>
+        <span className={'experience__word'}>Web-developers</span>
+        <span className={'experience__word'}>Designers</span>
+        <span className={'experience__word'}>Project managers</span>
+        <span className={'experience__word'}>CopywriterS</span>
+        <span className={'experience__word'}>Proofreaders</span>
       </div>
-      <ExperienceBackground>
+      <div className={'experience__background'}>
         <div>METTEVO</div>
         <div>TEAM</div>
-      </ExperienceBackground>
-    </ExperienceWrapper>
+      </div>
+    </div>
   );
 };
 
