@@ -1,0 +1,90 @@
+
+.benchmark {
+  &__arrow {
+    width: 100%;
+    height: 5px;
+    background-color: var(--text-color);
+    position: relative;
+    //transform: rotate(-10deg);
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-style: solid;
+      border-width: 14px 0 14px 16px;
+      border-color: transparent transparent transparent var(--text-color);
+    }
+  }
+
+  &__word-wrapper {
+    @media (max-width: $mobile) {
+      margin-top: 40px;
+    }
+
+    @media (max-width: 468px) {
+      margin-top: 60px;
+    }
+
+    & span:nth-child(4) {
+      margin-right: 16px;
+    }
+  }
+
+  &__word {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+  }
+
+
+}
+
+@for $i from 0 through 15 {
+  .benchmark__word_#{$i} {
+    @if $i == 0 {
+      font-size: 7.55rem;
+      line-height: 7.55rem;
+
+      @media (max-width: 1440px) {
+        font-size: 8vw;
+        line-height: 8vw;
+      }
+
+      @media (max-width: 1100px) {
+        font-size: 12vw;
+        line-height: 12vw;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 11vw;
+        line-height: 11vw;
+      }
+    } @else {
+
+      font-size: 7.75 + ($i * 1.25) + rem;
+      line-height: 7.75 + ($i * 1.25) + rem;
+
+      @media (max-width: 1440px) {
+        font-size: 8 + ($i * 1.5) + vw;
+        line-height: 8 + ($i * 1.5) + vw;
+      }
+
+      @media (max-width: 1100px) {
+        font-size: 12 + ($i * 4) + vw;
+        line-height: 12 + ($i * 4) + vw;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 11 + ($i * 4) + vw;
+        line-height: 11 + ($i * 4) + vw;
+      }
+    }
+  }
+}

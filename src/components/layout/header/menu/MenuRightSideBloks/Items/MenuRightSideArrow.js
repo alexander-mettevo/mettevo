@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  MenuRightSideArrowItem, MenuRightSideArrowWrapper
-} from "@/components/layout/header/menu/MenuRightSideBloks/Items/styles";
 import {useDispatch, useSelector} from "react-redux";
 import {switchMobileShowContent, switchShowContent} from "@/store/slices/menuSlice/MenuSlice";
 
@@ -17,9 +14,9 @@ const MenuRightSideArrow = () => {
   }
 
   return (
-    <MenuRightSideArrowWrapper>
-      <MenuRightSideArrowItem onClick={handleSwitchShowContent}/>
-    </MenuRightSideArrowWrapper>
+    <div className={'right-side__arrow'}>
+      <div className={'right-side__arrow-item'} onClick={handleSwitchShowContent}/>
+    </div>
   );
 };
 

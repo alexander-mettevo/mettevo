@@ -1,0 +1,16 @@
+.bounce {
+  position: absolute;
+  border-radius: 50%;
+
+  &__item {
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.125rem;
+    padding: 10px;
+    text-align: center;
+  }
+}

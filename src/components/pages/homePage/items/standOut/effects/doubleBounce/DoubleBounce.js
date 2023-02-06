@@ -1,35 +1,31 @@
 import React from 'react';
-import {
-  DoubleBounceItem, DoubleBounceWordWrap,
-  DoubleBounceWrapper
-} from "@/components/pages/homePage/items/standOut/effects/doubleBounce/styles";
 import Bounce from "@/components/reusable/bounce/Bounce";
 
 
 const DoubleBounce = () => {
   return (
-    <DoubleBounceWrapper>
-      <DoubleBounceItem>
+    <div className={'stand-out__effect double-bounce'}>
+      <div className={'double-bounce__item'}>
         <Bounce color={'#EBEBEB'} mobileSize={'180px'} size={'260px'} top={0} left={0}>
-          <DoubleBounceWordWrap>copywriting</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>web design + development</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>instagram management</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>e-commerce seo</DoubleBounceWordWrap>
+          <div className={'double-bounce__word-wrap'}>copywriting</div>
+          <div className={'double-bounce__word-wrap'}>web design + development</div>
+          <div className={'double-bounce__word-wrap'}>instagram management</div>
+          <div className={'double-bounce__word-wrap'}>e-commerce seo</div>
         </Bounce>
         <span>services of competitors</span>
-      </DoubleBounceItem>
-      <DoubleBounceItem>
+      </div>
+      <div className={'double-bounce__item'}>
         <Bounce color={'#101010'} mobileSize={'240px'} size={'320px'} top={0} left={0}>
-          <DoubleBounceWordWrap>competitor analysis</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>web design + development</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>proofreading + copywriting</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>website support & maintenance</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>instagram management</DoubleBounceWordWrap>
-          <DoubleBounceWordWrap>wide range of seo services</DoubleBounceWordWrap>
+          <div className={'double-bounce__word-wrap'}>competitor analysis</div>
+          <div className={'double-bounce__word-wrap'}>web design + development</div>
+          <div className={'double-bounce__word-wrap'}>proofreading + copywriting</div>
+          <div className={'double-bounce__word-wrap'}>website support & maintenance</div>
+          <div className={'double-bounce__word-wrap'}>instagram management</div>
+          <div className={'double-bounce__word-wrap'}>wide range of seo services</div>
         </Bounce>
         <span>our services</span>
-      </DoubleBounceItem>
-    </DoubleBounceWrapper>
+      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,43 @@
+:root {
+  // Colors
+  --black: #000000;
+  --white: #ffffff;
+  --main-dark: #101010;
+  --main-light: #F9F9F9;
+  --main-gray: #b2b2b2;
+  --dark-gray: #808080;
+
+  // Theme dark-mode
+  --dark-text-color:  var(--main-light);
+  --dark-opposite-text-color:  var(--main-dark);
+  --dark-bg-color:  var(--main-dark);
+  --dark-opposite-bg-color:  var(--main-light);
+  --dark-main-opposite-color:  var(--black);
+
+  // Theme light-mode
+  --light-text-color:  var(--main-dark);
+  --light-opposite-text-color:  var(--main-light);
+  --light-bg-color:  var(--main-light);
+  --light-opposite-bg-color:  var(--main-dark);
+  --light-main-opposite-color:  var(--white);
+
+  // Default theme
+  --text-color: var(--light-text-color);
+  --opposite-text-color: var(--light-opposite-text-color);
+  --bg-color: var(--light-bg-color);
+  --opposite-bg-color: var(--light-opposite-bg-color);
+  --main-opposite-color: var(--light-main-opposite-color);
+}
+
+
+#theme-switch:checked ~ .wrapper {
+  --text-color: var(--dark-text-color);
+  --opposite-text-color: var(--dark-opposite-text-color);
+  --bg-color: var(--dark-bg-color);
+  --opposite-bg-color: var(--dark-opposite-bg-color);
+  --main-opposite-color: var(--dark-main-opposite-color);
+  color: var(--text-color);
+  .dark-line {
+    fill: var(--text-color);
+  }
+}

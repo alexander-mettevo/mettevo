@@ -1,16 +1,8 @@
 import React from 'react';
-import {
-  ReviewsItemDate,
-  ReviewsItemLeft, ReviewsItemLeftBottom, ReviewsItemMainLogoWrapper,
-  ReviewsItemRight,
-  ReviewsItemRow,
-  ReviewsItemRowBio, ReviewsItemSmallLogoWrapper
-} from "@/components/pages/homePage/items/reviews/styles";
-import {CustomImage} from "@/components/reusable/image/styles";
-import {ItemText} from "@/components/reusable/text/styles";
 import FullStar from "@/components/reusable/stars/FullStar";
 import EmptyStar from "@/components/reusable/stars/EmptyStar";
-import dynamic  from "next/dynamic";
+import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const Rating = dynamic(
   () => import("react-simple-star-rating")
@@ -20,33 +12,32 @@ const Rating = dynamic(
 
 const ReviewsItem = ({item}) => {
   return (
-    <ReviewsItemRow>
-      <ReviewsItemLeft>
-        <ReviewsItemMainLogoWrapper>
-          <CustomImage src={item.logs.mainLogo} alt={'review logo'} fill/>
-        </ReviewsItemMainLogoWrapper>
-        <ReviewsItemLeftBottom>
-          <ReviewsItemSmallLogoWrapper>
-            <CustomImage src={item.logs.smallLogo} alt={'review small logo'} fill/>
-          </ReviewsItemSmallLogoWrapper>
-          <Rating className={'reviews-star'} emptyIcon={<EmptyStar size={50}/>} fillIcon={<FullStar size={50}/>} readonly fillColor={'#303030'} initialValue={item.rating} />
-
-        </ReviewsItemLeftBottom>
-      </ReviewsItemLeft>
-      <ReviewsItemRight>
-        <div>
-          <ItemText>
-            {item.text}
-          </ItemText>
-          <ReviewsItemRowBio>
-            {item.bio}
-          </ReviewsItemRowBio>
+    <div className={'item-reviews__row'}>
+      <div className={'item-reviews__left'}>
+        <div className={'item-reviews__main-logo wrapper-img'}>
+          <Image className='custom-img' src={item.logs.mainLogo} alt={'review logo'} fill/>
         </div>
-        <ReviewsItemDate>
+        <div className={'item-reviews__left-bottom'}>
+          <div className={'item-reviews__small-logo wrapper-img'}>
+            <Image className='custom-img' src={item.logs.smallLogo} alt={'review small logo'} fill/>
+          </div>
+          <Rating className={'reviews-star'} emptyIcon={<EmptyStar size={50}/>} fillIcon={<FullStar size={50}/>} readonly fillColor={'#303030'} initialValue={item.rating} />
+        </div>
+      </div>
+      <div className={'item-reviews__right'}>
+        <div>
+          <p className='item-text'>
+            {item.text}
+          </p>
+          <div className={'item-reviews__bio'}>
+            {item.bio}
+          </div>
+        </div>
+        <div className={'item-reviews__date'}>
           {item.date}
-        </ReviewsItemDate>
-      </ReviewsItemRight>
-    </ReviewsItemRow>
+        </div>
+      </div>
+    </div>
   );
 };
 

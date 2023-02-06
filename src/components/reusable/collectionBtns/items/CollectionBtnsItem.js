@@ -1,22 +1,18 @@
 import React from 'react';
-import {
-  CollectionBtnsImageWrapper,
-  CollectionBtnsItemWrapper,
-  CollectionBtnsTitle
-} from "@/components/reusable/collectionBtns/styles";
 import renderContent from "@/components/reusable/collectionBtns/items/CollectionBtnsSVGImages/renderContent";
+import Link from "next/link";
 
 const CollectionBtnsItem = ({item}) => {
 
   return (
-    <CollectionBtnsItemWrapper href={item.href}>
-      <CollectionBtnsImageWrapper>
+    <Link className={'collection-btns__item'} href={item.href}>
+      <div className={'collection-btns__image-wrapper'}>
         {renderContent(item.image)}
-      </CollectionBtnsImageWrapper>
-      <CollectionBtnsTitle>
+      </div>
+      <div className={'collection-btns__title'}>
         {item.title}
-      </CollectionBtnsTitle>
-    </CollectionBtnsItemWrapper>
+      </div>
+    </Link>
   );
 };
 

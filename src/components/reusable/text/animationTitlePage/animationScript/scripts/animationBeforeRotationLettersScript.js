@@ -18,7 +18,9 @@ const animationBeforeRotationLettersScript = (mm, wrapperTL, textRef, titlePageC
     }
 
     wrapperTL.to('body', {
-      overflow: 'hidden'
+      // overflow: 'hidden',
+      touchAction: 'none',
+      overscrollBehavior: 'none',
     })
     wrapperTL.to(titlePageWrapperRef.current, {
       scale: mediaWrapperProps.scale,

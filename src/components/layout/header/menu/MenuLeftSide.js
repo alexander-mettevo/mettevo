@@ -1,5 +1,4 @@
 import React from 'react';
-import {MenuLeftSideList} from "@/components/layout/header/menu/styles";
 import MenuBtnsList from "@/components/reusable/MenuBtnsList/MenuBtnsList";
 import {useDispatch, useSelector} from "react-redux";
 import {switchShowContent} from "@/store/slices/menuSlice/MenuSlice";
@@ -13,7 +12,7 @@ const MenuLeftSide = ({menuState, setMenuState}) => {
   }
 
   return (
-    <MenuLeftSideList>
+    <div className={'top-menu__left-side'}>
       <MenuBtnsList
         currentState={menuState}
         list={menuItems}
@@ -24,7 +23,7 @@ const MenuLeftSide = ({menuState, setMenuState}) => {
         rectangleSize={'10px 0 10px 12px'}
         adaptiveRectangleSize={'8px 0 8px 10px'}
       />
-    </MenuLeftSideList>
+    </div>
   );
 };
 

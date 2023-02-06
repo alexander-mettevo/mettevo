@@ -1,13 +1,11 @@
 import React from 'react';
-import {LogoBottom, LogoTop, LogoWrapper} from "@/components/reusable/logo/styles";
+import Link from "next/link";
 
-const Logo = () => {
-  return (
-    <LogoWrapper href={'/'}>
-      <LogoTop>METTEVO</LogoTop>
-      <LogoBottom>DIGITAL AGENCY</LogoBottom>
-    </LogoWrapper>
+const Logo = () => (
+    <Link className={'logo'} href={'/'}>
+      <div className={'logo__top'}>METTEVO</div>
+      <div className={'logo__bottom'}>DIGITAL AGENCY</div>
+    </Link>
   );
-};
 
 export default Logo;

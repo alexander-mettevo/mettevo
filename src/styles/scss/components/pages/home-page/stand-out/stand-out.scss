@@ -1,0 +1,57 @@
+.stand-out {
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+  }
+
+  &__row {
+    column-count: 2;
+
+
+    & > div:nth-child(1) {
+      padding-top: 0;
+    }
+
+    & > div {
+      padding-top: 280px;
+    }
+
+    @media (max-width: 1100px) {
+      column-count: 1;
+      display: block;
+
+      & > div {
+        padding-top: 0;
+      }
+
+      & > div:nth-child(2) {
+        padding-top: 0;
+      }
+      & > div {
+        padding-bottom: 80px
+      }
+    }
+  }
+
+  &__item {
+    display: inline-block;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+
+  &__effect {
+    margin-top: 80px;
+
+    @media($mobile) {
+      margin-top: 24px;
+    }
+  }
+}
+
+@import "benchmark";
+@import "bounce-graphic";
+@import "double-bounce";
+@import "experience";

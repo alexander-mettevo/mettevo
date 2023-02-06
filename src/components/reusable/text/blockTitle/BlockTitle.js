@@ -1,5 +1,4 @@
 import React, {useEffect, useRef} from 'react';
-import {BlockTitleWrapper} from "@/components/reusable/text/styles";
 import blockTitleAnimationScript from "@/components/reusable/text/blockTitle/animationScript";
 
 const BlockTitle = ({align, children}) => {
@@ -8,9 +7,9 @@ const BlockTitle = ({align, children}) => {
   useEffect(() => {blockTitleAnimationScript(ref)}, [])
 
   return (
-    <BlockTitleWrapper ref={ref} align={align}>
+    <h2 className={`block-title ${!!align && 'block-title_' + align}`} ref={ref}>
       {children}
-    </BlockTitleWrapper>
+    </h2>
   );
 };
 

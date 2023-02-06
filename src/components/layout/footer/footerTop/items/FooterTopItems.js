@@ -1,22 +1,21 @@
 import React from 'react';
-import {FooterTopItemList, FooterTopItemTitle, FooterTopItemWrap} from "@/components/layout/footer/footerTop/styles";
-import {FooterLink} from "@/components/layout/footer/styles";
 import FooterDropdown from "@/components/layout/footer/footerDropdown/FooterDropdown";
+import Link from "next/link";
 
 const FooterTopItems = ({item}) => {
   return (
-    <FooterTopItemWrap>
-      <FooterTopItemTitle>
+    <div className={'footer-top__item'}>
+      <div className={'footer-top__title'}>
         {item.title}
-      </FooterTopItemTitle>
-      <FooterTopItemList>
+      </div>
+      <ul className={'footer-top__list'}>
         {item.menuList.map((item, index) => {
           if (item.type === 'link') {
             return (
               <li key={index + 'footerTopItems'}>
-                <FooterLink href={item.href}>
+                <Link className='footer__link underline-link' href={item.href}>
                   {item.title}
-                </FooterLink>
+                </Link>
               </li>
             )
           }
@@ -29,8 +28,8 @@ const FooterTopItems = ({item}) => {
           }
         return null
         })}
-      </FooterTopItemList>
-    </FooterTopItemWrap>
+      </ul>
+    </div>
   );
 }
   ;

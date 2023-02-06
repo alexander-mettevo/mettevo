@@ -1,6 +1,5 @@
 import React from 'react';
-import {FooterLink} from "@/components/layout/footer/styles";
-import {FooterDropdownContent, FooterDropdownTitle} from "@/components/layout/footer/footerDropdown/styles";
+import Link from "next/link";
 
 const FooterDropdown = ({list, title}) => {
   const [showContent, setShowContent] = React.useState(false);
@@ -11,18 +10,18 @@ const FooterDropdown = ({list, title}) => {
 
   return (
     <div>
-      <FooterDropdownTitle showContent={showContent} onClick={toggleShowContent}>
+      <div className={`footer-dropdown__title`} onClick={toggleShowContent}>
         {title}
-      </FooterDropdownTitle>
-      <FooterDropdownContent showContent={showContent}>
+      </div>
+      <ul className={`footer-dropdown ${showContent && 'footer-dropdown_show'}`}>
         {list.map((item, index) => (
           <li key={index + item.href}>
-            <FooterLink href={item.href}>
+            <Link className='footer__link underline-link' href={item.href}>
               {item.title}
-            </FooterLink>
+            </Link>
           </li>
         ))}
-      </FooterDropdownContent>
+      </ul>
     </div>
   );
 };

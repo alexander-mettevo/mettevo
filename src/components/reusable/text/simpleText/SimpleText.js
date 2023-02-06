@@ -1,5 +1,4 @@
 import React, {useEffect, useRef} from 'react';
-import {SimpleTextContent, SimpleTextTitle, SimpleTextWrapper} from "@/components/reusable/text/simpleText/styles";
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
 
 const SimpleText = ({title, text}) => {
@@ -8,14 +7,14 @@ const SimpleText = ({title, text}) => {
   useEffect(() => {showFromBottom(ref)}, [])
 
   return (
-    <SimpleTextWrapper ref={ref}>
-      <SimpleTextTitle>
+    <div className={'simple-text'} ref={ref}>
+      <h5 className='simple-text__title item-title'>
         {title}
-      </SimpleTextTitle>
-      <SimpleTextContent>
+      </h5>
+      <p className='item-text'>
         {text}
-      </SimpleTextContent>
-    </SimpleTextWrapper>
+      </p>
+    </div>
   );
 };
 

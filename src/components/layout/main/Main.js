@@ -1,5 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {MainWrapper} from "@/components/layout/main/styles";
+import React from 'react';
 import dynamic from "next/dynamic";
 
 const Animation = dynamic(
@@ -8,10 +7,10 @@ const Animation = dynamic(
 )
 const MainComponent = ({children}) => {
   return (
-    <MainWrapper>
+    <main>
       <Animation triangleCount={50}/>
       {children}
-    </MainWrapper>
+    </main>
   );
 };
 

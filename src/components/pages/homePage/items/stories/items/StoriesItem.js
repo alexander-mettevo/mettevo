@@ -1,29 +1,52 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Image from "next/image";
-import {
-  StoriesItemImageWrapper,
-  StoriesItemSubtitle,
-  StoriesItemTitle
-} from "@/components/pages/homePage/items/stories/styles";
-import {ItemText} from "@/components/reusable/text/styles";
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
+import useWindowSize from "@/hooks/useWindowSize";
+import Link from "next/link";
 
 const StoriesItem = ({item}) => {
   const ref = useRef(null);
+  const {width} = useWindowSize();
+  const [imageSize, setImageSize] = useState({
+    width: item.image.size.width + 'px',
+    height: item.image.size.height + 'px'
+  });
 
-  useEffect(() => {showFromBottom(ref)}, []);
+  const handleSize = () => {
+    if (width < 900) {
+      setImageSize({
+        width: '100%',
+        height: (item.image.size.height / item.image.size.width) * 90 + 'vw'
+      })
+    } else if (width < 1440) {
+      setImageSize({
+        width: (item.image.size.width * 100) / 1440 + 'vw',
+        height: (item.image.size.height * 100) / 1440 + 'vw'
+      })
+    }
+  }
+
+  useEffect(() => {
+    showFromBottom(ref)
+    handleSize()
+  }, []);
+
+  useEffect(() => {handleSize()}, [width]);
 
   return (
     <div ref={ref}>
-      <StoriesItemImageWrapper href={item.href} data-mouse={'View'} width={item.image.size.width} height={item.image.size.height}>
+      <Link className={'stories__image-wrapper'} href={item.href} data-mouse={'View'} style={{
+        width: imageSize.width,
+        height: imageSize.height
+      }}>
         <Image fill src={item.image.src} alt={item.title} />
-      </StoriesItemImageWrapper>
+      </Link>
 
-      <ItemText>
-        <StoriesItemTitle>{item.title} </StoriesItemTitle>
+      <p className='item-text'>
+        <span>{item.title} </span>
         -
-        <StoriesItemSubtitle> {item.subtitle}</StoriesItemSubtitle>
-      </ItemText>
+        <span className={'stories__subtitle'}>{item.subtitle}</span>
+      </p>
     </div>
   );
 };

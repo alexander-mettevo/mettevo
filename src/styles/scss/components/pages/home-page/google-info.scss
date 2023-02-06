@@ -1,0 +1,52 @@
+.google-info {
+  display: flex;
+
+  @media(max-width: 768px) {
+    display: block;
+  }
+
+  &__wrapper {
+    flex: 0 0 1003px;
+
+    @media(max-width: $pc) {
+      flex: 0 0 69.6vw;
+    }
+
+    @media(max-width: 1024px) {
+      flex: 0 0 85vw;
+    }
+  }
+
+  &__content {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media(max-width: $pc) {
+      margin-top: 24px;
+    }
+
+    @media(max-width: $mobile) {
+      margin-top: 16px;
+      display: block;
+    }
+  }
+
+  &__text {
+    flex: 0 0 64%;
+
+    p:first-child {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 40px;
+
+    @media(max-width: $mobile) {
+      justify-content: center;
+    }
+  }
+}

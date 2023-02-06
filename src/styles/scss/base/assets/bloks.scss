@@ -1,0 +1,3 @@
+.block-wrapper {
+  @include adaptiveValue("margin-top", 280, 160);
+}

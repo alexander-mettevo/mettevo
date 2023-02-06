@@ -1,18 +1,18 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import {MobileNavigationWrapper, NavigationMenuLink} from "@/components/layout/header/navigation/styles";
+import Link from "next/link";
 
 const MobileNavigation = () => {
   const links = useSelector(state => state.menu.pageLinks)
 
   if (links.length > 0) {
     return (
-      <MobileNavigationWrapper>
+      <nav className={'mobile-nav'}>
         {links.map(({href, title}, index) => (
-          <NavigationMenuLink href={href} key={href + index}>{title}</NavigationMenuLink>
+          <Link className='nav-link underline-link' href={href} key={href + index}>{title}</Link>
         ))
         }
-      </MobileNavigationWrapper>
+      </nav>
     );
   }
   return null;

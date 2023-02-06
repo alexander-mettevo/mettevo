@@ -1,10 +1,4 @@
 import React, {useEffect, useRef} from 'react';
-import {
-  BenchmarkArrow,
-  BenchmarkWord,
-  BenchmarkWordWrapper,
-  BenchmarkWrapper
-} from "@/components/pages/homePage/items/standOut/effects/benchmark/styles";
 import showBenchmarkAnimationScript from "@/components/pages/homePage/items/standOut/effects/benchmark/animationScript";
 
 const word = ['y', 'o', 'u', 'R', 'R', 'O', 'I'];
@@ -18,14 +12,14 @@ const Benchmark = () => {
   }, [])
 
   return (
-    <BenchmarkWrapper>
-      <BenchmarkArrow ref={lineRef}/>
-      <BenchmarkWordWrapper ref={lettersRef}>
+    <div className={'stand-out__effect'}>
+      <div className={'benchmark__arrow'} ref={lineRef}/>
+      <div className={'benchmark__word-wrapper'} ref={lettersRef}>
         {word?.length > 0 && word.map((letter, index) => (
-          <BenchmarkWord key={index + 'bench'} index={index}>{letter}</BenchmarkWord>
+          <span className={`benchmark__word benchmark__word_${index}`} key={index + 'bench'}>{letter}</span>
         ))}
-      </BenchmarkWordWrapper>
-    </BenchmarkWrapper>
+      </div>
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {BounceItem, BounceWrapper} from "@/components/reusable/bounce/styles";
 import bounceAnimationScript from "@/components/reusable/bounce/animationScript";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const Bounce = ({
                   children,
@@ -9,23 +9,50 @@ const Bounce = ({
                   top,
                   left,
                   mobileSize
-}) => {
+                }) => {
   const ref = useRef(null);
-  useEffect(() => {bounceAnimationScript(ref);}, []);
+  const {width} = useWindowSize()
+  useEffect(() => {
+    bounceAnimationScript(ref);
+  }, []);
+  const [style, setStyle] = useState({})
+
+  useEffect(() => {
+    const finishSize = (mobileSize && width < 650) ? mobileSize : size
+
+    const state = {
+      color: color === '#101010' ? '#fff' : '#101010',
+      border: `${color === '#101010' ? '#fff' : 'transparent'} 1px solid`,
+      width: finishSize,
+      height: finishSize,
+      top,
+      left,
+      backgroundColor: color,
+    }
+
+    setStyle(state)
+  }, [])
+
+  useEffect(() => {
+    if (mobileSize && width < 650) {
+      setStyle(prevState => ({
+        ...prevState,
+        width: mobileSize,
+        height: mobileSize
+      }))
+    }
+  }, [width])
 
   return (
-    <BounceWrapper
+    <div
+      className={'bounce'}
       ref={ref}
-      size={size}
-      color={color}
-      top={top}
-      left={left}
-      mobileSize={mobileSize}
+      style={style}
     >
-      <BounceItem>
+      <div className={'bounce__item'}>
         {children}
-      </BounceItem>
-    </BounceWrapper>
+      </div>
+    </div>
   );
 };
 

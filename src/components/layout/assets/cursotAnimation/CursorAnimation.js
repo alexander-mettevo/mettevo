@@ -1,5 +1,4 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {CursorAnimationWrapper} from "@/components/layout/assets/cursotAnimation/styles";
 import gsap from "gsap";
 
 const CursorAnimation = () => {
@@ -61,7 +60,7 @@ const CursorAnimation = () => {
 
   return (
     <>
-      <CursorAnimationWrapper ref={ref} className={'ball'}>{word}</CursorAnimationWrapper>
+      <div ref={ref} className={'cursor-animation ball'}>{word}</div>
     </>
 
   );

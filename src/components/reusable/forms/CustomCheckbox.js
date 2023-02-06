@@ -1,12 +1,13 @@
 import React from 'react';
-import {CustomCheckboxWrapper} from "@/components/reusable/forms/styles";
 
-const CustomCheckbox = ({title, checked, setChecked}) => {
+const CustomCheckbox = ({title, checked, setChecked, id}) => {
   return (
-    <CustomCheckboxWrapper checked={checked}>
-      {title}
-      <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)}/>
-    </CustomCheckboxWrapper>
+    <div className={'checkbox'}>
+      <input className={'checkbox__input'} type="checkbox" id={id} checked={checked} onChange={() => setChecked(!checked)}/>
+      <label className={'checkbox__label'} htmlFor={id}>
+        {title}
+      </label>
+    </div>
   );
 };
 

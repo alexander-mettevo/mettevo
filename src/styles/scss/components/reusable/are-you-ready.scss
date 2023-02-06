@@ -1,0 +1,17 @@
+.are-you-ready {
+  margin-top: 300px;
+  max-width: 80%;
+
+  &>div:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  @media(max-width: $pc) {
+    max-width: 90%;
+  }
+
+  @media(max-width: $tablet) {
+    margin-top: 160px;
+    max-width: 100%;
+  }
+}

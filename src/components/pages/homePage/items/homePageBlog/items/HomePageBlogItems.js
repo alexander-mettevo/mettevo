@@ -1,7 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {useSelector} from "react-redux";
 import HomePageBlogItem from "@/components/pages/homePage/items/homePageBlog/items/HomePageBlogItem";
-import {HomePageBlogRow} from "@/components/pages/homePage/items/homePageBlog/styles";
 import homePageBlogAnimationScript from "@/components/pages/homePage/items/homePageBlog/animationScript";
 
 const HomePageBlogItems = () => {
@@ -14,11 +13,11 @@ const HomePageBlogItems = () => {
   }, [])
 
   return (
-    <HomePageBlogRow ref={ref}>
+    <div className={'home-blog__row'} ref={ref}>
       {data.length > 0 && data.map((item, index) => (
         <HomePageBlogItem item={item} key={index + 'homePageBlog'}/>
       ))}
-    </HomePageBlogRow>
+    </div>
   );
 };
 

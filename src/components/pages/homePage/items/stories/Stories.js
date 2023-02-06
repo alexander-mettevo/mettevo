@@ -1,5 +1,4 @@
 import React from 'react';
-import {StoriesGridWrapper, StoriesTitle, StoriesWrapper} from "@/components/pages/homePage/items/stories/styles";
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import {useSelector} from "react-redux";
 import StoriesItem from "@/components/pages/homePage/items/stories/items/StoriesItem";
@@ -9,13 +8,13 @@ const Stories = () => {
   const data = useSelector(state => state.homePage.homePageStories)
 
   return (
-    <StoriesWrapper>
-      <StoriesTitle>
+    <div className={'block-wrapper stories'}>
+      <div className={'stories__title'}>
         <BlockTitle>
           our stories and case studies
         </BlockTitle>
-      </StoriesTitle>
-      <StoriesGridWrapper>
+      </div>
+      <div className={'stories__grid'}>
         {
           data?.length > 0 && data.map((item, index) => (
             <StoriesItem item={item} key={index + 'Stories'}/>
@@ -24,8 +23,8 @@ const Stories = () => {
         <div>
           <ArrowLink href={'/projects'} title={'view all work'}/>
         </div>
-      </StoriesGridWrapper>
-    </StoriesWrapper>
+      </div>
+    </div>
   );
 };
 
