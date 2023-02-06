@@ -97,3 +97,9 @@
 		}
 	}
 }
+
+@mixin textBlock ($marginDesktop: 0, $marginMobile: 0, $fontSizeDesktop: 16, $fontSizeMobile: 16, $lineHeightDesktop: 1.5, $lineHeightMobile: 1.5) {
+	@include adaptiveValue("margin-bottom", $marginDesktop, $marginMobile);
+	@include adaptiveValue("font-size", $fontSizeDesktop, $fontSizeMobile);
+	@include adaptiveValue("line-height", $lineHeightDesktop, $lineHeightMobile);
+}

@@ -22,8 +22,6 @@
 }
 
 .item-text {
-  font-style: italic;
-
   @include adaptiveValue("font-size", 20, 16);
   @include adaptiveValue("line-height", 32, 24);
 }

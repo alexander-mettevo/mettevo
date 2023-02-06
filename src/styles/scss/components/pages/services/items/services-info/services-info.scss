@@ -1,0 +1,27 @@
+.services-info {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    flex: 0 0 27.77%;
+
+    &_list {
+      flex: 0 0 53.75%;
+    }
+  }
+
+  &__form {
+    margin-right: 66px;
+    flex-shrink: 1;
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.text-services {
+  &__top {
+    margin-bottom: 40px;
+  }
+}
