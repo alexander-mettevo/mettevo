@@ -1,6 +1,7 @@
 .services-info {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   &__text {
     flex: 0 0 27.77%;
@@ -12,7 +13,13 @@
 
   &__form {
     margin-right: 66px;
-    flex-shrink: 1;
+    flex: 1;
+
+    @media (max-width: $mobile) {
+      margin-right: 0;
+      order: 2;
+      margin-top: 20px;
+    }
   }
 
   @media (max-width: $mobile) {
@@ -23,5 +30,79 @@
 .text-services {
   &__top {
     margin-bottom: 40px;
+  }
+}
+
+.form-services {
+  padding: 40px;
+  @include adaptiveValue('font-size', 20, 16);
+  @include adaptiveValue('line-height', 19, 15);
+
+  & > &__items-wrap {
+    @include adaptiveValue('margin-bottom', 28, 20);
+    display: flex;
+  }
+
+  &__items-wrap {
+    @media (max-width: $mobile) {
+      &_s {
+        margin-bottom: 8px !important;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 24px 16px;
+  }
+
+
+  &__block {
+    @include adaptiveValue('font-size', 20, 18);
+    @include adaptiveValue('line-height', 19, 17);
+  }
+
+  &__label {
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+
+    @media (max-width: $mobile) {
+      &_fw {
+        flex-wrap: wrap;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      flex-wrap: wrap;
+      input {
+        margin-top: 8px;
+      }
+    }
+
+    &_w {
+      white-space: normal;
+    }
+  }
+
+  &__input {
+    margin: 0;
+    flex: 1 1 100%;
+  }
+
+  &__button {
+    width: 100%;
+    justify-content: center;
+  flex-wrap: wrap;
+    @include adaptiveValue('margin-top', 20, 0);
+    span {
+      white-space: nowrap;
+      text-transform: lowercase;
+      padding: 0 6px;
+    }
   }
 }

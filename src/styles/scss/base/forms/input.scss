@@ -29,6 +29,7 @@ textarea {
 .input[placeholder]:not([data-placeholder-nohiden]) {
 	&::placeholder {
 		transition: opacity 0.3s;
+		text-transform: uppercase;
 	}
 	&:focus::placeholder {
 		opacity: 0;
