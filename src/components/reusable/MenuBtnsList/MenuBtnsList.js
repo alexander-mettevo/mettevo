@@ -1,6 +1,6 @@
-import React from 'react';
-import {MenuBtnsListItem, MenuBtnsListWrapper} from "@/components/reusable/MenuBtnsList/styles";
+import React, {useEffect, useState} from 'react';
 import Link from "next/link";
+import useWindowSize from "@/hooks/useWindowSize";
 
 const MenuBtnsList = ({
                         list,
@@ -13,37 +13,58 @@ const MenuBtnsList = ({
                         adaptiveRectangleSize,
                         noteFS
 }) => {
+  const {width} = useWindowSize();
+  const [sizes, setSizes] = useState({
+    fs: desktopFS,
+    rectangleSize: rectangleSize,
+  });
+
+  useEffect(() => {
+    if (width < 768) {
+      setSizes(prevState => ({
+        ...prevState,
+        fs: mobileFS,
+        rectangleSize: adaptiveRectangleSize
+      }))
+    } else if(width < 1440) {
+      setSizes(prevState => ({
+        ...prevState,
+        fs: noteFS ? noteFS : mobileFS
+      }))
+    }
+  }, [width])
+
   return (
-    <MenuBtnsListWrapper
-      desktopFS={desktopFS}
-      mobileFS={mobileFS}
-      noteFS={noteFS}
-    >
+    <ul style={{fontSize: sizes.fs}}>
       {list.length > 0 && list.map((item, index) => {
         if (!item.link) {
           return (
-            <MenuBtnsListItem
+            <li className={'menu-list__item'}
               onClick={() => onClickItem(item.id)}
-              checked={currentState === item.id}
               key={index + keyWord}
-              rectangleSize={rectangleSize}
-              adaptiveRectangleSize={adaptiveRectangleSize}
-            ><span>{item.title}</span></MenuBtnsListItem>
+              style={{
+                '--rectangle-size': sizes.rectangleSize,
+                '--display-rectangle': currentState === item.id ? 'block' : 'none',
+                '--weight': currentState === item.id ? 700 : 400,
+            }}
+            ><span>{item.title}</span></li>
           )
         } else {
           return (
-            <MenuBtnsListItem
-              checked={currentState === item.id}
+            <li className={'menu-list__item'}
               key={index + keyWord}
-              rectangleSize={rectangleSize}
-              adaptiveRectangleSize={adaptiveRectangleSize}
+                style={{
+                  '--rectangle-size': sizes.rectangleSize,
+                  '--display-rectangle': currentState === item.id ? 'block' : 'none',
+                  '--weight': currentState === item.id ? 700 : 400,
+                }}
             >
               <Link href={item.link.href}>{item.title}</Link>
-            </MenuBtnsListItem>
+            </li>
           )
         }
       })}
-    </MenuBtnsListWrapper>
+    </ul>
   );
 };
 

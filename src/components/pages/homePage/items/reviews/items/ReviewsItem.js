@@ -29,9 +29,9 @@ const ReviewsItem = ({item}) => {
           <p className='item-text'>
             {item.text}
           </p>
-          <divBio>
+          <div className={'item-reviews__bio'}>
             {item.bio}
-          </divBio>
+          </div>
         </div>
         <div className={'item-reviews__date'}>
           {item.date}

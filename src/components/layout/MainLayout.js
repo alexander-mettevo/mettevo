@@ -2,10 +2,6 @@ import React, {useEffect, useRef, useState} from 'react';
 import FooterComponent from "@/components/layout/footer/FooterComponent";
 import HeaderComponent from "@/components/layout/header/HeaderComponent";
 import Menu from "@/components/layout/header/menu/Menu";
-import {lightTheme} from "@/styles/themes/lightTheme";
-import {darkTheme} from "@/styles/themes/darkTheme";
-import {ThemeProvider} from "styled-components";
-import {GlobalStyles} from "@/styles/global";
 import MainComponent from "@/components/layout/main/Main";
 import dynamic from "next/dynamic";
 
@@ -37,27 +33,28 @@ const MainLayout = ({children}) => {
   }
 
   return (
-    <ThemeProvider theme={lightTheme}>
-      <GlobalStyles/>
-      <input
-        ref={themeSwitcherRef}
-        className='theme-handler__switch'
-        id="theme-switch"
-        type="checkbox"
-        onChange={handleThemeSwitcher}
-      />
-        <div className="wrapper">
-          <HeaderComponent active={menuActive} setActive={setMenuActive}/>
-          <MainComponent>
-            <div className="__container">
-              {children}
-            </div>
-          </MainComponent>
-          <FooterComponent/>
-          <Menu active={menuActive}/>
-          <CursorAnimation/>
-        </div>
-    </ThemeProvider>
+<>
+  <input
+    ref={themeSwitcherRef}
+    className='theme-handler__switch'
+    id="theme-switch"
+    type="checkbox"
+    onChange={handleThemeSwitcher}
+  />
+  <div className="wrapper">
+    <HeaderComponent active={menuActive} setActive={setMenuActive}/>
+    <MainComponent>
+      <div className="__container">
+        {children}
+      </div>
+    </MainComponent>
+    <FooterComponent/>
+    <Menu active={menuActive}/>
+    <CursorAnimation/>
+  </div>
+</>
+
+
   );
 };
 
