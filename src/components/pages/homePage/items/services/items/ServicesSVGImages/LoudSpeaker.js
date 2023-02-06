@@ -1,5 +1,4 @@
 import React, {useEffect, useRef} from 'react';
-import {ServiceSVGWrapper} from "@/components/pages/homePage/items/services/items/styles";
 import servicesAnimationScript
   from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript";
 import {showLineAnimationWithCircle} from "@/components/reusable/animations/showLineAnimation";
@@ -13,7 +12,7 @@ const LoudSpeaker = () => {
   }, [])
 
   return (
-    <ServiceSVGWrapper ref={ref}>
+    <div className={'services__svg'} ref={ref}>
       <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path className="animation-circle"
               d="M57.1653 75.4861C67.0654 75.4861 75.091 67.4605 75.091 57.5605C75.091 47.6605 67.0654 39.6349 57.1653 39.6349C47.2653 39.6349 39.2397 47.6605 39.2397 57.5605C39.2397 67.4605 47.2653 75.4861 57.1653 75.4861Z"
@@ -46,7 +45,7 @@ const LoudSpeaker = () => {
               d="M110.328 10.9558C109.01 10.9558 107.69 10.4539 106.686 9.44889C105.714 8.47681 105.177 7.18333 105.177 5.80687C105.177 4.43173 105.713 3.13825 106.686 2.16485C108.692 0.157453 111.96 0.157453 113.969 2.16485C114.941 3.13825 115.479 4.43173 115.479 5.80687C115.479 7.18201 114.942 8.47549 113.969 9.44889C112.965 10.4539 111.647 10.9558 110.328 10.9558ZM110.328 3.29368C109.684 3.29368 109.039 3.53867 108.549 4.02867C108.075 4.50417 107.811 5.13642 107.811 5.80819C107.811 6.47995 108.072 7.1122 108.549 7.58771C109.529 8.56769 111.127 8.56769 112.107 7.58771C112.582 7.1122 112.844 6.48127 112.844 5.80819C112.844 5.13642 112.582 4.50417 112.107 4.02867C111.617 3.53867 110.972 3.29368 110.328 3.29368Z"
               fill="#BEBEBE"/>
       </svg>
-    </ServiceSVGWrapper>
+    </div>
   );
 };
 

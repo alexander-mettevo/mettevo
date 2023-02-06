@@ -1,9 +1,8 @@
 import React, {useEffect, useRef} from 'react';
-import {ReviewsContentWrapper} from "@/components/pages/homePage/items/reviews/styles";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {useSelector} from "react-redux";
 import ReviewsItem from "@/components/pages/homePage/items/reviews/items/ReviewsItem";
-import { Navigation} from "swiper";
+import {Navigation} from "swiper";
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
 
 const ReviewsContent = () => {
@@ -13,7 +12,7 @@ const ReviewsContent = () => {
   useEffect(() => {showFromBottom(ref)}, [])
 
   return (
-    <ReviewsContentWrapper ref={ref}>
+    <div className={'reviews'} ref={ref}>
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
@@ -30,7 +29,7 @@ const ReviewsContent = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </ReviewsContentWrapper>
+    </div>
   );
 };
 

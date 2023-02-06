@@ -1,14 +1,7 @@
 import React from 'react';
-import {
-  ReviewsItemDate,
-  ReviewsItemLeft, ReviewsItemLeftBottom, ReviewsItemMainLogoWrapper,
-  ReviewsItemRight,
-  ReviewsItemRow,
-  ReviewsItemRowBio, ReviewsItemSmallLogoWrapper
-} from "@/components/pages/homePage/items/reviews/styles";
 import FullStar from "@/components/reusable/stars/FullStar";
 import EmptyStar from "@/components/reusable/stars/EmptyStar";
-import dynamic  from "next/dynamic";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 
 const Rating = dynamic(
@@ -19,33 +12,32 @@ const Rating = dynamic(
 
 const ReviewsItem = ({item}) => {
   return (
-    <ReviewsItemRow>
-      <ReviewsItemLeft>
-        <ReviewsItemMainLogoWrapper className={'wrapper-img'}>
+    <div className={'item-reviews__row'}>
+      <div className={'item-reviews__left'}>
+        <div className={'item-reviews__main-logo wrapper-img'}>
           <Image className='custom-img' src={item.logs.mainLogo} alt={'review logo'} fill/>
-        </ReviewsItemMainLogoWrapper>
-        <ReviewsItemLeftBottom>
-          <ReviewsItemSmallLogoWrapper className={'wrapper-img'}>
+        </div>
+        <div className={'item-reviews__left-bottom'}>
+          <div className={'item-reviews__small-logo wrapper-img'}>
             <Image className='custom-img' src={item.logs.smallLogo} alt={'review small logo'} fill/>
-          </ReviewsItemSmallLogoWrapper>
+          </div>
           <Rating className={'reviews-star'} emptyIcon={<EmptyStar size={50}/>} fillIcon={<FullStar size={50}/>} readonly fillColor={'#303030'} initialValue={item.rating} />
-
-        </ReviewsItemLeftBottom>
-      </ReviewsItemLeft>
-      <ReviewsItemRight>
+        </div>
+      </div>
+      <div className={'item-reviews__right'}>
         <div>
           <p className='item-text'>
             {item.text}
           </p>
-          <ReviewsItemRowBio>
+          <divBio>
             {item.bio}
-          </ReviewsItemRowBio>
+          </divBio>
         </div>
-        <ReviewsItemDate>
+        <div className={'item-reviews__date'}>
           {item.date}
-        </ReviewsItemDate>
-      </ReviewsItemRight>
-    </ReviewsItemRow>
+        </div>
+      </div>
+    </div>
   );
 };
 

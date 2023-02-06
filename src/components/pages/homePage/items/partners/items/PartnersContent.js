@@ -2,9 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import {useSelector} from "react-redux";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Controller} from "swiper";
-import {PartnerLink, PartnersSliderWrapper} from "@/components/pages/homePage/items/partners/styles";
 import Image from "next/image";
 import partnersSliderAnimationScript from "@/components/pages/homePage/items/partners/animationScript";
+import Link from "next/link";
 
 const breakpoints = {
   1440: {
@@ -39,7 +39,7 @@ const PartnersContent = () => {
   }, [])
 
   return (
-    <PartnersSliderWrapper data-mouse={'Drag'}>
+    <div className={'partners__slider-wrapper'} data-mouse={'Drag'}>
       <Swiper
         ref={firstSlider}
         slidesPerView={7}
@@ -53,9 +53,9 @@ const PartnersContent = () => {
         }}>
         {firstHomePagePartners.map((item, index) => (
           <SwiperSlide key={index + 'partnerLogo2'}>
-            <PartnerLink href={item.href}>
+            <Link className={'partners__link'} href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
-            </PartnerLink>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -72,13 +72,13 @@ const PartnersContent = () => {
       }}>
         {secondHomePagePartners.map((item, index) => (
           <SwiperSlide key={index + 'partnerLogo1'}>
-            <PartnerLink href={item.href}>
+            <Link className={'partners__link'} href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
-            </PartnerLink>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
-    </PartnersSliderWrapper>
+    </div>
   );
 };
 

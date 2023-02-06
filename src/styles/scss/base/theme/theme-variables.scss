@@ -5,6 +5,7 @@
   --main-dark: #101010;
   --main-light: #F9F9F9;
   --main-gray: #b2b2b2;
+  --dark-gray: #808080;
 
   // Theme dark-mode
   --dark-text-color:  var(--main-light);
@@ -36,4 +37,7 @@
   --opposite-bg-color: var(--dark-opposite-bg-color);
   --main-opposite-color: var(--dark-main-opposite-color);
   color: var(--text-color);
+  .dark-line {
+    fill: var(--text-color);
+  }
 }

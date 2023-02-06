@@ -1,5 +1,4 @@
 import React, {useEffect, useRef} from 'react';
-import {ServiceSVGWrapper} from "@/components/pages/homePage/items/services/items/styles";
 import servicesAnimationScript
   from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript";
 import {showLineAnimationWithCircle} from "@/components/reusable/animations/showLineAnimation";
@@ -13,7 +12,7 @@ const Computer = () => {
   }, [])
 
   return (
-    <ServiceSVGWrapper ref={ref}>
+    <div className={'services__svg'} ref={ref}>
       <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path className="animation-circle"
               d="M59.9261 87.4093C68.2665 87.4093 75.0277 80.6481 75.0277 72.3077C75.0277 63.9674 68.2665 57.2062 59.9261 57.2062C51.5858 57.2062 44.8246 63.9674 44.8246 72.3077C44.8246 80.6481 51.5858 87.4093 59.9261 87.4093Z"
@@ -61,7 +60,7 @@ const Computer = () => {
           d="M59.0599 78.0551L59.06 78.0551L63.6613 66.7537L63.567 66.7202L63.6614 66.7535L63.6613 66.7535C63.7724 66.44 63.6375 66.0753 63.3407 65.9451C63.0374 65.8118 62.7057 65.9831 62.5933 66.3014L62.5933 66.3014L58.7387 77.2461L58.7387 77.2462C58.6282 77.5606 58.7629 77.9248 59.0599 78.0551Z"
           fill="#101010" stroke="#101010" strokeWidth="0.2"/>
       </svg>
-    </ServiceSVGWrapper>
+    </div>
   );
 };
 
