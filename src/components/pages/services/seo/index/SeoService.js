@@ -4,6 +4,7 @@ import seoServices from "@/mocData/services/seoServices";
 import ServiceInfo from "@/components/pages/services/items/serviseInfo/ServiceInfo";
 import DifferentService from "@/components/pages/services/items/differentService/DifferentService";
 import Changes from "@/components/pages/services/seo/index/items/changes/Changes";
+import ServiceText from "@/components/pages/services/items/serviceText/ServiceText";
 
 const SeoService = () => {
   return (
@@ -12,6 +13,7 @@ const SeoService = () => {
       <ServiceInfo title={seoServices.title} info={seoServices.info}/>
       <DifferentService different={seoServices.different}/>
       <Changes/>
+      <ServiceText/>
     </>
   );
 };

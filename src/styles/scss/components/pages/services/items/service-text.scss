@@ -1,0 +1,41 @@
+.service-text {
+
+  &__row {
+    display: flex;
+
+    & > div {
+      flex: 0 0 50.2%;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+
+      .service-text__bounce {
+        align-self: flex-end;
+        margin-top: 30px;
+      }
+    }
+
+    &_mid {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__bounce {
+  position: relative;
+
+    & > div {
+      transform: translateY(-50%);
+
+      @media (max-width: $tablet) {
+        position: static;
+        transform: translateY(0);
+
+      }
+    }
+  }
+
+  &__title {
+    @include adaptiveValue('margin-bottom', 24, 16)
+  }
+}
