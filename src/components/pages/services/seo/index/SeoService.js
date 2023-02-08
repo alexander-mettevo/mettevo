@@ -5,6 +5,10 @@ import ServiceInfo from "@/components/pages/services/items/serviseInfo/ServiceIn
 import DifferentService from "@/components/pages/services/items/differentService/DifferentService";
 import Changes from "@/components/pages/services/seo/index/items/changes/Changes";
 import ServiceText from "@/components/pages/services/items/serviceText/ServiceText";
+import CollectionBtns from "@/components/reusable/collectionBtns/CollectionBtns";
+import FeaturedProjects from "@/components/pages/services/items/featuredProjets/FeaturedProjects";
+import AreYouReady from "@/components/reusable/areYouRedy/AreYouReady";
+import Asked from "@/components/pages/services/items/asked/Asked";
 
 const SeoService = () => {
   return (
@@ -14,6 +18,10 @@ const SeoService = () => {
       <DifferentService different={seoServices.different}/>
       <Changes/>
       <ServiceText/>
+      <CollectionBtns/>
+      <FeaturedProjects/>
+      <Asked/>
+      <AreYouReady/>
     </>
   );
 };
