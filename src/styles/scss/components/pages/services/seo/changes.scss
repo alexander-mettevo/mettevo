@@ -41,6 +41,13 @@
         width: 100%;
       }
     }
+
+    @media(max-width: $tablet) {
+      margin-left: 0;
+      svg {
+        height: 90vw;
+      }
+    }
   }
 
   &__circle {
@@ -59,19 +66,18 @@
       left: 26%;
       width: 108px;
       height: 108px;
-      font-size: 32px;
+      @include adaptiveValue("font-size", 32, 12);
 
       @media (max-width: $pc) {
         width: 7.5vw;
         height: 7.5vw;
       }
 
-      @media (max-width: $mobile) {
-        bottom: 37%;
-        left: 26%;
-        width: 108px;
-        height: 108px;
-        font-size: 32px;
+      @media (max-width: $tablet) {
+        top: 42vw;
+        left: 14vw;
+        width: 8.91vw;
+        height: 8.91vw;
       }
     }
 
@@ -80,20 +86,18 @@
       left: 31%;
       width: 216px;
       height: 216px;
-      font-size: 60px;
+      @include adaptiveValue("font-size", 60, 23);
 
       @media (max-width: $pc) {
         width: 15vw;
         height: 15vw;
       }
 
-      @media (max-width: $mobile) {
-        top: 2.1%;
-        left: 31%;
-        width: 216px;
-        height: 216px;
-        font-size: 60px;
-
+      @media (max-width: $tablet) {
+        width: 17.82vw;
+        height: 17.82vw;
+        top: 16.7vw;
+        left: 23vw;
       }
     }
 
@@ -102,19 +106,18 @@
       left: 36.6%;
       width: 160px;
       height: 160px;
-      font-size: 47px;
+      @include adaptiveValue("font-size", 47, 18);
 
       @media (max-width: $pc) {
         width: 11.11vw;
         height: 11.11vw;
       }
 
-      @media (max-width: $mobile) {
-        top: 47%;
-        left: 36.6%;
-        width: 160px;
-        height: 160px;
-        font-size: 47px;
+      @media (max-width: $tablet) {
+        width: 13.2vw;
+        height: 13.2vw;
+        top: 45vw;
+        left: 31vw;
       }
     }
 
@@ -123,19 +126,18 @@
       left: 51.6%;
       width: 270px;
       height: 270px;
-      font-size: 80px;
+      @include adaptiveValue("font-size", 80, 31);
 
       @media (max-width: $pc) {
         width: 18.75vw;
         height: 18.75vw;
       }
 
-      @media (max-width: $mobile) {
-        top: 13%;
-        left: 51.6%;
-        width: 270px;
-        height: 270px;
-        font-size: 80px;
+      @media (max-width: $tablet) {
+        width: 22.28vw;
+        height: 22.28vw;
+        top: 22.5vw;
+        left: 52.6vw;
       }
     }
 
@@ -144,19 +146,18 @@
       left: 51.6%;
       width: 86px;
       height: 86px;
-      font-size: 25px;
+      @include adaptiveValue("font-size", 25, 10);
 
       @media (max-width: $pc) {
         width: 5.97vw;
         height: 5.97vw;
       }
 
-      @media (max-width: $mobile) {
-        top: 67.5%;
-        left: 51.6%;
-        width: 86px;
-        height: 86px;
-        font-size: 25px;
+      @media (max-width: $tablet) {
+        width: 7.1vw;
+        height: 7.1vw;
+        top: 55.5vw;
+        left: 49.6vw;
       }
     }
   }
