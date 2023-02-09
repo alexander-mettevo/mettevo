@@ -1,12 +1,13 @@
 import React from 'react';
 import Bounce from "@/components/reusable/bounce/Bounce";
+import style from './service-text.module.scss'
 
 const ServiceText = () => {
   return (
     <div>
-      <div className={'service-text__row'}>
+      <div className={style['service-text__row']}>
         <div>
-          <div className={'block-title service-text__title'}>
+          <div className={`block-title ${style['service-text__title']}`}>
             We Deliver Page 1 Rankings
           </div>
           <p className={'item-text '}>
@@ -17,14 +18,14 @@ const ServiceText = () => {
             identify improvements to your SEO performance.
           </p>
         </div>
-        <div className={'service-text__bounce'}>
+        <div className={style['service-text__bounce']}>
           <Bounce color={'#101010'} size={'140px'} mobileSize={'80px'} left={'40%'} top={'50%'}>
             Free quote
           </Bounce>
         </div>
       </div>
-      <div className={'service-text__row service-text__row_mid'}>
-        <div className={'service-text__bounce'}>
+      <div className={`${style['service-text__row']} ${style['service-text__row_mid']}`}>
+        <div className={style['service-text__bounce']}>
           <Bounce color={'#101010'} size={'140px'} mobileSize={'80px'} left={'60%'} top={'50%'}>
             Free quote
           </Bounce>
@@ -41,7 +42,7 @@ const ServiceText = () => {
           </p>
         </div>
       </div>
-      <div className={'service-text__row'}>
+      <div className={style['service-text__row']}>
         <div>
           <div className={'block-title'}>
             We Listen Before We Act

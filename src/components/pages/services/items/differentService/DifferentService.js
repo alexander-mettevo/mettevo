@@ -1,17 +1,18 @@
 import React from 'react';
 import DiffCryptoSvg from "@/components/pages/services/items/differentService/items/DiffCryptoSvg";
+import style from './different.module.scss'
 
 const DifferentService = ({different}) => {
   return (
     <div className={'block-wrapper'}>
-      <h2 className='block-title different__title'>
+      <h2 className={`block-title ${style['different__title']}`}>
         WHAT MAKES mettevo SEO SERVICES DIFFERENT
       </h2>
-      <div className={'different__row'}>
+      <div className={style['different__row']}>
         {different.map((item, index) => (
-          <div key={index + 'diff'} className={'different__item item-different'}>
-            <div className={'item-different__top'}>
-              <div className={'item-different__image'}>
+          <div key={index + 'diff'} className={`${style['different__item']} ${style['item-different']}`}>
+            <div className={style['item-different__top']}>
+              <div className={style['item-different__image']}>
                 <DiffCryptoSvg/>
               </div>
               <div className={'title_1'}>{item.title}</div>
