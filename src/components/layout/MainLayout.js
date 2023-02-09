@@ -4,6 +4,7 @@ import HeaderComponent from "@/components/layout/header/HeaderComponent";
 import Menu from "@/components/layout/header/menu/Menu";
 import MainComponent from "@/components/layout/main/Main";
 import dynamic from "next/dynamic";
+import styles from './Main.module.scss';
 
 const CursorAnimation = dynamic(() =>
   import('@/components/layout/assets/cursotAnimation/CursorAnimation'), {
@@ -41,7 +42,7 @@ const MainLayout = ({children}) => {
     type="checkbox"
     onChange={handleThemeSwitcher}
   />
-  <div className="wrapper">
+  <div className={`${styles.wrapper} wrapper`}>
     <HeaderComponent active={menuActive} setActive={setMenuActive}/>
     <MainComponent>
       <div className="__container">
