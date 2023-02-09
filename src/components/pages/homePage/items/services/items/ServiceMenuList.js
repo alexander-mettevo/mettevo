@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from "next/link";
+import style from '../services.module.scss'
 
 const ServiceMenuList = ({list}) => {
 
   return (
-    <ul className={'menu-services__list'}>
+    <ul className={style['menu-services__list']}>
       {list.map((item) => (
         <li key={item.href}>
           <Link key={item.href} href={item.href}>{item.title}</Link>

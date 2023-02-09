@@ -4,7 +4,7 @@ import {useSelector} from "react-redux";
 import ReviewsItem from "@/components/pages/homePage/items/reviews/items/ReviewsItem";
 import {Navigation} from "swiper";
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
-
+import style from '../reviews.module.scss'
 const ReviewsContent = () => {
   const data = useSelector(state => state.homePage.reviewsHomePage);
   const ref = useRef(null);
@@ -12,7 +12,7 @@ const ReviewsContent = () => {
   useEffect(() => {showFromBottom(ref)}, [])
 
   return (
-    <div className={'reviews'} ref={ref}>
+    <div className={style.reviews} ref={ref}>
       <Swiper
         spaceBetween={50}
         slidesPerView={1}

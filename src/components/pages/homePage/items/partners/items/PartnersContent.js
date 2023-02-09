@@ -5,6 +5,7 @@ import {Controller} from "swiper";
 import Image from "next/image";
 import partnersSliderAnimationScript from "@/components/pages/homePage/items/partners/animationScript";
 import Link from "next/link";
+import style from '../partners.module.scss'
 
 const breakpoints = {
   1440: {
@@ -39,7 +40,7 @@ const PartnersContent = () => {
   }, [])
 
   return (
-    <div className={'partners__slider-wrapper'} data-mouse={'Drag'}>
+    <div className={style['partners__slider-wrapper']} data-mouse={'Drag'}>
       <Swiper
         ref={firstSlider}
         slidesPerView={7}
@@ -53,7 +54,7 @@ const PartnersContent = () => {
         }}>
         {firstHomePagePartners.map((item, index) => (
           <SwiperSlide key={index + 'partnerLogo2'}>
-            <Link className={'partners__link'} href={item.href}>
+            <Link className={style['partners__link']} href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
             </Link>
           </SwiperSlide>
@@ -72,7 +73,7 @@ const PartnersContent = () => {
       }}>
         {secondHomePagePartners.map((item, index) => (
           <SwiperSlide key={index + 'partnerLogo1'}>
-            <Link className={'partners__link'} href={item.href}>
+            <Link className={style['partners__link']} href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
             </Link>
           </SwiperSlide>

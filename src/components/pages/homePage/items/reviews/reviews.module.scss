@@ -3,11 +3,11 @@
   margin-top: 80px;
   padding: 56px;
 
-  .swiper {
+  [class~="swiper"] {
     z-index: 1;
   }
 
-  .swiper-button-next, .swiper-button-prev {
+  [class~="swiper-button-next"], [class~="swiper-button-prev"] {
     position: absolute;
     cursor: pointer;
     border-style: solid;
@@ -18,17 +18,17 @@
 
 
 
-  .swiper-button-next {
+  [class~="swiper-button-next"] {
     border-color: transparent transparent transparent var(--text-color);
     right: 0;
   }
 
-  .swiper-button-prev{
+  [class~="swiper-button-prev"]{
     border-color: transparent var(--text-color) transparent   transparent;
     right: 50px;
   }
 
-  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+  [class~="swiper-button-next"][class~="swiper-button-disabled"], [class~="swiper-button-prev"][class~="swiper-button-disabled"]{
     opacity: 0.5;
   }
 
@@ -111,7 +111,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    .star-svg {
+    [class~="star-svg"] {
       width: 22px;
       height: 22px;
     }

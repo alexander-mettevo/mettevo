@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import servicesAnimationScript
   from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript";
 import {showLineAnimationWithCircle} from "@/components/reusable/animations/showLineAnimation";
-
+import style from '../../services.module.scss'
 const Computer = () => {
   const ref = useRef(null)
 
@@ -12,7 +12,7 @@ const Computer = () => {
   }, [])
 
   return (
-    <div className={'services__svg'} ref={ref}>
+    <div className={style['services__svg']} ref={ref}>
       <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path className="animation-circle"
               d="M59.9261 87.4093C68.2665 87.4093 75.0277 80.6481 75.0277 72.3077C75.0277 63.9674 68.2665 57.2062 59.9261 57.2062C51.5858 57.2062 44.8246 63.9674 44.8246 72.3077C44.8246 80.6481 51.5858 87.4093 59.9261 87.4093Z"

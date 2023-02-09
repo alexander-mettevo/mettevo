@@ -1,9 +1,10 @@
 import React from 'react';
+import style from '../../services-info.module.scss'
 
 const ServiceText = ({info}) => {
   return (
-    <div className={`text-services services-info__text ${!!info?.list && 'services-info__text_list'}`}>
-      <div className={'item-text text-services__top'}>
+    <div className={`${style['text-services']} ${style['services-info__text']} ${!!info?.list && style['services-info__text_list']}`}>
+      <div className={`item-text ${style['text-services__top']}`}>
         {info.text}
       </div>
       {!!info.list && (

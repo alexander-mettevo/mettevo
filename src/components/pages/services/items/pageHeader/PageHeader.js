@@ -1,13 +1,14 @@
 import React from 'react';
+import style from './page-header.module.scss'
 
 const PageHeader = ({url, title}) => {
   return (
-    <div className="page-header title-page">
-      <div className="page-header__url">
+    <div className={`${style['page-header']} title-page`}>
+      <div className={style["page-header__url"]}>
         {url}
       </div>
-      <h2 className="page-header__subtitle">mettevo</h2>
-      <h1 className="page-header__title">{title}</h1>
+      <h2 className={style["page-header__subtitle"]}>mettevo</h2>
+      <h1 className={style["page-header__title"]}>{title}</h1>
     </div>
   );
 };
