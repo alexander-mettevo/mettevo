@@ -60,7 +60,7 @@ const CursorAnimation = () => {
 
   return (
     <>
-      <div ref={ref} className={'cursor-animation ball'}>{word}</div>
+      <div ref={ref} className={`cursor-animation ball`}>{word}</div>
     </>
 
   );
