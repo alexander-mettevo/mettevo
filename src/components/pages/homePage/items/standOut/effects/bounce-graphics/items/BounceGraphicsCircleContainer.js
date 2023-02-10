@@ -1,9 +1,10 @@
 import React from 'react';
 import Bounce from "@/components/reusable/bounce/Bounce";
+import style from '../bounce-graphic.module.scss'
 
 const BounceGraphicsCircleContainer = () => {
   return (
-    <div className={'bounce-graphic__circle-wrapper'}>
+    <div className={style['bounce-graphic__circle-wrapper']}>
       <Bounce size={'130px'} color={'#101010'} top={'calc(100% - 140px)'} left={'78px'}>integration </Bounce>
       <Bounce size={'170px'} color={'#EBEBEB'} top={'10%'} left={'152px'}>finish of the project </Bounce>
       <Bounce size={'210px'} color={'#101010'} top={'0'} left={'calc(100% - 210px)'}>continue working on the project </Bounce>

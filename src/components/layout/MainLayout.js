@@ -41,7 +41,7 @@ const MainLayout = ({children}) => {
     type="checkbox"
     onChange={handleThemeSwitcher}
   />
-  <div className="wrapper">
+  <div className={'wrapper'}>
     <HeaderComponent active={menuActive} setActive={setMenuActive}/>
     <MainComponent>
       <div className="__container">

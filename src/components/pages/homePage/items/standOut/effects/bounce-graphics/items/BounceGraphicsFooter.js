@@ -1,9 +1,9 @@
 import React from 'react';
 import Bounce from "@/components/reusable/bounce/Bounce";
-
+import style from '../bounce-graphic.module.scss'
 const BounceGraphicsFooter = () => {
   return (
-    <div className={'bounce-graphic__footer'}>
+    <div className={style['bounce-graphic__footer']}>
       <div>
         <Bounce color={'#101010'} size={'30px'} left={0} top={'calc(50% - 15px)'}/>
         - Mettevo

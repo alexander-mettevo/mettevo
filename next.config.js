@@ -3,11 +3,9 @@ const path = require('path')
 
 const nextConfig = {
   reactStrictMode: false,
-  compiler: {
-    styledComponents: true
-  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
+    additionalData: `@use "src/styles/scss/style.scss" as *;`
   },
   experimental: {
     // appDir: true,

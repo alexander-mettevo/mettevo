@@ -2,11 +2,12 @@ import React from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import ArrowLink from "@/components/reusable/links/ArrowLink";
 import HomePageBlogItems from "@/components/pages/homePage/items/homePageBlog/items/HomePageBlogItems";
+import style from './home-blog.module.scss'
 
 const HomePageBlog = () => {
   return (
-    <div className={'home-blog'}>
-      <div className={'home-blog__header'}>
+    <div className={style['home-blog']}>
+      <div className={style['home-blog__header']}>
         <BlockTitle>
           learn with mettevo
         </BlockTitle>

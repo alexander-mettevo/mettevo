@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
+import style from './AreYouReady.module.scss';
 
 const AreYouReady = () => {
   const ref = useRef(null);
@@ -8,7 +9,7 @@ const AreYouReady = () => {
   useEffect(() => {showFromBottom(ref)}, [])
 
   return (
-    <div className={'are-you-ready'} ref={ref}>
+    <div className={style.areYouReady} ref={ref}>
       <BlockTitle >
         Are You Ready To Grow Your Website?
       </BlockTitle>

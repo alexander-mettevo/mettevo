@@ -19,13 +19,14 @@ a:active {
 html,
 body {
 	height: 100%;
-	min-width: $minWidth + px;
+	//min-width: $minWidth + px;
 }
 body {
 	color: $mainColor;
 	line-height: 1;
 	font-family: $fontFamily;
 	font-size: $fontSize;
+	overflow-x: hidden;
 	//text-rendering: optimizeLegibility;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;

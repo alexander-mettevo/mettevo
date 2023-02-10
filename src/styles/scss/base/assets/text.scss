@@ -22,8 +22,6 @@
 }
 
 .item-text {
-  font-style: italic;
-
   @include adaptiveValue("font-size", 20, 16);
   @include adaptiveValue("line-height", 32, 24);
 }
@@ -46,5 +44,26 @@
 
   &:hover::before {
     transform: scaleX(1);
+  }
+}
+
+.title {
+  &_1 {
+    text-transform: lowercase;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 24, 18);
+    @include adaptiveValue("line-height", 23.21, 17.41);
+  }
+}
+
+.text {
+  &_1 {
+    @include adaptiveValue("font-size", 18, 16);
+    @include adaptiveValue("line-height", 30, 24);
+  }
+
+  &_2 {
+    @include adaptiveValue('font-size', 20, 16);
+    @include adaptiveValue('line-height', 19, 15);
   }
 }

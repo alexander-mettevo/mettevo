@@ -1,9 +1,7 @@
-import React, {useEffect, useRef} from 'react';
-import {showLineAnimation} from "@/components/reusable/animations/showLineAnimation";
-import gsap from "gsap";
+import React from 'react';
 import useInitAnimation from "@/hooks/useInitAnimation";
 import {
-  callbackAnimation, callbackAnimationLine
+  callbackAnimationLine
 } from "@/components/reusable/collectionBtns/items/CollectionBtnsSVGImages/callbacksAnimations";
 
 const Crypto = () => {

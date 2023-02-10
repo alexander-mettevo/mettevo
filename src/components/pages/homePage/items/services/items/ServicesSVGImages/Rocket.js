@@ -3,6 +3,7 @@ import servicesAnimationScript
   from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript";
 import rocketAnimation
   from "@/components/pages/homePage/items/services/items/ServicesSVGImages/animationScript/scripts/rocketAnimation";
+import style from '../../services.module.scss'
 
 const Rocket = () => {
   const ref = useRef(null)
@@ -13,7 +14,7 @@ const Rocket = () => {
   }, [])
 
   return (
-    <div className={'services__svg'}>
+    <div className={style['services__svg']}>
       <svg ref={ref} width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path className='dark-line'
           d="M4.15382 118.118C3.81662 118.118 3.47942 117.989 3.22257 117.732C2.70755 117.217 2.70755 116.385 3.22257 115.87L56.2301 62.8622C56.7452 62.3472 57.5776 62.3472 58.0926 62.8622C58.6077 63.3772 58.6077 64.2097 58.0926 64.7247L5.08507 117.732C4.8269 117.989 4.4897 118.118 4.15382 118.118Z"

@@ -1,11 +1,5 @@
-.collection-btns {
+.CollectionBtns{
   @include adaptiveValue("margin-top", 305, 160);
-
-  &__title {
-    font-weight: 500;
-    @include adaptiveValue("font-size", 24, 18);
-    @include adaptiveValue("line-height", 23.21, 17.41);
-  }
 
   &__row {
     display: flex;

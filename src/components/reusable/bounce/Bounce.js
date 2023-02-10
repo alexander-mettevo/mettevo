@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import bounceAnimationScript from "@/components/reusable/bounce/animationScript";
 import useWindowSize from "@/hooks/useWindowSize";
+import style from './Bounce.module.scss';
 
 const Bounce = ({
                   children,
@@ -15,7 +16,7 @@ const Bounce = ({
   useEffect(() => {
     bounceAnimationScript(ref);
   }, []);
-  const [style, setStyle] = useState({})
+  const [inlineStyle, setStyle] = useState({})
 
   useEffect(() => {
     const finishSize = (mobileSize && width < 650) ? mobileSize : size
@@ -45,11 +46,11 @@ const Bounce = ({
 
   return (
     <div
-      className={'bounce'}
+      className={style.Bounce}
       ref={ref}
-      style={style}
+      style={inlineStyle}
     >
-      <div className={'bounce__item'}>
+      <div className={style.BounceItem}>
         {children}
       </div>
     </div>

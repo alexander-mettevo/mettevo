@@ -3,7 +3,7 @@ import Form from "@/components/layout/footer/footerForm/items/Form";
 
 const FooterForm = () => {
   return (
-    <div className={'footer-form'}>
+    <div className={'footer-form form'}>
       <Form/>
     </div>
   );

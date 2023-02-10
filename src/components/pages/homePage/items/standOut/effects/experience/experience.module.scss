@@ -1,0 +1,53 @@
+.experience {
+  position: relative;
+
+  span:nth-child(1) {
+    left: 0;
+    top: 8.333%;
+  }
+  span:nth-child(2) {
+    left: 30%;
+    top: 23.333%;
+  }
+  span:nth-child(3) {
+    right: 10%;
+    top: 0;
+  }
+  span:nth-child(4) {
+    left: 0;
+    top: 45%;
+  }
+  span:nth-child(5) {
+    left: 40%;
+    top: 72%;
+  }
+  span:nth-child(6) {
+    right: 0;
+    top: 55%;
+  }
+
+  &__background {
+    text-align: center;
+    color: var(--main-gray);
+    font-weight: 900;
+  }
+
+  &__word {
+    font-weight: 700;
+    font-size: 1.68rem;
+    text-transform: uppercase;
+    position: absolute;
+
+    @media(max-width: 1100px) {
+      font-size: 2rem;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 1.3rem;
+    }
+
+    @media(max-width: 568px) {
+      font-size: 4vw;
+    }
+  }
+}

@@ -41,7 +41,7 @@ export const menuItems = [
 export const pageLinks = [
   {
     title: "SEO",
-    href: "/seo"
+    href: "/services/seo"
   },
   {
     title: "SMM",

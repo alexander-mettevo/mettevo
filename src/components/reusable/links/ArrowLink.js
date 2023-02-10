@@ -1,15 +1,16 @@
 import React from 'react';
 import Link from "next/link";
+import style from './ArrowLink.module.scss';
 
 const ArrowLink = ({href, title, isMarginRight}) => {
   return (
-    <div className={`arrow-link ${isMarginRight && 'arrow-link_mr'}`}>
-      <Link className={'arrow-link__link-item'} href={href}>
+    <div className={`${style['arrow-link']} ${isMarginRight && style['arrow-link_mr']}`}>
+      <Link className={style['arrow-link__link-item']} href={href}>
         {title}
       </Link>
-      <div className={'arrow-link__items-wrapper'}>
-        <span className={'arrow-link__link-line'}/>
-        <span className={'arrow-link__link-rectangle'}/>
+      <div className={style['arrow-link__items-wrapper']}>
+        <span className={style['arrow-link__link-line']}/>
+        <span className={style['arrow-link__link-rectangle']}/>
       </div>
     </div>
   );

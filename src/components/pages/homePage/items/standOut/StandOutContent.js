@@ -2,13 +2,13 @@ import React from 'react';
 import {useSelector} from "react-redux";
 import StandOutItem from "@/components/pages/homePage/items/standOut/StandOutItem";
 import useWindowSize from "@/hooks/useWindowSize";
-
+import style from './stand-out.module.scss';
 const StandOutContent = () => {
   const data = useSelector(state => state.homePage.homePageStandOutContent);
   const {width} = useWindowSize()
 
   return (
-    <div className={'stand-out__row'}>
+    <div className={style['stand-out__row']}>
       {
         width < 1100 ? data && data.map((item, index) => (
              <StandOutItem  key={index + 'standOutContent'} item={item}/>

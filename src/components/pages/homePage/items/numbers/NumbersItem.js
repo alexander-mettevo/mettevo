@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import numbersAnimationScript from "@/components/pages/homePage/items/numbers/animationScript";
-
+import style from './numbers.module.scss'
 const NumbersItem = ({value, text}) => {
   const ref = useRef(null);
 
@@ -20,9 +20,9 @@ const NumbersItem = ({value, text}) => {
   }, [value]);
 
   return (
-    <div className={'item-numbers'}>
-      <div className={'item-numbers__value'} ref={ref}/>
-      <div className={'item-numbers__text'}>{text}</div>
+    <div className={style['item-numbers']}>
+      <div className={style['item-numbers__value']} ref={ref}/>
+      <div className={style['item-numbers__text']}>{text}</div>
     </div>
   );
 };

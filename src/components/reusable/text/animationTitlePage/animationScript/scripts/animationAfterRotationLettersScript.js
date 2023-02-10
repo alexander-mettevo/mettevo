@@ -27,6 +27,7 @@ const animationAfterRotationLettersScript = (
 
   wrapperTL.to('body', {
     overflowY: 'auto',
+    overflowX: 'hidden',
     touchAction: 'auto',
     overscrollBehavior: 'auto',
   })

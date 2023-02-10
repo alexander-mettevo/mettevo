@@ -10,7 +10,7 @@ export const homePageServiceList = [
       },
       {
         title: "on-page seo",
-        href: "/service/seo/on-page_seo"
+        href: "/services/seo/on-page"
       },
       {
         title: "keywords research",
@@ -72,7 +72,7 @@ export const homePageServiceList = [
       },
       {
         title: "on-page seo",
-        href: "/service/web/on-page_seo"
+        href: "/services/seo/on-page"
       },
       {
         title: "keywords research",

@@ -1,10 +1,11 @@
 import React from 'react';
 import Link from "next/link";
+import style from './logo.module.scss';
 
 const Logo = () => (
-    <Link className={'logo'} href={'/'}>
-      <div className={'logo__top'}>METTEVO</div>
-      <div className={'logo__bottom'}>DIGITAL AGENCY</div>
+    <Link className={style['logo']} href={'/'}>
+      <div className={style['logo__top']}>METTEVO</div>
+      <div className={style['logo__bottom']}>DIGITAL AGENCY</div>
     </Link>
   );
 

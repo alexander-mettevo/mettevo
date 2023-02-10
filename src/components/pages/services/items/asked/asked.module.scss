@@ -1,0 +1,20 @@
+.asked {
+  display: flex;
+  justify-content: flex-end;
+
+  &__body {
+    flex: 0 0 80%;
+
+    @media (max-width: $pc) {
+      flex: 0 0 90%;
+    }
+
+    @media (max-width: $tablet) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__content {
+    @include adaptiveValue('margin-top', 60, 24);
+  }
+}

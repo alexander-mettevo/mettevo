@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 import useWindowSize from "@/hooks/useWindowSize";
+import style from './menu-list.module.scss'
 
 const MenuBtnsList = ({
                         list,
@@ -39,7 +40,7 @@ const MenuBtnsList = ({
       {list.length > 0 && list.map((item, index) => {
         if (!item.link) {
           return (
-            <li className={'menu-list__item'}
+            <li className={style['menu-list__item']}
               onClick={() => onClickItem(item.id)}
               key={index + keyWord}
               style={{
@@ -51,7 +52,7 @@ const MenuBtnsList = ({
           )
         } else {
           return (
-            <li className={'menu-list__item'}
+            <li className={style['menu-list__item']}
               key={index + keyWord}
                 style={{
                   '--rectangle-size': sizes.rectangleSize,

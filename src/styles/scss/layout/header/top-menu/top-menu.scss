@@ -56,6 +56,10 @@
       width: 100%;
       padding: 0 16px;
     }
+
+    li {
+      @include adaptiveValue('margin-bottom', 24, 12);
+    }
   }
 
   &__right-side {
@@ -75,6 +79,9 @@
       }
     }
 
+    li {
+      @include adaptiveValue('margin-bottom', 12, 8);
+    }
 
 
     @media (max-width: 530px) {
