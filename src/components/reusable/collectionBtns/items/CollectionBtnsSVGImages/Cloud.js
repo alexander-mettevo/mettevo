@@ -1,6 +1,4 @@
-import React, {useEffect, useRef} from 'react';
-import {showLineAnimationWithCircle} from "@/components/reusable/animations/showLineAnimation";
-import gsap from "gsap";
+import React from 'react';
 import useInitAnimation from "@/hooks/useInitAnimation";
 import {
   callbackAnimation
@@ -10,7 +8,7 @@ const Cloud = () => {
   const [ref, timelineRef, handleOnMouseEnter, handleOnMouseLeave] = useInitAnimation(callbackAnimation, ['center left'])
 
   return (
-    <svg onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} ref={ref} width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg onMouseEnter={handleOnMouseEnter} onMouseLeave={handleOnMouseLeave} ref={ref} width="101" height="100" viewBox="0 -20 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_1027_16720)">
         <path className="animation-circle"
               d="M50.4395 56.3454C65.8472 56.3454 78.3376 43.855 78.3376 28.4473C78.3376 13.0397 65.8472 0.549316 50.4395 0.549316C35.0319 0.549316 22.5415 13.0397 22.5415 28.4473C22.5415 43.855 35.0319 56.3454 50.4395 56.3454Z"
