@@ -52,19 +52,11 @@
   }
 
   &__image {
-    position: relative;
     height: 550px;
-    overflow: hidden;
 
     img {
       object-fit: contain;
       object-position: bottom;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-      }
     }
     @media (max-width: 1230px) {
       height: 40vw;

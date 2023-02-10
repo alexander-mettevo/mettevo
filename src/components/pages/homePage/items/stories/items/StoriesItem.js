@@ -4,6 +4,7 @@ import showFromBottom from "@/components/reusable/animations/showFromBottom";
 import useWindowSize from "@/hooks/useWindowSize";
 import Link from "next/link";
 import style from '../stories.module.scss'
+import BlackAndGray from "@/components/reusable/text/textComponents/BlackAndGray";
 
 const StoriesItem = ({item}) => {
   const ref = useRef(null);
@@ -36,18 +37,13 @@ const StoriesItem = ({item}) => {
 
   return (
     <div ref={ref}>
-      <Link className={style['stories__image-wrapper']} href={item.href} data-mouse={'View'} style={{
+      <Link className={`${style['stories__image-wrapper']} container-img`} href={item.href} data-mouse={'View'} style={{
         width: imageSize.width,
         height: imageSize.height
       }}>
         <Image fill src={item.image.src} alt={item.title} />
       </Link>
-
-      <p className={'item-text'}>
-        <span>{item.title} </span>
-        -
-        <span className={style['stories__subtitle']}> {item.subtitle}</span>
-      </p>
+      <BlackAndGray item={item}/>
     </div>
   );
 };

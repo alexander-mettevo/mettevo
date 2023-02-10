@@ -7,7 +7,7 @@ const HomePageBlogItem = ({item}) => {
 
   return (
     <Link className={style['home-blog__item']} href={item.href}>
-      <div className={style['home-blog__image']} data-mouse={'Read'}>
+      <div className={`${style['home-blog__image']} container-img`} data-mouse={'Read'}>
         <Image src={item.image} fill alt={'post image'}/>
       </div>
       <div>

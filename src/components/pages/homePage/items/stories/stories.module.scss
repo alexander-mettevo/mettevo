@@ -66,19 +66,7 @@
 
   &__image-wrapper {
     display: block;
-    position: relative;
-    overflow: hidden;
 
-    img {
-      transition: all 0.3s ease;
-      object-fit: contain;
-    }
-
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
-    }
     @media (max-width: 900px) {
       margin: 0 auto;
     }
