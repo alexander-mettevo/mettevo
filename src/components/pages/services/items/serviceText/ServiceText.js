@@ -25,11 +25,6 @@ const ServiceText = () => {
         </div>
       </div>
       <div className={`${style['service-text__row']} ${style['service-text__row_mid']}`}>
-        <div className={style['service-text__bounce']}>
-          <Bounce color={'#101010'} size={'140px'} mobileSize={'80px'} left={'60%'} top={'50%'}>
-            Free quote
-          </Bounce>
-        </div>
         <div>
           <div className={'block-title'}>
             RANK HIGHER ON GOOGLE
@@ -40,6 +35,11 @@ const ServiceText = () => {
             authorities in their industry. This ensures that each SEO campaign is a success by producing Page 1 results,
             driving relevant traffic to crucial pages.
           </p>
+        </div>
+        <div className={style['service-text__bounce']}>
+          <Bounce color={'#101010'} size={'140px'} mobileSize={'80px'} left={'60%'} top={'50%'}>
+            Free quote
+          </Bounce>
         </div>
       </div>
       <div className={style['service-text__row']}>

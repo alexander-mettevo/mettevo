@@ -4,33 +4,36 @@
     display: flex;
 
     & > div {
-      flex: 0 0 50.2%;
+      flex: 0 0 50%;
     }
 
     @media (max-width: $tablet) {
-      flex-direction: column;
+      display: block;
 
-      .service-text__bounce {
-        align-self: flex-end;
-        margin-top: 30px;
-      }
+
     }
 
     &_mid {
-      flex-direction: column-reverse;
+      flex-direction: row-reverse;
     }
   }
 
   &__bounce {
-  position: relative;
+    position: relative;
 
     & > div {
       transform: translateY(-50%);
+    }
 
-      @media (max-width: $tablet) {
+    @media (max-width: $tablet) {
+      display: flex;
+      margin: 30px 0;
+      justify-content: flex-end;
+
+
+      & > div {
         position: static;
         transform: translateY(0);
-
       }
     }
   }
