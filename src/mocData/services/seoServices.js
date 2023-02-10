@@ -84,7 +84,48 @@ const seoServices = {
       subtitle: 'web development, healthcare',
       height: 517
     }
-  ]
+  ],
+  servicesText: [
+    [
+      {
+      component: 'text',
+      content: {
+        title: 'We Deliver Page 1 Rankings',
+        text: 'On-page optimization involves updating your website methodically to increase its online visibility for those searching for the products or services you offer. SEO marketing requires significant time and skills to produce a competitive strategy for the digital marketplace. DMA conducts a site audit to understand the keywords your website targets, the quality of content on the website, and internal linking strategies to identify improvements to your SEO performance.'
+      }
+    },
+      {
+        component: 'bounce',
+        content: {
+          text: 'Free quote'
+        }
+      }
+      ],
+    [
+      {
+        component: 'bounce',
+        content: {
+          text: 'Free quote'
+        }
+      },
+      {
+        component: 'text',
+        content: {
+          title: 'RANK HIGHER ON GOOGLE',
+          text: 'Your incoming links and outside presence affects your SEO performance. We have a proven track record of creating campaigns that take advantage of powerful resources to establish our clients\' websites as authorities in their industry. This ensures that each SEO campaign is a success by producing Page 1 results, driving relevant traffic to crucial pages.'
+        }
+      }
+    ],
+    [
+      {
+        component: 'text',
+        content: {
+          title: 'We Listen Before We Act',
+          text: 'Before we start work on any client\'s website, we conduct an audit of the website by taking a look at the content and its presence on the World Wide Web. Our SEO professionals spend time getting to understand the work that has already been done and determine what areas are lacking. We put together a plan to ensure that each website is given a chance to succeed. We believe search engine optimization is not a "one size fits all" situation; each of our SEO campaigns are built specifically with that client in mind.'
+        }
+      }
+    ],
+  ],
 }
 
 export default seoServices;

@@ -8,7 +8,7 @@ const PageHeader = ({url, title}) => {
         {url}
       </div>
       <h2 className={style["page-header__subtitle"]}>mettevo</h2>
-      <h1 className={style["page-header__title"]}>{title}</h1>
+      <h1 className={`${style["page-header__title"]} ${title.length > 14 && style["page-header__title_long"]}`}>{title}</h1>
     </div>
   );
 };

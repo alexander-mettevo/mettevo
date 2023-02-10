@@ -7,14 +7,18 @@
       flex: 0 0 50%;
     }
 
-    @media (max-width: $tablet) {
-      display: block;
-
-
+    &_r {
+      flex-direction: row-reverse;
     }
 
-    &_mid {
-      flex-direction: row-reverse;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    @media (max-width: $tablet) {
+      order: 1;
     }
   }
 
@@ -29,11 +33,11 @@
       display: flex;
       margin: 30px 0;
       justify-content: flex-end;
-
+      order: 2;
 
       & > div {
         position: static;
-        transform: translateY(0);
+        transform: translateY(0) !important;
       }
     }
   }

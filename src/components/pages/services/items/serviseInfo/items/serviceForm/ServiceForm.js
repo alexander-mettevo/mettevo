@@ -2,12 +2,6 @@ import React, {useEffect, useState} from 'react';
 import style from '../../services-info.module.scss'
 
 const ServiceForm = ({title}) => {
-  const [labelText, setLabelText] = useState(title);
-
-  useEffect(() => {
-    setLabelText(title.replace(/Services/i, 'services'));
-  }, [])
-
   return (
     <form className={`${style['services-info__form']} ${style['form-services']} form`}>
       <div className={`${style['form-services__block']} ${style['form-services__items-wrap']}`}>
@@ -23,7 +17,7 @@ const ServiceForm = ({title}) => {
       </div>
       <div className={`${style['form-services__items-wrap']} ${style['form-services__items-wrap_s']}`}>
         <label className={`input__label ${style['form-services__label']} ${style['form-services__label_w']}`}
-               htmlFor={'service-input'}>I want to get free {labelText} quote of my website</label>
+               htmlFor={'service-input'}>I want to get free {title} quote of my website</label>
       </div>
       <div className={style['form-services__items-wrap']}>
         <input id={'service-input'} className={`${style['form-services__input']} input`} type='text'

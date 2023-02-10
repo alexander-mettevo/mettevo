@@ -20,5 +20,9 @@
     font-weight: 900;
     text-transform: uppercase;
     @include textBlock(120, 32, 160, 37, 155, 56);
+
+    &_long {
+      @include textBlock(120, 32, 100, 37, 97, 56);
+    }
   }
 }
