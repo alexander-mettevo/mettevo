@@ -41,35 +41,237 @@ export const menuItems = [
 export const pageLinks = [
   {
     title: "SEO",
-    href: "/services/seo"
+    href: "/seo",
+    childPage: [
+      {
+        title: "SEO Services",
+        href: "/seo/",
+        childPage: [
+          {
+            title: "SEO for Healthcare Providers",
+            href: "/seo/healthcare",
+          },
+          {
+            title: "SEO for SAAS Industry",
+            href: "/seo/saas",
+          },
+          {
+            title: "SEO for B2B Companies",
+            href: "/seo/b2b",
+          },
+          {
+            title: "SEO for Crypto",
+            href: "/seo/crypto",
+          },
+          {
+            title: "SEO for Finanical Services Industry",
+            href: "/seo/finances",
+          },
+          {
+            title: "SEO for Real Estate Industry",
+            href: "/seo/real-estate",
+          },
+          {
+            title: "SEO for Franchises",
+            href: "/seo/franchise",
+          }
+        ]
+      },
+      {
+        title: "e-commerce seo",
+        href: "/seo/e-commerce",
+        childPage: [
+          {
+            title: "WooCommerce SEO",
+            href: "/seo/woocommerce-seo",
+          },
+          {
+            title: "Shopify SEO",
+            href: "/seo/shopify-seo",
+          },
+          {
+            title: "Magento SEO",
+            href: "/seo/magento-seo",
+          },
+          {
+            title: "Amazon SEO",
+            href: "/seo/amazon-seo",
+          },
+        ]
+      },
+      {
+        title: "on-page seo",
+        href: "/seo/on-page",
+      },
+      {
+        title: "keywords research",
+        href: "/seo/keywords-research",
+      },
+      {
+        title: "content marketing",
+        href: "/seo/content-marketing",
+      },
+      {
+        title: "mobile seo",
+        href: "/seo/mobile",
+      },
+      {
+        title: "international seo",
+        href: "/seo/international",
+      },
+    ]
   },
   {
     title: "SMM",
-    href: "/smm"
+    href: "/smm",
+    childPage: [
+      {
+        title: "SMM Services",
+        href: "/smm",
+      },
+      {
+        title: "facebook management",
+        href: "/smm/facebook-management",
+      },
+      {
+        title: "instagram management",
+        href: "/smm/instagram-management",
+      },
+      {
+        title: "linkedin management",
+        href: "/smm/linkedin-management",
+      },
+      {
+        title: "twitter management",
+        href: "/smm/twitter-management",
+      },
+      {
+        title: "youtube management",
+        href: "/smm/youtube-management",
+      },
+      {
+        title: "pinterest management",
+        href: "/smm/pinterest-management",
+      },
+    ]
   },
   {
     title: "WEB Development",
-    href: "/web-development"
+    href: "/web-development",
+    childPage: [
+      {
+        title: "Website Design",
+        href: "/web-design",
+      },
+      {
+        title: "Website Development Services",
+        href: "/web-development",
+        childPage: [
+          {
+            title: "Developing Website on Wordpress",
+            href: "/wordpress-development",
+          },
+          {
+            title: "Woocommerce Development",
+            href: "/woocommerce-development",
+          }
+        ]
+      },
+      {
+        title: "Website Maintenance Services",
+        href: "/website-maintenance",
+      },
+      {
+        title: "Website Speed Optimization",
+        href: "/website-speed-optimization",
+      },
+    ]
   },
   {
     title: "niches",
-    href: "/niches"
+    href: "/niches",
+    childPage: [
+      {
+        title: "E-commerce SEO",
+        href: "/seo/e-commerce",
+        childPage: [
+          {
+            title: "WooCommerce SEO",
+            href: "/seo/woocommerce-seo",
+          },
+          {
+            title: "Shopify SEO",
+            href: "/seo/shopify-seo",
+          },
+          {
+            title: "Magento SEO",
+            href: "/seo/magento-seo",
+          },
+          {
+            title: "Amazon SEO",
+            href: "/seo/amazon-seo",
+          },
+        ]
+      },
+      {
+        title: "SEO for Healthcare Providers",
+        href: "/seo/healthcare",
+      },
+      {
+        title: "SEO for SAAS Industry",
+        href: "/seo/saas",
+      },
+      {
+        title: "SEO for B2B Companies",
+        href: "/seo/b2b",
+      },
+      {
+        title: "SEO for Crypto",
+        href: "/seo/crypto",
+      },
+      {
+        title: "SEO for Finanical Services Industry",
+        href: "/seo/finances",
+      },
+      {
+        title: "SEO for Real Estate Industry",
+        href: "/seo/real-estate",
+      },
+      {
+        title: "SEO for Franchises",
+        href: "/seo/franchise",
+      }
+    ]
   },
   {
     title: "projects",
-    href: "/projects"
+    href: "/projects",
+    //TODO projects list
+    childPage: []
   },
   {
     title: "Company",
-    href: "/company"
+    href: "/company",
+    childPage: [
+      {
+        title: "About Us",
+        href: "/company/about-us",
+      },
+      {
+        title: "Career",
+        href: "/company/career",
+      }
+    ]
   },
   {
     title: "Blog",
-    href: "/blog"
+    href: "/blog",
+    childPage: []
   },
   {
     title: "Contacts",
-    href: "/contacts"
+    href: "/contacts",
+    childPage: []
   }
 
 ]

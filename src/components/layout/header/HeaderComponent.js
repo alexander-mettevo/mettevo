@@ -15,7 +15,7 @@ const HeaderComponent = ({active, setActive}) => {
           <div>
             <Logo/>
           </div>
-          <DesktopNavigation/>
+          {!active && <DesktopNavigation/>}
           <div className={'header__burger-btn'} ref={ref} onClick={handleMenu}>
             <span></span>
             <span></span>

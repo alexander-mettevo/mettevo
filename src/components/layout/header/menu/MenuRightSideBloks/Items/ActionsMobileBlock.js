@@ -1,6 +1,7 @@
 import React from 'react';
 import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsBlockForm";
 import {useSelector} from "react-redux";
+import ArrowLink from "@/components/reusable/links/ArrowLink";
 
 const ActionsMobileBlock = ({currentData}) => {
   const mobileShowContent = useSelector(state => state.menu.mobileShowContent)
@@ -11,8 +12,11 @@ const ActionsMobileBlock = ({currentData}) => {
       <>
         <div>
           <h4 className={'right-side__title'}>{currentData.data.title}</h4>
-          <div>
+          <p>
             {currentData.data.text}
+          </p>
+          <div className={'right-side__link'}>
+            <ArrowLink href={currentData.data.href || '/'} title={'Go to page'}/>
           </div>
         </div>
         <ActionsBlockForm title={currentData.title}/>
