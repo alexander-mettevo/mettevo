@@ -4,6 +4,8 @@ import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks
 import {useDispatch} from "react-redux";
 import {switchMobileShowContent} from "@/store/slices/menuSlice/MenuSlice";
 import ActionsMobileBlock from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsMobileBlock";
+import Link from "next/link";
+import ArrowLink from "@/components/reusable/links/ArrowLink";
 
 const ActionsBlock = ({list}) => {
   const [currentItem, setCurrentItem] = useState(list[0].id)
@@ -38,9 +40,14 @@ const ActionsBlock = ({list}) => {
         </div>
 
         <div className={'action-block__desktop'}>
-          <h4 className={'right-side__title'}>{currentData.data.title}</h4>
           <div>
-            {currentData.data.text}
+            <h4 className={'right-side__title'}>{currentData.data.title}</h4>
+            <div>
+              {currentData.data.text}
+            </div>
+          </div>
+          <div >
+            <ArrowLink href={currentData.data.href || '/'} title={'Go to page'}/>
           </div>
         </div>
       </div>
