@@ -14,7 +14,7 @@ const Team = ({list}) => {
       <div className={style['team__collection']}>
         {list?.length > 0 && list.map((item, index) => (
           <div className={style['team__image-wrap']}>
-            <div className={style['team__image']}>
+            <div data-mouse={'View'} className={`${style['team__image']} container-img`}>
               <Image src={item.url} fill alt={item.alt} key={index + 'team'} />
             </div>
           </div>
