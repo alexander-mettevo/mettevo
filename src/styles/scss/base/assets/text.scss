@@ -16,7 +16,7 @@
 .item-title {
   font-weight: 500;
   margin: 0;
-
+  text-transform: lowercase;
   @include adaptiveValue("font-size", 40, 24);
   @include adaptiveValue("line-height", 38.68, 32);
 }
