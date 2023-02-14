@@ -1,0 +1,96 @@
+.team {
+  &__text {
+    @include adaptiveValue("margin-top", 24, 16);
+    @include adaptiveValue("margin-bottom", 80, 40);
+  }
+
+  &__collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "item1 item2 item2"
+    "item1 item3 item4"
+    "item5 item6 item7"
+  ;
+    height: 647px;
+    gap: 20px;
+  }
+
+  &__image-wrap {
+    &:nth-child(1) {
+      grid-area: item1;
+      align-self: end;
+      justify-self: end;
+
+      & > div {
+        width: 337px;
+        height: 365px;
+      }
+    }
+    &:nth-child(2) {
+      grid-area: item2;
+      align-self: start;
+      justify-self: start;
+
+      & > div {
+        width: 631px;
+        height: 287px;
+      }
+    }
+    &:nth-child(3) {
+      grid-area: item3;
+
+      & > div {
+        width: 485px;
+        height: 265px;
+      }
+    }
+    &:nth-child(4) {
+      grid-area: item4;
+      align-self: start;
+      justify-self: end;
+
+      & > div {
+        width: 528px;
+        height: 265px;
+      }
+    }
+    &:nth-child(5) {
+      grid-area: item5;
+
+      & > div {
+        width: 423px;
+        height: 260px;
+      }
+    }
+    &:nth-child(6) {
+      grid-area: item6;
+
+      & > div {
+        width: 439px;
+        height: 260px;
+      }
+    }
+    &:nth-child(7) {
+      grid-area: item7;
+      align-self: start;
+      justify-self: start;
+
+      & > div {
+        width: 364px;
+        height: 239px;
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

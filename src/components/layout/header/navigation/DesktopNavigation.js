@@ -1,5 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
+import NavigationMenuItem from "@/components/layout/header/navigation/NavigationMenuItem";
 import Link from "next/link";
 
 const DesktopNavigation = () => {
@@ -8,10 +9,11 @@ const DesktopNavigation = () => {
   if (links.length > 0) {
     return (
       <nav className='desktop-nav'>
-        {links.map(({href, title}, index) => (
-          <Link className='nav-link  underline-link' href={href} key={href + index}>{title}</Link>
-        ))
-        }
+
+        {links.map((item, index) => {
+          if(item.childPage.length > 0) return  <NavigationMenuItem item={item} key={index + 'nav'}/>
+           else return  <Link className='nav-link  underline-link' key={index + 'sub-menu'} href={item.href}>{item.title}</Link>
+        })}
       </nav>
     );
   }
