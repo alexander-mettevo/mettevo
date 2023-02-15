@@ -1,6 +1,6 @@
 import React from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
-import ArrowLink from "@/components/reusable/links/ArrowLink";
+import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 import HomePageBlogItems from "@/components/pages/homePage/items/homePageBlog/items/HomePageBlogItems";
 import style from './home-blog.module.scss'
 

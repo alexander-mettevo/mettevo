@@ -1,8 +1,8 @@
 import React from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
-import StoriesItem from "@/components/pages/homePage/items/stories/items/StoriesItem";
-import ArrowLink from "@/components/reusable/links/ArrowLink";
+import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 import style from './stories.module.scss'
+import ImageLink from "@/components/reusable/links/imageLink/ImageLink";
 
 const Stories = ({stories}) => {
 
@@ -16,7 +16,7 @@ const Stories = ({stories}) => {
       <div className={style['stories__grid']}>
         {
           stories?.length > 0 && stories.map((item, index) => (
-            <StoriesItem item={item} key={index + 'Stories'}/>
+            <ImageLink item={item} key={index + 'Stories'}/>
           ))
         }
         <div>
