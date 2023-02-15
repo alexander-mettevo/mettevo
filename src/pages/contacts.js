@@ -1,5 +1,6 @@
+import ContactsPage from "@/components/pages/contacts/ContactsPage";
+import contacts from "@/mocData/contacts";
+
 export default function Contacts() {
-  return (
-    <>Hello world</>
-  )
+  return <ContactsPage data={contacts}/>
 }

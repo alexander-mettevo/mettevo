@@ -5,7 +5,7 @@ import Link from "next/link";
 const CareerItem = ({item}) => {
   return (
     <Link href={item.href} className={style['career__item']}>
-      <div className={style['career__title']}>
+      <div className={'title_2'}>
         {item.title}
       </div>
       <div className={'text_1'}>

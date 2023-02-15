@@ -15,7 +15,7 @@ const DifferentService = ({different}) => {
               <div className={style['item-different__image']}>
                 <DiffCryptoSvg/>
               </div>
-              <div className={'title_1'}>{item.title}</div>
+              <div className={'title_2'}>{item.title}</div>
             </div>
             <p className={'text_1'}>
               {item.text}

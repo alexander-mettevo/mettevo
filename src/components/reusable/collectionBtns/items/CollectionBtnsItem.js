@@ -10,7 +10,7 @@ const CollectionBtnsItem = ({item}) => {
       <div className={style['CollectionBtns__image-wrapper']}>
         {renderContent(item.image)}
       </div>
-      <div className={'title_1'}>
+      <div className={'title_2'}>
         {item.title}
       </div>
     </Link>
