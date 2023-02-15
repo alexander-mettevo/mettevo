@@ -1,3 +1,5 @@
+import certifications from "@/components/pages/company/aboutUs/items/certifications/Certifications";
+
 const aboutUs = {
   // url: 'seo services',
   title: 'Company',
@@ -221,7 +223,49 @@ const aboutUs = {
         value: '74%'
       },
     ]
-  }
+  },
+  certifications: [
+    {
+      src: '/images/about_us/certifications/image_1.svg',
+      alt: '',
+      href: '/'
+    },
+    {
+      src: '/images/about_us/certifications/image_2.svg',
+      alt: '',
+      href: '/'
+    },
+    {
+      src: '/images/about_us/certifications/image_3.svg',
+      alt: '',
+      href: '/'
+    },
+    {
+      src: '/images/about_us/certifications/image_4.svg',
+      alt: '',
+      href: '/'
+    },
+    {
+      src: '/images/about_us/certifications/image_5.svg',
+      alt: '',
+      href: '/'
+    },
+    {
+      src: '/images/about_us/certifications/image_6.svg',
+      alt: '',
+      href: '/'
+    },
+    {
+      src: '/images/about_us/certifications/image_7.svg',
+      alt: '',
+      href: '/'
+    },
+    {
+      src: '/images/about_us/certifications/image_8.svg',
+      alt: '',
+      href: '/'
+    },
+  ]
 }
 
 export default aboutUs

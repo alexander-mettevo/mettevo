@@ -5,6 +5,7 @@ import TopText from "@/components/pages/company/aboutUs/items/TopText";
 import Team from "@/components/pages/company/aboutUs/items/team/Team";
 import SEO from "@/components/pages/company/aboutUs/items/seo/SEO";
 import Partners from "@/components/pages/company/aboutUs/items/partners/Partners";
+import Certifications from "@/components/pages/company/aboutUs/items/certifications/Certifications";
 
 const AboutUsPage = ({data}) => {
   return (
@@ -15,6 +16,7 @@ const AboutUsPage = ({data}) => {
       <Team list={data.team}/>
       <SEO list={data.seo}/>
       <Partners partners={data.partners}/>
+      <Certifications certifications={data.certifications}/>
     </>
   );
 };
