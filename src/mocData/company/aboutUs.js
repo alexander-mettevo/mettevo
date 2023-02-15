@@ -265,6 +265,29 @@ const aboutUs = {
       alt: '',
       href: '/'
     },
+  ],
+  careers: [
+    {
+      title: 'Lead Generation Manager',
+      timing: 'Full Time',
+      location: 'Ukraine',
+      type: 'Remote',
+      href: '/career'
+    },
+    {
+      title: 'Senior Frontend Developer',
+      timing: 'Full Time',
+      location: 'Ukraine',
+      type: 'Remote',
+      href: '/career'
+    },
+    {
+      title: 'Lead Generation Manager',
+      timing: 'Full Time',
+      location: 'Ukraine',
+      type: 'Remote',
+      href: '/career'
+    },
   ]
 }
 
