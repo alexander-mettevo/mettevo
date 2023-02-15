@@ -1,7 +1,7 @@
 import React from 'react';
 import style from "@/components/reusable/numbers/numbers.module.scss";
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
-import ArrowLink from "@/components/reusable/links/ArrowLink";
+import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 import Numbers from "@/components/reusable/numbers/Numbers";
 
 const HomePageNumbers = ({numbers}) => {

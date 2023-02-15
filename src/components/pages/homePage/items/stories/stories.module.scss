@@ -63,12 +63,4 @@
   &__subtitle {
     color: var(--dark-gray)
   }
-
-  &__image-wrapper {
-    display: block;
-
-    @media (max-width: 900px) {
-      margin: 0 auto;
-    }
-  }
 }

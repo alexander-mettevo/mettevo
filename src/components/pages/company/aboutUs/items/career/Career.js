@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowLink from "@/components/reusable/links/ArrowLink";
+import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 import CareerItem from "@/components/pages/company/aboutUs/items/career/items/CareerItem";
 import style from './career.module.scss'
 

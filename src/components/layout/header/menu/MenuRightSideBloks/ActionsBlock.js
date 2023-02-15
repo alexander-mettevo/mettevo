@@ -5,7 +5,7 @@ import {useDispatch} from "react-redux";
 import {switchMobileShowContent} from "@/store/slices/menuSlice/MenuSlice";
 import ActionsMobileBlock from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsMobileBlock";
 import Link from "next/link";
-import ArrowLink from "@/components/reusable/links/ArrowLink";
+import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 
 const ActionsBlock = ({list}) => {
   const [currentItem, setCurrentItem] = useState(list[0].id)

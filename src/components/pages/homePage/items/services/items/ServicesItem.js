@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowLink from "@/components/reusable/links/ArrowLink";
+import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 import ServicesMenu from "@/components/pages/homePage/items/services/items/ServicesMenu";
 import style from '../services.module.scss'
 

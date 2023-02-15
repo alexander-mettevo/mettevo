@@ -1,12 +1,12 @@
 import React, {useEffect, useRef, useState} from 'react';
-import Image from "next/image";
-import showFromBottom from "@/components/reusable/animations/showFromBottom";
 import useWindowSize from "@/hooks/useWindowSize";
+import showFromBottom from "@/components/reusable/animations/showFromBottom";
 import Link from "next/link";
-import style from '../stories.module.scss'
+import style from "./image-link.module.scss"
+import Image from "next/image";
 import BlackAndGray from "@/components/reusable/text/textComponents/BlackAndGray";
 
-const StoriesItem = ({item}) => {
+const ImageLink = ({item}) => {
   const ref = useRef(null);
   const {width} = useWindowSize();
   const [imageSize, setImageSize] = useState({
@@ -37,7 +37,7 @@ const StoriesItem = ({item}) => {
 
   return (
     <div ref={ref}>
-      <Link className={`${style['stories__image-wrapper']} container-img`} href={item.href} data-mouse={'View'} style={{
+      <Link className={`${style['image-link']} container-img`} href={item.href} data-mouse={'View'} style={{
         width: imageSize.width,
         height: imageSize.height
       }}>
@@ -48,4 +48,4 @@ const StoriesItem = ({item}) => {
   );
 };
 
-export default StoriesItem;
+export default ImageLink;

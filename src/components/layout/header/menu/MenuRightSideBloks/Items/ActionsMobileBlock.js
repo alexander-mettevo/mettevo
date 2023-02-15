@@ -1,7 +1,7 @@
 import React from 'react';
 import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsBlockForm";
 import {useSelector} from "react-redux";
-import ArrowLink from "@/components/reusable/links/ArrowLink";
+import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 
 const ActionsMobileBlock = ({currentData}) => {
   const mobileShowContent = useSelector(state => state.menu.mobileShowContent)
