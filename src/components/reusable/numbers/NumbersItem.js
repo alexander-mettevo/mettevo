@@ -1,7 +1,10 @@
 import React, {useEffect, useRef} from 'react';
-import numbersAnimationScript from "@/components/pages/homePage/items/numbers/animationScript";
+import numbersAnimationScript from "@/components/reusable/numbers/animationScript";
 import style from './numbers.module.scss'
-const NumbersItem = ({value, text}) => {
+
+const NumbersItem = (props) => {
+  const {value, text, itemClassName, valueClassName, textClassName} = props;
+
   const ref = useRef(null);
 
   const parseNumber = (num) => {
@@ -13,16 +16,15 @@ const NumbersItem = ({value, text}) => {
     return selectedNumber[0];
   }
 
-
   useEffect(() => {
     const number = +parseNumber(value);
     numbersAnimationScript(ref, number)
   }, [value]);
 
   return (
-    <div className={style['item-numbers']}>
-      <div className={style['item-numbers__value']} ref={ref}/>
-      <div className={style['item-numbers__text']}>{text}</div>
+    <div className={itemClassName ? itemClassName : style['item-numbers']}>
+      <div className={valueClassName ? valueClassName : style['item-numbers__value']} ref={ref}/>
+      <div className={textClassName ? textClassName : style['item-numbers__text']}>{text}</div>
     </div>
   );
 };

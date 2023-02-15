@@ -4,6 +4,7 @@ import WhyDifferent from "@/components/pages/company/aboutUs/items/whyDifferent/
 import TopText from "@/components/pages/company/aboutUs/items/TopText";
 import Team from "@/components/pages/company/aboutUs/items/team/Team";
 import SEO from "@/components/pages/company/aboutUs/items/seo/SEO";
+import Partners from "@/components/pages/company/aboutUs/items/partners/Partners";
 
 const AboutUsPage = ({data}) => {
   return (
@@ -12,7 +13,8 @@ const AboutUsPage = ({data}) => {
       <TopText text={data.box}/>
       <WhyDifferent/>
       <Team list={data.team}/>
-      <SEO list={data.seo}/>       
+      <SEO list={data.seo}/>
+      <Partners partners={data.partners}/>
     </>
   );
 };

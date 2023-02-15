@@ -1,10 +1,9 @@
 import React from 'react';
 import BlockTitle from "@/components/reusable/text/blockTitle/BlockTitle";
 import ServicesItem from "@/components/pages/homePage/items/services/items/ServicesItem";
-import {useSelector} from "react-redux";
 import style from './services.module.scss'
-const Services = () => {
-  const data = useSelector(state => state.homePage.homePageServiceList)
+
+const Services = ({services}) => {
 
   return (
     <div className={style['services']}>
@@ -12,7 +11,7 @@ const Services = () => {
         what we do for you
       </BlockTitle>
       <div className={style['services__row']}>
-        {data && data.map(item =>
+        {services && services.map(item =>
           <ServicesItem
             key={item.href}
             href={item.href}

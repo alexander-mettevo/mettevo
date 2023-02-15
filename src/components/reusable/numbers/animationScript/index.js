@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import {ScrollTrigger}  from "gsap/dist/ScrollTrigger";
-import numbersAnimation from "@/components/pages/homePage/items/numbers/animationScript/scripts/numbersAnimation";
+import numbersAnimation from "@/components/reusable/numbers/animationScript/scripts/numbersAnimation";
 
 const numbersAnimationScript = (ref, num) => {
   // Register Plugins ==================

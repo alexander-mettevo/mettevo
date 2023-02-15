@@ -201,7 +201,27 @@ const aboutUs = {
       position: 'Position',
       href: ''
     },
-  ]
+  ],
+  partners: {
+    numbers: [
+      {
+        text: 'clients with active projects',
+        value: '20+'
+      },
+      {
+        text: 'of clients come to mettevo via a partner reference',
+        value: '30%'
+      },
+      {
+        text: 'Happy partners that have been collaborating with mettevo for 2+ years',
+        value: '10+        '
+      },
+      {
+        text: 'annual company growth',
+        value: '74%'
+      },
+    ]
+  }
 }
 
 export default aboutUs

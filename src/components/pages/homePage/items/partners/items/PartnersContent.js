@@ -1,5 +1,4 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {useSelector} from "react-redux";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Controller} from "swiper";
 import Image from "next/image";
@@ -25,12 +24,9 @@ const breakpoints = {
   }
 }
 
-const PartnersContent = () => {
+const PartnersContent = ({partners}) => {
   const [firstSliderController, setFirstSliderController] = useState(null)
   const [secondSliderController, setSecondSliderController] = useState(null)
-
-  const firstHomePagePartners = useSelector(state => state.homePage.firstHomePagePartners)
-  const secondHomePagePartners = useSelector(state => state.homePage.secondHomePagePartners)
 
   const firstSlider = useRef(null);
   const secondSlider = useRef(null);
@@ -52,7 +48,7 @@ const PartnersContent = () => {
           control: secondSliderController,
           inverse: true,
         }}>
-        {firstHomePagePartners.map((item, index) => (
+        {partners.top.map((item, index) => (
           <SwiperSlide key={index + 'partnerLogo2'}>
             <Link className={style['partners__link']} href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
@@ -71,7 +67,7 @@ const PartnersContent = () => {
           control: firstSliderController,
           inverse: true,
       }}>
-        {secondHomePagePartners.map((item, index) => (
+        {partners.bottom.map((item, index) => (
           <SwiperSlide key={index + 'partnerLogo1'}>
             <Link className={style['partners__link']} href={item.href}>
               <Image src={item.image} alt={'partner logo'} fill/>
