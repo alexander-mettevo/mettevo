@@ -13,6 +13,21 @@
   }
 }
 
+.block-subtitle {
+  @include adaptiveValue("margin-top", 24, 16);
+  @include adaptiveValue("margin-bottom", 80, 40);
+  @include adaptiveValue("font-size", 18, 16);
+  @include adaptiveValue("line-height", 30, 24);
+
+  &_center{
+    text-align: center;
+  }
+
+  &_right{
+    text-align: right;
+  }
+}
+
 .item-title {
   font-weight: 500;
   margin: 0;

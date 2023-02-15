@@ -5,6 +5,7 @@ import ReviewsItem from "@/components/pages/homePage/items/reviews/items/Reviews
 import {Navigation} from "swiper";
 import showFromBottom from "@/components/reusable/animations/showFromBottom";
 import style from '../reviews.module.scss'
+
 const ReviewsContent = () => {
   const data = useSelector(state => state.homePage.reviewsHomePage);
   const ref = useRef(null);

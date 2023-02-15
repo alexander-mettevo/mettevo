@@ -1,6 +1,5 @@
 import React, {useRef} from 'react';
 import Logo from "@/components/reusable/logo/Logo";
-import DesktopNavigation from "@/components/layout/header/navigation/DesktopNavigation";
 
 const HeaderComponent = ({active, setActive}) => {
   const ref = useRef(null);
@@ -15,7 +14,6 @@ const HeaderComponent = ({active, setActive}) => {
           <div>
             <Logo/>
           </div>
-          {/*{!active && <DesktopNavigation/>}*/}
           <div className={'header__burger-btn'} ref={ref} onClick={handleMenu}>
             <span></span>
             <span></span>

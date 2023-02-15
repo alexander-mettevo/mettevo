@@ -31,6 +31,176 @@ const aboutUs = {
       url: '/images/about_us/team/Image_7.png',
       alt: ''
     },
+  ],
+  seo: [
+    {
+      src: '/images/about_us/seo/Image-1.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-2.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-3.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-4.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-5.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-6.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-7.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-8.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-9.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-10.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-11.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-1.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-2.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-3.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-4.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-5.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-6.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-7.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-8.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-9.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-10.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image-11.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
+    {
+      src: '/images/about_us/seo/Image.png',
+      alt: '',
+      name: 'Name',
+      position: 'Position',
+      href: ''
+    },
   ]
 }
 
