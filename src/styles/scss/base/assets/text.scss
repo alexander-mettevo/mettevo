@@ -13,10 +13,25 @@
   }
 }
 
+.block-subtitle {
+  @include adaptiveValue("margin-top", 24, 16);
+  @include adaptiveValue("margin-bottom", 80, 40);
+  @include adaptiveValue("font-size", 18, 16);
+  @include adaptiveValue("line-height", 30, 24);
+
+  &_center{
+    text-align: center;
+  }
+
+  &_right{
+    text-align: right;
+  }
+}
+
 .item-title {
   font-weight: 500;
   margin: 0;
-
+  text-transform: lowercase;
   @include adaptiveValue("font-size", 40, 24);
   @include adaptiveValue("line-height", 38.68, 32);
 }
@@ -49,6 +64,12 @@
 
 .title {
   &_1 {
+    font-weight: 500;
+    @include adaptiveValue('font-size', 22, 18);
+    @include adaptiveValue('margin-bottom', 24, 16);
+  }
+
+  &_2 {
     text-transform: lowercase;
     font-weight: 500;
     @include adaptiveValue("font-size", 24, 18);

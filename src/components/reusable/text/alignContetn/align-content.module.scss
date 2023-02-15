@@ -1,0 +1,12 @@
+.align-content {
+  display: flex;
+
+  &__box {
+    flex: 0 0 60%;
+
+    @media(max-width: $tablet) {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.contacts {
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 32px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 95vw;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 100vw;
+      padding: 0 36px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      padding: 0 12px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    color: var(--text-color);
+    justify-self: center;
+
+    @media (max-width: 1200px) {
+      justify-self: left;
+    }
+  }
+
+  &__title {
+    color: var(--dark-gray);
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    text-transform: none;
+  }
+}

@@ -1,10 +1,9 @@
 import React, {useEffect, useRef} from 'react';
-import {useSelector} from "react-redux";
 import HomePageBlogItem from "@/components/pages/homePage/items/homePageBlog/items/HomePageBlogItem";
 import homePageBlogAnimationScript from "@/components/pages/homePage/items/homePageBlog/animationScript";
 import style from '../home-blog.module.scss'
-const HomePageBlogItems = () => {
-  const data = useSelector(state => state.homePage.homePageBlog)
+
+const HomePageBlogItems = ({blog}) => {
   const ref = useRef(null);
 
 
@@ -14,7 +13,7 @@ const HomePageBlogItems = () => {
 
   return (
     <div className={style['home-blog__row']} ref={ref}>
-      {data.length > 0 && data.map((item, index) => (
+      {blog.length > 0 && blog.map((item, index) => (
         <HomePageBlogItem item={item} key={index + 'homePageBlog'}/>
       ))}
     </div>

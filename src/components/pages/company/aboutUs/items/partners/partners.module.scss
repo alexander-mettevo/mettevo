@@ -1,0 +1,40 @@
+.partners {
+  svg {
+    width: 100%;
+
+    @media (max-width: $pc) {
+      max-height: 35vw;
+    }
+
+    path {
+      fill: var(--text-color);
+    }
+  }
+}
+
+.numbers-partners {
+  display: flex;
+  justify-content: space-between;
+  @include adaptiveValue("margin-top", 120, 60);
+  @include adaptiveValue("margin-bottom", 100, 60);
+
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    text-align: center;
+    flex: 0 0 24.5%;
+
+    @media (max-width: $tablet) {
+      flex: 0 0 49.5%;
+      &:first-child {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__value {
+      @include textBlock(4, 4, 64, 32, 64, 36);
+  }
+}

@@ -1,0 +1,55 @@
+.career {
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+
+    @include adaptiveValue('column-gap', 40, 5);
+    @include adaptiveValue('margin-top', 60, 18);
+    @include adaptiveValue('margin-bottom', 44, 40);
+
+    @media (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    background: var(--main-opposite-color);
+    padding: 48px 32px;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+      padding: 20px 12px;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    @include adaptiveValue('font-size', 22, 18);
+    @include adaptiveValue('margin-bottom', 24, 16);
+  }
+
+  &__timing {
+    padding-right: 28px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-style: solid;
+      border-width: 6px;
+      border-color: transparent transparent transparent var(--text-color);
+    }
+  }
+}
