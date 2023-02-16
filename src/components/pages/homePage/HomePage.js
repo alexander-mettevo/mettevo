@@ -2,7 +2,6 @@ import React from 'react';
 import GoogleInfo from "@/components/pages/homePage/items/googleInfo/GoogleInfo";
 import AnimationTitlePage from "@/components/reusable/text/animationTitlePage/AnimationTitlePage";
 import Services from "@/components/pages/homePage/items/services/Services";
-import Numbers from "@/components/reusable/numbers/Numbers";
 import StandOut from "@/components/pages/homePage/items/standOut/StandOut";
 import CollectionBtns from "@/components/reusable/collectionBtns/CollectionBtns";
 import Stories from "@/components/pages/homePage/items/stories/Stories";

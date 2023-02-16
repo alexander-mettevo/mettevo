@@ -16,7 +16,7 @@ const ActionsMobileBlock = ({currentData}) => {
             {currentData.data.text}
           </p>
           <div className={'right-side__link'}>
-            <ArrowLink href={currentData.data.href || '/'} title={'Go to page'}/>
+
           </div>
         </div>
         <ActionsBlockForm title={currentData.title}/>

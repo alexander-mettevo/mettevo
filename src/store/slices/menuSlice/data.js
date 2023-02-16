@@ -283,6 +283,9 @@ export const rightSideData = [
       {
         id: 1,
         title: "seo services",
+        link: {
+          href: '/seo'
+        },
         data: {
           title: "OUR SEO SERVICES",
           text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
@@ -291,6 +294,9 @@ export const rightSideData = [
       {
         id: 2,
         title: "e-commerce seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR E-COMMERCE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -299,6 +305,9 @@ export const rightSideData = [
       {
         id: 3,
         title: "on-page seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR ON-PAGE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -307,6 +316,9 @@ export const rightSideData = [
       {
         id: 4,
         title: "keywords research",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR KEYWORDS RESEARCH",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -315,6 +327,9 @@ export const rightSideData = [
       {
         id: 5,
         title: "content marketing",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR CONTENT MARKETING",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -323,6 +338,9 @@ export const rightSideData = [
       {
         id: 6,
         title: "mobile seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR MOBILE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -331,6 +349,9 @@ export const rightSideData = [
       {
         id: 7,
         title: "international seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR INTERNATIONAL SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -345,6 +366,9 @@ export const rightSideData = [
       {
         id: 1,
         title: "smm services",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR SOCIAL MEDIA OPTIMIZATION SERVICES",
           text: "Our Search Engine Optimization (SEO) services will provide your business with everything it will need to get your brand the online presence it deserves on Google’s search results. SEO is the marketing foundation of nearly every successful online business!"
@@ -353,6 +377,9 @@ export const rightSideData = [
       {
         id: 2,
         title: "facebook management",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR FACEBOOK MANAGEMENT",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -361,6 +388,9 @@ export const rightSideData = [
       {
         id: 3,
         title: "instagram management",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR INSTAGRAM MANAGEMENT",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -369,6 +399,9 @@ export const rightSideData = [
       {
         id: 4,
         title: "linkedin management",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR LINKEDIN MANAGEMENT",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -377,6 +410,9 @@ export const rightSideData = [
       {
         id: 5,
         title: "twitter management",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR TWITTER MANAGEMENT",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -385,6 +421,9 @@ export const rightSideData = [
       {
         id: 6,
         title: "youtube management",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR YOUTUBE MANAGEMENT",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -393,6 +432,9 @@ export const rightSideData = [
       {
         id: 7,
         title: "pinterest management",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR PINTEREST MANAGEMENT",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -407,6 +449,9 @@ export const rightSideData = [
       {
         id: 1,
         title: "seo services",
+        link: {
+          href: '/seo'
+        },
         data: {
           title: "OUR SEO SERVICES",
           text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
@@ -415,6 +460,9 @@ export const rightSideData = [
       {
         id: 2,
         title: "e-commerce seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR E-COMMERCE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -423,6 +471,9 @@ export const rightSideData = [
       {
         id: 3,
         title: "on-page seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR ON-PAGE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -431,6 +482,9 @@ export const rightSideData = [
       {
         id: 4,
         title: "keywords research",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR KEYWORDS RESEARCH",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -439,6 +493,9 @@ export const rightSideData = [
       {
         id: 5,
         title: "content marketing",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR CONTENT MARKETING",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -447,6 +504,9 @@ export const rightSideData = [
       {
         id: 6,
         title: "mobile seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR MOBILE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -455,6 +515,9 @@ export const rightSideData = [
       {
         id: 7,
         title: "international seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR INTERNATIONAL SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -469,6 +532,9 @@ export const rightSideData = [
       {
         id: 1,
         title: "seo services",
+        link: {
+          href: '/seo'
+        },
         data: {
           title: "OUR SEO SERVICES",
           text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
@@ -477,6 +543,9 @@ export const rightSideData = [
       {
         id: 2,
         title: "e-commerce seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR E-COMMERCE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -485,6 +554,9 @@ export const rightSideData = [
       {
         id: 3,
         title: "on-page seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR ON-PAGE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -493,6 +565,9 @@ export const rightSideData = [
       {
         id: 4,
         title: "keywords research",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR KEYWORDS RESEARCH",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -501,6 +576,9 @@ export const rightSideData = [
       {
         id: 5,
         title: "content marketing",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR CONTENT MARKETING",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -509,6 +587,9 @@ export const rightSideData = [
       {
         id: 6,
         title: "mobile seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR MOBILE SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
@@ -517,6 +598,9 @@ export const rightSideData = [
       {
         id: 7,
         title: "international seo",
+        link: {
+          href: '/'
+        },
         data: {
           title: "OUR INTERNATIONAL SEO",
           text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"

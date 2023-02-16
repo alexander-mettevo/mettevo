@@ -3,7 +3,7 @@ import Link from "next/link";
 import useWindowSize from "@/hooks/useWindowSize";
 import style from './menu-list.module.scss'
 
-const MenuBtnsList = (props) => {
+const MenuBtnsList = React.memo((props) => {
   const {list, currentState, onClickItem, keyWord, desktopFS, mobileFS, rectangleSize, adaptiveRectangleSize, noteFS} = props
 
   const {width} = useWindowSize();
@@ -39,13 +39,13 @@ const MenuBtnsList = (props) => {
             }}
         >
           {
-            !!item?.link ? <Link  onPointerEnter={onClickItem} href={item.link.href}>{item.title}</Link> :
-              <span onClick={onClickItem}>{item.title}</span>
+            !!item?.link ? <Link  onPointerEnter={() => onClickItem(item.id)} href={item.link.href}>{item.title}</Link> :
+              <span onClick={() => onClickItem(item.id)}>{item.title}</span>
           }
         </li>
       ))}
     </ul>
   );
-};
+});
 
 export default MenuBtnsList;
