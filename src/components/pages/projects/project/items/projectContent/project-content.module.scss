@@ -1,0 +1,72 @@
+.project-content {
+
+  & > div:nth-child(even) {
+    div {
+      justify-content: flex-end;
+    }
+  }
+
+  &__block {
+    display: flex;
+    max-width: 95%;
+    margin: 0 auto 80px;
+
+
+    @media (max-width: $tablet) {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    flex: 0 0 60%;
+
+    p {
+      margin: 40px 0 24px;
+
+      @media (max-width: $tablet) {
+        margin: 12px 0 24px;
+      }
+    }
+  }
+
+  &__image-wrapper {
+    height: 1000px;
+    display: grid;
+    @include adaptiveValue("gap", 40, 8);
+    grid-template-columns: 1fr;
+
+    &_double {
+      grid-template-columns: 1fr 1fr;
+
+      @media (max-width: $tablet) {
+        height: 50vh !important;
+      }
+    }
+
+    &_mod {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      @media (max-width: $tablet) {
+        grid-template-rows: repeat(2, 50vh);
+      }
+    }
+
+
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
+
+    @media (max-width: $tablet) {
+      height: 100vh;
+    }
+  }
+
+
+  &__bio {
+    color: var(--dark-gray)
+  }
+}

@@ -1,0 +1,100 @@
+.project-top {
+
+  &__gasket {
+    height: calc(100vh - 60px);
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+    div {
+      width: 100vw;
+      height: calc(100vh - 60px);
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include adaptiveValue('margin-top', 40, 8);
+    @include adaptiveValue('margin-bottom', 120, 32);
+
+    @media (max-width: $tablet) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $mobileSmall) {
+      justify-content: space-between;
+      align-items: flex-end;
+
+      & > div {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__tags-row {
+    display: flex;
+    @include adaptiveValue('margin-right', 80, 0);
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $mobileSmall) {
+      display: block;
+      margin-right: 0;
+    }
+  }
+
+  &__tag-item {
+    @include adaptiveValue('margin-right', 80, 0);
+
+    @media (max-width: $mobileSmall) {
+      margin-right: 5px;
+    }
+  }
+
+  &__tag-type{
+   color: var(--dark-gray);
+  }
+
+  &__tag-title {
+    font-weight: 500;
+  }
+
+  &__text {
+    flex: 0 0 600px;
+    @include adaptiveValue('line-height', 32, 24);
+
+    @media (max-width: $tablet) {
+      @include adaptiveValue('margin-top', 32, 24);
+    }
+  }
+
+  &__bottom-image {
+    position: relative;
+    height: 100vh;
+    max-width: calc(100vw - 10px);
+    @include adaptiveValue('margin-top', 160, 80);
+
+    img {
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+}

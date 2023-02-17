@@ -1,6 +1,6 @@
-import projects from "@/mocData/projects/projects";
 import ProjectPage from "@/components/pages/projects/project/ProjectPage";
+import youdogg from "@/mocData/projects/youdogg";
 
 export default function Project() {
-  return <ProjectPage data={projects}/>
+  return <ProjectPage data={youdogg}/>
 }
