@@ -1,21 +1,36 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import Link from "next/link";
+import styles from "@/components/reusable/dropDownMenu/DropdownMenu.module.scss";
 
 const FooterDropdown = ({list, title}) => {
-  const [showContent, setShowContent] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const contentRef = useRef(null);
 
-  const toggleShowContent = () => {
-    setShowContent(!showContent);
-  }
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
 
   return (
-    <div>
-      <div className={`footer-dropdown__title`} onClick={toggleShowContent}>
+    <div className={'footer-dropdown'}>
+      <button
+        onClick={handleToggle}
+        className={`footer-dropdown__title ${
+          isOpen ? 'footer-dropdown__title--open' : ""
+        }`}
+      >
         {title}
-      </div>
-      <ul className={`footer-dropdown ${showContent && 'footer-dropdown_show'}`}>
+      </button>
+      <ul
+        // className={`footer-dropdown ${showContent && 'footer-dropdown_show'}`}
+        ref={contentRef}
+        className={`footer-dropdown__items ${
+          isOpen ? 'footer-dropdown__items--open' : ""
+        }`}
+        style={{ maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : 0 }}
+      >
         {list.map((item, index) => (
-          <li key={index + item.href}>
+          <li className={'footer-dropdown__item'} key={index + item.href}>
             <Link className='footer__link underline-link' href={item.href}>
               {item.title}
             </Link>

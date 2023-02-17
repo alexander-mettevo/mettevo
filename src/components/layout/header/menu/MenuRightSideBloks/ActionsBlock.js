@@ -47,7 +47,7 @@ const ActionsBlock = ({list}) => {
             </div>
           </div>
           <div >
-            <ArrowLink href={currentData.data.href || '/'} title={'Go to page'}/>
+
           </div>
         </div>
       </div>
