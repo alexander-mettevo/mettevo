@@ -17,6 +17,8 @@
   }
 
   &__item {
+    flex: 0 0 19%;
+
     @media(max-width: $mobile) {
       flex: 0 0 30%;
       margin: 0 5px;

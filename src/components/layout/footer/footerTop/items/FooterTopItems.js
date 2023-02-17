@@ -1,6 +1,7 @@
 import React from 'react';
 import FooterDropdown from "@/components/layout/footer/footerDropdown/FooterDropdown";
 import Link from "next/link";
+import DropdownMenu from "@/components/reusable/dropDownMenu/DropDownMenu";
 
 const FooterTopItems = ({item}) => {
   return (
@@ -22,6 +23,7 @@ const FooterTopItems = ({item}) => {
           if (item.type === 'dropdown') {
             return (
               <li key={index + 'footerTopItems'}>
+                {/*<DropdownMenu items={item.links} title={item.title}/>*/}
                 <FooterDropdown list={item.links} title={item.title}/>
               </li>
             )
