@@ -23,7 +23,7 @@
   &__top-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     @include adaptiveValue('margin-top', 40, 8);
     @include adaptiveValue('margin-bottom', 120, 32);
 
@@ -36,7 +36,9 @@
   &__row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
+    @include adaptiveValue('margin-top', 120, 32);
     @media (max-width: $mobileSmall) {
       justify-content: space-between;
       align-items: flex-end;
@@ -48,7 +50,8 @@
   }
 
   &__tags-row {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     @include adaptiveValue('margin-right', 80, 0);
 
     @media (max-width: $mobile) {
@@ -62,19 +65,29 @@
   }
 
   &__tag-item {
+    margin-bottom: 24px;
+
     @include adaptiveValue('margin-right', 80, 0);
 
     @media (max-width: $mobileSmall) {
       margin-right: 5px;
     }
+
+
+    @media (max-width: $tablet) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
-  &__tag-type{
-   color: var(--dark-gray);
+  &__tag-type {
+    color: var(--dark-gray);
   }
 
   &__tag-title {
     font-weight: 500;
+
   }
 
   &__text {
@@ -83,6 +96,20 @@
 
     @media (max-width: $tablet) {
       @include adaptiveValue('margin-top', 32, 24);
+    }
+
+    &_d {
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+
+    &_m {
+      display: none;
+
+      @media (max-width: $tablet) {
+        display: block;
+      }
     }
   }
 

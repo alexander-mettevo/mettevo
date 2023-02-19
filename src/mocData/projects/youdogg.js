@@ -29,7 +29,7 @@ const youdogg = {
   content: [
     {
       title: 'objective',
-      text: 'The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.',
+      text: ['The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.'],
       images: [
         {
           alt: 'dog',
@@ -51,7 +51,7 @@ const youdogg = {
     },
     {
       title: 'solution',
-      text: 'The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.',
+      text: ['The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.'],
       images: [
         {
           alt: 'dog',
@@ -61,7 +61,7 @@ const youdogg = {
     },
     {
       title: 'simple quiz',
-      text: 'The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.',
+      text: ['The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.'],
       images: [
         {
           alt: 'dog',
@@ -75,7 +75,7 @@ const youdogg = {
     },
     {
       title: 'mobile design',
-      text: 'The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.',
+      text: ['The customer does not always know what he wants. Therefore, our designers are always ready to offer their unique ideas and listen to the opinion of the client. We follow the latest innovations and trends in the field of design and are happy to share fresh thoughts.'],
       images: [
         {
           alt: 'dog',
@@ -85,7 +85,7 @@ const youdogg = {
     },
     {
       title: 'Testimonial',
-      text: 'Although the project is still ongoing, Mettevo has fixed thousands of broken links, updated plug-ins, and increased the page load speed. They communicate through Microsoft Teams, and the team is responsive to the client\'s queries. Overall, the client is pleased with their growing partnership.',
+      text: ['Although the project is still ongoing, Mettevo has fixed thousands of broken links, updated plug-ins, and increased the page load speed. They communicate through Microsoft Teams, and the team is responsive to the client\'s queries. Overall, the client is pleased with their growing partnership.'],
       bio: 'Peter Moeller, Director of Marketing & Business Dev'
     },
   ],

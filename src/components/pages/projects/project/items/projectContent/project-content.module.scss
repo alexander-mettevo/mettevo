@@ -4,6 +4,10 @@
     div {
       justify-content: flex-end;
     }
+
+    h2 {
+      text-align: right;
+    }
   }
 
   &__block {
@@ -65,8 +69,38 @@
     }
   }
 
-
   &__bio {
     color: var(--dark-gray)
+  }
+
+  &__list-item {
+    padding-left: 20px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      background-color: var(--text-color);
+    }
+  }
+
+  &__list-tags {
+    @include adaptiveValue("margin-bottom", 40, 24);
+
+    & > div:first-child {
+      font-weight: 600;
+      @include adaptiveValue("font-size", 28, 24);
+      @include adaptiveValue("margin-bottom", 16, 12);
+    }
+
+    & > div:last-child {
+      color: var(--dark-gray);
+    }
   }
 }

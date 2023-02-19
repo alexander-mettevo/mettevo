@@ -20,7 +20,14 @@ const ProjectContentItem = ({item}) => {
       <div className={style['project-content__block']}>
         <div className={style['project-content__text']}>
           <h2 className={'block-title'}>{item.title}</h2>
-          <p className={'text_1'}>{item.text}</p>
+          {item.text.map((text, index) => <p key={index + 'project_text'} className={'text_1'}>{text}</p>)}
+          {item.list && item.list.map((text, index) => <div key={index + 'project_list'} className={`${style['project-content__list-item']} text_1`}>{text}</div>)}
+          {item.listTags && item.listTags.map((item, index) =>
+            <div key={index + 'project_list'} className={`${style['project-content__list-tags']} text_1`}>
+              <div>{item.title}</div>
+              <div className={`text_1`}>{item.text}</div>
+            </div>
+          )}
           {item.bio && <span  className={`${style['project-content__bio']} text_1`}>{item.bio}</span>}
         </div>
       </div>
