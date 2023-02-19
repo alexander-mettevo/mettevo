@@ -75,6 +75,13 @@
     @include adaptiveValue("font-size", 24, 18);
     @include adaptiveValue("line-height", 23.21, 17.41);
   }
+
+  &_3 {
+    text-transform: lowercase;
+    font-weight: 500;
+    @include adaptiveValue("font-size", 100, 60);
+    @include adaptiveValue("line-height", 96.7, 58);
+  }
 }
 
 .text {
