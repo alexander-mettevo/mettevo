@@ -1,6 +1,5 @@
 import ProjectPage from "@/components/pages/projects/project/ProjectPage";
 import youdogg from "@/mocData/projects/youdogg";
-import slugs from "@/mocData/projects/slugs";
 import charterJets from "@/mocData/projects/charterJets";
 
 export default function Project({data}) {
@@ -10,7 +9,7 @@ export default function Project({data}) {
 export async function getStaticPaths() {
   return {
     paths: [{ params: { slug: 'youdogg' } }, { params: { slug: 'charter_jets' } }],
-    fallback: true
+    fallback: false
   }
 }
 
