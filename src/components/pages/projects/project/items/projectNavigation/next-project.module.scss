@@ -13,7 +13,7 @@
   &__link {
     width: 660px;
     margin-left: -60px;
-    color: inherit;
+    color: var(--text-color);
 
     @media (max-width: $mobile) {
       width: 207px;
