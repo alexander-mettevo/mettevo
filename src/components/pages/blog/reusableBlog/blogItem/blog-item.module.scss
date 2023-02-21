@@ -1,0 +1,74 @@
+.blog-item {
+  display: block;
+  cursor: pointer;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 48px;
+  }
+
+  &__image-wrapper {
+    display: inline-block;
+    position: relative;
+    width: var(--image-width);
+    height: var(--image-height);
+    overflow: hidden;
+
+
+    img {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    @media (max-width: $pc) {
+      width: var(--image-width-adaptive);
+      height: var(--image-height-adaptive);
+    }
+  }
+
+  &__author {
+    font-weight: 500;
+    margin-bottom: 8px;
+
+    @include adaptiveValue('font-size', 18, 16);
+    @include adaptiveValue('line-height', 26, 22);
+  }
+
+  &__theme {
+    color: var(--main-gray);
+    font-style: italic;
+    text-transform: lowercase;
+    margin-top: 8px;
+  }
+
+  &__title {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+    margin: 8px 0;
+
+    @include adaptiveValue('font-size', 26, 20);
+    @include adaptiveValue('line-height', 36, 28);
+
+    &_sm {
+      font-weight: 400;
+      @include adaptiveValue('font-size', 20, 16);
+      @include adaptiveValue('line-height', 28, 24);
+    }
+  }
+
+  &__date {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    text-transform: lowercase;
+    margin-bottom: 8px;
+
+    @include adaptiveValue('font-size', 18, 14);
+    @include adaptiveValue('line-height', 26, 22);
+  }
+}
+

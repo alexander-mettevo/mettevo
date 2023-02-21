@@ -1,0 +1,16 @@
+.blog-content {
+  & > div:nth-child(odd) {
+    h2 {
+      text-align: right;
+    }
+
+    & > div {
+      direction: rtl;
+      text-align: left;
+
+      @media (max-width: $mobile) {
+        direction: ltr;
+      }
+    }
+  }
+}

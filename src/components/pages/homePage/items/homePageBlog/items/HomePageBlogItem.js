@@ -1,22 +1,23 @@
 import React from 'react';
 import Image from "next/image";
-import dayjs from "dayjs";
 import Link from "next/link";
 import style from '../home-blog.module.scss'
+import BlogItemText from "@/components/pages/blog/reusableBlog/blogItem/BlogItemText";
+
 const HomePageBlogItem = ({item}) => {
+  const {image, theme, title, date, href} = item
 
   return (
-    <Link className={style['home-blog__item']} href={item.href}>
+    <Link className={style['home-blog__item']} href={href}>
       <div className={`${style['home-blog__image']} container-img`} data-mouse={'Read'}>
-        <Image src={item.image} fill alt={'post image'}/>
+        <Image src={image} fill alt={'post image'}/>
       </div>
       <div>
-        <div className={style['home-blog__theme']}>{item.theme}</div>
-        <div className={style['home-blog__title']}>{item.title}</div>
-        <div className={style['home-blog__date']}>{dayjs(item.date).format('MMM D, YYYY')}</div>
+        <BlogItemText theme={theme} title={title} date={date} />
       </div>
-    </Link >
-  );
+    </Link>
+  )
 };
+
 
 export default HomePageBlogItem;
