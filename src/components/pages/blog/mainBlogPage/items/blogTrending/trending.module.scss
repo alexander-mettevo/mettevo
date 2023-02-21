@@ -1,0 +1,45 @@
+.trending {
+  display: flex;
+  @include adaptiveValue('gap', 77, 5);
+
+  @media (max-width: $tablet) {
+    [class~="blog-image"] {
+      text-align: right;
+    }
+  }
+
+  &__articles {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__list {
+    margin-top: 28px;
+
+    li {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__item-top {
+    margin-bottom: 12px;
+    text-transform: lowercase;
+    padding-left: 22px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: var(--display-rectangle);
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 0;
+      top: 45%;
+      transform: translateY(-50%);
+      border-style: solid;
+      border-width: 8px;
+      border-color: transparent transparent transparent var(--text-color);
+    }
+  }
+}

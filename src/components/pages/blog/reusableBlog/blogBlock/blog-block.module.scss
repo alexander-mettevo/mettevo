@@ -1,0 +1,96 @@
+.blog-block {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); /* две строки, равной высоты */
+  grid-template-columns: repeat(2, 1fr); /* две колонки, равной ширины */
+  grid-gap: 5px; /* промежуток между блоками */
+  grid-auto-flow: dense; /* заполнение пустых ячеек */
+
+  @include adaptiveValue('margin-top', 60, 24);
+
+  &_revers {
+    direction: rtl;
+    text-align: left;
+  }
+
+
+  &__item {
+    &_1 {
+      grid-row: 1 / span 2; /* занимает первые две строки */
+      grid-column: 2 / 3; /* занимает вторую колонку */
+
+    }
+
+    &_2 {
+      grid-row: 1 / 2; /* занимает первую строку */
+      grid-column: 1 / 2; /* занимает первую колонку */
+
+      [class~="blog-image"] {
+        text-align: right;
+      }
+    }
+
+    &_3 {
+      grid-row: 2 / 3; /* занимает вторую строку */
+      grid-column: 1 / 2; /* занимает вторую колонку */
+      display: flex;
+      justify-content: flex-end;
+
+      @include adaptiveValue('gap', 40, 5);
+
+      @media (max-width: $mobile) {
+        grid-template-columns: repeat(1, 1fr);
+
+        [class~="blog-item"] {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  @media(max-width: $mobile) {
+    display: block;
+
+    &__big {
+
+      [class~="blog-image"] {
+        div {
+          width: calc(100vw - 15px);
+          height: calc(var(--image-aspect-ratio) * (100vw - 15px));
+        }
+
+      }
+
+      //& > div > div:first-child > div {
+      //  height: var(--image-height);
+      //}
+    }
+
+    &__mid {
+      [class~="blog-image"] {
+        text-align: right;
+
+        div {
+          width: 70vw;
+          height: calc(var(--image-aspect-ratio) * 70vw);
+        }
+      }
+    }
+
+    &__small {
+      [class~="blog-image"] {
+        div {
+          width: 35vw;
+          height: 35vw;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.double-block {
+  //  класс для двойного блока он же третий
+}
+
