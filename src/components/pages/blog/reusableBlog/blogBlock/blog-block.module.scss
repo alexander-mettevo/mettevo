@@ -13,31 +13,29 @@
   }
 
 
-
   &__item {
     &_1 {
       grid-row: 1 / span 2; /* занимает первые две строки */
-      grid-column: 1 / 2; /* занимает первую колонку */
+      grid-column: 2 / 3; /* занимает вторую колонку */
+
     }
 
     &_2 {
       grid-row: 1 / 2; /* занимает первую строку */
-      grid-column: 2 / 3; /* занимает вторую колонку */
+      grid-column: 1 / 2; /* занимает первую колонку */
 
-      & > a {
-        div:first-child {
-          text-align: right;
-        }
+      [class~="blog-image"] {
+        text-align: right;
       }
     }
 
     &_3 {
       grid-row: 2 / 3; /* занимает вторую строку */
-      grid-column: 2 / 3; /* занимает вторую колонку */
-      display: grid; /* внутренняя сетка */
-      grid-template-columns: repeat(2, 1fr); /* две колонки, равной ширины */
+      grid-column: 1 / 2; /* занимает вторую колонку */
+      display: flex;
+      justify-content: flex-end;
 
-      @include adaptiveValue('grid-gap', 40, 5);
+      @include adaptiveValue('gap', 40, 5);
 
       @media (max-width: $mobile) {
         grid-template-columns: repeat(1, 1fr);

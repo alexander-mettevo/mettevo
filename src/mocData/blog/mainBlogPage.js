@@ -39,26 +39,32 @@ const mainBlogPage = {
     latestArticles: [
       {
         date: '2022-12-01T00:00:00.000Z',
+        href: '/',
         title: 'How to create a website in 2021',
       },
       {
         date: '2022-12-01T00:00:00.000Z',
+        href: '/',
         title: 'Ultricies donec varius sed egestas turpis.',
       },
       {
         date: '2022-12-01T00:00:00.000Z',
+        href: '/',
         title: 'Magna ipsum euismod suspendisse ultrices blandit tristique fringilla nisi.',
       },
       {
         date: '2022-12-01T00:00:00.000Z',
+        href: '/',
         title: 'Curabitur dolor commodo bibendum egestas turpis nisi bibendum.',
       },
       {
         date: '2022-12-01T00:00:00.000Z',
+        href: '/',
         title: 'Amet mi risus vitae nec cursus facilisis.',
       },
       {
         date: '2022-12-01T00:00:00.000Z',
+        href: '/',
         title: 'Sociis auctor convallis nisi vivamus sagittis semper purus vel metus.',
       },
     ],
