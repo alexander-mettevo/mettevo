@@ -1,0 +1,53 @@
+.author {
+
+  &__row {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+
+    @include adaptiveValue('margin-top', 80, 40);
+    @include adaptiveValue('margin-bottom', 240, 80);
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__avatar {
+    flex: 0 0 32%;
+
+    img {
+      object-fit: contain !important;
+      object-position: top;
+    }
+
+    @media (max-width: $mobile) {
+      flex: 0 0 100vw;
+      height: 100vh;
+    }
+  }
+
+  &__link-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+
+    @include adaptiveValue('margin-bottom', 120, 80);
+  }
+
+  &__link {
+    font-weight: 500;
+  }
+
+  &__name {
+    font-weight: 500;
+    @include adaptiveValue("font-size", 100, 60);
+    @include adaptiveValue("line-height", 96.7, 58);
+    @include adaptiveValue('margin-bottom', 40, 20)
+  }
+
+  &__text {
+    @include adaptiveValue('margin-bottom', 40, 20)
+  }
+}
