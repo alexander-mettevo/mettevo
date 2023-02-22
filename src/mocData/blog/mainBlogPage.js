@@ -3,7 +3,7 @@ const mainBlogPage = {
   links: [
     {
       title: 'seo basic',
-      href: '/',
+      href: '/blog/seo-basics',
     },
     {
       title: 'internal optimization',
@@ -72,13 +72,14 @@ const mainBlogPage = {
       {
         href: '/',
         image: {
-          src: '/images/blog/main/Image_10.png',
+          src: '/images/blog/main/Image_11.png',
           size: {
-            width: 560,
-            height: 740
+            width: 280,
+            height: 380
           },
           alt: ''
         },
+
         theme: 'theme 1',
         title: 'Cursus sollicitudin amet nisi nisl quisque hendrerit magna montes.',
         author:{
@@ -90,10 +91,10 @@ const mainBlogPage = {
       {
         href: '/',
         image: {
-          src: '/images/blog/main/Image_11.png',
+          src: '/images/blog/main/Image_10.png',
           size: {
-            width: 280,
-            height: 380
+            width: 560,
+            height: 740
           },
           alt: ''
         },
@@ -145,13 +146,14 @@ const mainBlogPage = {
         {
           href: '/',
           image: {
-            src: '/images/blog/main/Image_7.png',
+            src: '/images/blog/main/Image_6.png',
             size: {
-              width: 365,
-              height: 460
+              width: 364,
+              height: 250
             },
             alt: ''
           },
+
           theme: 'theme 1',
           title: 'Sed dignissim amet ullamcorper turpis congue volutpat massa nec.',
           author:{
@@ -163,10 +165,10 @@ const mainBlogPage = {
         {
           href: '/',
           image: {
-            src: '/images/blog/main/Image_6.png',
+            src: '/images/blog/main/Image_7.png',
             size: {
-              width: 364,
-              height: 250
+              width: 365,
+              height: 460
             },
             alt: ''
           },
@@ -230,10 +232,10 @@ const mainBlogPage = {
         {
           href: '/',
           image: {
-            src: '/images/blog/main/Image_2.png',
+            src: '/images/blog/main/Image_1.png',
             size: {
-              width: 500,
-              height: 387
+              width: 300,
+              height: 391
             },
             alt: ''
           },
@@ -243,10 +245,10 @@ const mainBlogPage = {
         {
           href: '/',
           image: {
-            src: '/images/blog/main/Image_1.png',
+            src: '/images/blog/main/Image_2.png',
             size: {
-              width: 300,
-              height: 391
+              width: 500,
+              height: 387
             },
             alt: ''
           },

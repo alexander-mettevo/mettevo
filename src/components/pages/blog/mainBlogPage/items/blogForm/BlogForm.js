@@ -14,7 +14,7 @@ const BlogForm = () => {
             <input className={'footer-form__input input'} type='text' placeholder='WEBSITE OR COMPANY NAME'/>
 
           </label>
-          and we promise to send weekly updates on the newest design stories, case studies and tips right in your mailbox.
+          and we promise to send weekly updates on the newest design stories,        case studies and tips right in your mailbox.
         </div>
         <button className={`button ${style['form__btn']}`}>Submit</button>
       </div>

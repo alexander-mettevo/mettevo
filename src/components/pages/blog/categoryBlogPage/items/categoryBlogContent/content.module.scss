@@ -1,0 +1,31 @@
+.content {
+
+  &__row {
+    display: grid;
+    gap: 20px;
+    align-items: end;
+    margin-bottom: 120px;
+    max-width: 100%;
+    overflow: hidden;
+
+    @media (max-width: $mobile) {
+      display: block;
+      margin-bottom: 0;
+
+      [class~="blog-image"] {
+        div {
+          width: calc(100vw - 17px);
+          height: calc((100vw - 17px) * var(--proportion));
+        }
+      }
+    }
+  }
+
+  &__triple {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__double {
+    grid-template-columns: 1fr 1fr;
+  }
+}

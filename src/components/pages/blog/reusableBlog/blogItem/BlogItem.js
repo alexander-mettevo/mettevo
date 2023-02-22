@@ -5,7 +5,7 @@ import style from './blog-item.module.scss'
 import {useRouter} from "next/navigation";
 
 
-const BlogItem = ({post}) => {
+const BlogItem = ({post, isMid}) => {
   const {image, theme, title, author, date, href} = post
   const [imageSize, setImageSize] = useState({width: 0, height: 0})
   const [aspectRatio, setAspectRatio] = useState(0)
@@ -23,18 +23,18 @@ const BlogItem = ({post}) => {
     router.push(href)
   }
 
-
   return (
     <div className={`${style['blog-item']} blog-item`} data-mouse='View' onClick={handleClick}>
       <div className={'blog-image'}>
         <div
-          className={style['blog-item__image-wrapper']}
+          className={!isMid ? style['blog-item__image-wrapper'] : style['blog-item__image-wrapper_mid']}
           style={{
             '--image-width': `${image.size.width}px`,
             '--image-height': `${image.size.height}px`,
             '--image-width-adaptive': `${imageSize.width}vw`,
             '--image-height-adaptive': `${imageSize.height}vw`,
-            '--image-aspect-ratio': `${aspectRatio}`
+            '--image-aspect-ratio': `${aspectRatio}`,
+            ...image.css
           }}>
           <Image fill src={image.src} alt={image.alt}/>
         </div>

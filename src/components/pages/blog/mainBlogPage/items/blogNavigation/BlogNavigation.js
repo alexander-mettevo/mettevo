@@ -5,7 +5,7 @@ import style from './blog-navigation.module.scss';
 const links =  [
   {
     title: 'seo basic',
-    href: '/',
+    href: '/blog/seo-basics',
   },
   {
     title: 'internal optimization',
