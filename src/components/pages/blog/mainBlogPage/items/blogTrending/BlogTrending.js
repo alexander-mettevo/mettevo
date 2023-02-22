@@ -11,7 +11,7 @@ const BlogTrending = ({data}) => {
       <h2 className={'block-title block-title_right'}>trending</h2>
       <div className={style['trending']}>
         <LatestArticles articles={data.latestArticles}/>
-        <BlogBlockItem items={data}/>
+        <BlogBlockItem items={data.posts}/>
       </div>
     </div>
   );

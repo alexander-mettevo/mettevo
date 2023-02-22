@@ -1,0 +1,13 @@
+.category-blog {
+  &__url {
+    align-self: flex-start;
+    font-style: italic;
+
+    @include textBlock(63, 24, 18, 14, 17.41, 13.54);
+  }
+
+  &__title {
+    font-weight: 500;
+    @include textBlock(60, 40, 100, 60, 96, 58);
+  }
+}

@@ -9,9 +9,32 @@
   &__image-wrapper {
     display: inline-block;
     position: relative;
-    width: var(--image-width);
-    height: var(--image-height);
+    width: calc(1440px * var(--desc-width) / 100);
+    height: calc(1440px * (var(--proportion) * var(--desc-width)) / 100);
     overflow: hidden;
+
+    &_mid {
+      display: inline-block;
+      position: relative;
+      width: calc(1440px * (var(--proportion) * var(--desc-height)) / 100);
+      height: calc(1440px * var(--desc-height) / 100);
+      overflow: hidden;
+
+      img {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      @media (max-width: $pc) {
+        width: calc((100vw - 15px) * (var(--proportion) * var(--desc-height)) / 100);
+        height: calc((100vw - 15px) * var(--desc-height) / 100);
+      }
+    }
 
 
     img {
@@ -25,8 +48,8 @@
     }
 
     @media (max-width: $pc) {
-      width: var(--image-width-adaptive);
-      height: var(--image-height-adaptive);
+      width: calc((100vw - 60px) * var(--desc-width) / 100);
+      height: calc((100vw - 60px) * (var(--proportion) * var(--desc-width)) / 100);
     }
   }
 

@@ -30,15 +30,13 @@
     }
 
     &_3 {
-      grid-row: 2 / 3; /* занимает вторую строку */
-      grid-column: 1 / 2; /* занимает вторую колонку */
       display: flex;
       justify-content: flex-end;
 
       @include adaptiveValue('gap', 40, 5);
 
       @media (max-width: $mobile) {
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
 
         [class~="blog-item"] {
           display: flex;
