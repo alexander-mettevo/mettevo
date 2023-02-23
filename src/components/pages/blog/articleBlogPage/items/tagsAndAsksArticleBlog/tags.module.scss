@@ -1,0 +1,26 @@
+.tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  & > div:last-child {
+    flex: 1;
+  }
+
+  &__list {
+    li, a {
+      @include adaptiveValue('font-size', 32, 20);
+      @include adaptiveValue('line-height', 40, 19);
+    }
+  }
+
+  &__tag-title {
+    margin-bottom: 24px;
+  }
+
+  &__tag-link {
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 16px;
+  }
+}

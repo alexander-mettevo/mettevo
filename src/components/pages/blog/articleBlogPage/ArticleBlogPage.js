@@ -1,5 +1,34 @@
 import React, {useEffect} from 'react';
 import HeaderArticleBlog from "@/components/pages/blog/articleBlogPage/items/headerArticleBlog/HeaderArticleBlog";
+import ContentArticleBlog from "@/components/pages/blog/articleBlogPage/items/contentArticleBlog/ContentArticleBlog";
+import AreYouReady from "@/components/reusable/areYouRedy/AreYouReady";
+import HomePageBlog from "@/components/pages/homePage/items/homePageBlog/HomePageBlog";
+import TagsAndAsksArticleBlog
+  from "@/components/pages/blog/articleBlogPage/items/tagsAndAsksArticleBlog/TagsAndAsksArticleBlog";
+
+const latestBlog = [
+  {
+    title: 'Venenatis tincidunt phasellus nec aliquam.',
+    theme: 'theme 1',
+    date: '2022-12-01T00:00:00.000Z',
+    image: '/images/home_page/blog/first.png',
+    href: '/'
+  },
+  {
+    title: 'Venenatis tincidunt phasellus nec aliquam.',
+    theme: 'theme 1',
+    date: '2022-12-01T00:00:00.000Z',
+    image: '/images/home_page/blog/second.png',
+    href: '/'
+  },
+  {
+    title: 'Venenatis tincidunt phasellus nec aliquam.',
+    theme: 'theme 1',
+    date: '2022-12-01T00:00:00.000Z',
+    image: '/images/home_page/blog/last.png',
+    href: '/'
+  }
+]
 
 const ArticleBlogPage = ({data}) => {
 
@@ -35,6 +64,10 @@ const ArticleBlogPage = ({data}) => {
         themes={data._embedded['wp:term'][0]}
         date={data.date_gmt}
       />
+      <ContentArticleBlog content={data.content.rendered}/>
+      <TagsAndAsksArticleBlog tags={data._embedded['wp:term'][1]}/>
+      <HomePageBlog blog={latestBlog}/>
+      <AreYouReady/>
     </>
   );
 };
