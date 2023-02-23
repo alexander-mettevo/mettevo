@@ -1,0 +1,27 @@
+.author {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+
+  @include adaptiveValue('margin-bottom', 63, 32);
+
+  &__image-wrapper {
+    margin-right: 8px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    & > div {
+      margin-bottom: 4px;
+    }
+
+    & > div:last-child {
+      font-weight: 400;
+    }
+  }
+}
