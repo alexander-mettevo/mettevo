@@ -12,6 +12,21 @@
   z-index: 11;
   color: var(--text-color);
 
+  &__desktop {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__mobile{
+    display: none;
+    overflow-y: auto;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
   &_active {
     top: 55px;
     transform: translateY(0);
@@ -95,17 +110,18 @@
     text-align: center;
     width: 100%;
     margin: 80px 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 
     @media (max-width: $mobile) {
+      gap: 10px;
       margin: 40px 0 20px;
     }
 
     a {
-      margin-left:  80px;
-
-      @media (max-width: $mobile) {
-        margin: 0 10px;
-      }
+      display: block;
     }
   }
 

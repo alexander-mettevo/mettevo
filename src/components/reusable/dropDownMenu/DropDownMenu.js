@@ -20,7 +20,7 @@ function DropdownMenu({ title, items }) {
           isOpen ? styles["dropdownMenuItems--open"] : ""
         }`}
         style={{ maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : 0 }}
-      >
+      > 
         {items.map((item, index) => (
           <div key={index} className={styles.dropdownMenuItem}>
             {item.title}

@@ -42,6 +42,9 @@ export const pageLinks = [
   {
     title: "SEO",
     href: "/seo",
+    feedback: {
+      url: '/'
+    },
     childPage: [
       {
         title: "SEO Services",
@@ -124,6 +127,9 @@ export const pageLinks = [
   {
     title: "SMM",
     href: "/smm",
+    feedback: {
+      url: ''
+    },
     childPage: [
       {
         title: "SMM Services",
@@ -158,6 +164,9 @@ export const pageLinks = [
   {
     title: "WEB Development",
     href: "/web-development",
+    feedback: {
+      url: ''
+    },
     childPage: [
       {
         title: "Website Design",
@@ -246,7 +255,6 @@ export const pageLinks = [
   {
     title: "projects",
     href: "/projects",
-    //TODO projects list
     childPage: []
   },
   {
@@ -693,10 +701,6 @@ export const rightSideData = [
         description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
       },
     ]
-  },
-  {
-    id: 8,
-    type: "simple",
   },
 ]
 

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import ActionsBlock from "@/components/layout/header/menu/MenuRightSideBloks/ActionsBlock";
+import ActionsBlock from "@/components/layout/header/menu/menuDesktop/MenuRightSideBloks/ActionsBlock";
 import {useSelector} from "react-redux";
-import SimpleBlock from "@/components/layout/header/menu/MenuRightSideBloks/SimpleBlock";
-import MenuRightSideArrow from "@/components/layout/header/menu/MenuRightSideBloks/Items/MenuRightSideArrow";
+import SimpleBlock from "@/components/layout/header/menu/menuDesktop/MenuRightSideBloks/SimpleBlock";
+import MenuRightSideArrow from "@/components/layout/header/menu/menuDesktop/MenuRightSideBloks/Items/MenuRightSideArrow";
 
 const MenuRightSide = ({menuState}) => {
   const rightSideData = useSelector(state => state.menu.rightSideData)
@@ -17,7 +17,6 @@ const MenuRightSide = ({menuState}) => {
   return (
     <div className={`top-menu__right-side ${showContent && 'top-menu__right-side_show'}`}>
       <div className={'right-side__content'}>
-        <MenuRightSideArrow/>
         <div className={'right-side__wrapper'}>
           {currentData.type === 'actions' && !!currentData?.menuList && <ActionsBlock list={currentData.menuList}/>}
           {currentData.type === 'simple' && !!currentData?.list && <SimpleBlock list={currentData?.list} moreLink={currentData.moreLink}/>}
