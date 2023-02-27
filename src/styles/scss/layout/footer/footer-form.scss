@@ -82,4 +82,11 @@
       display: block;
     }
   }
+
+  &__error {
+    color: #ff0000 !important;
+    //font-size: 1.125rem;
+    //margin-top: 8px;
+    margin-bottom: 16px;
+  }
 }

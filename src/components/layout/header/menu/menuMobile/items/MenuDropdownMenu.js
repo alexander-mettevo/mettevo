@@ -9,7 +9,7 @@ const MenuDropdownMenu = ({item, setIsOpen, isOpen, feedback, setShowForm}) => {
   const handleToggle = e => {
     e.preventDefault();
 
-    if (isOpen) {
+    if (!!isOpen) {
       setIsOpen('');
       setShowForm(false);
     }
@@ -19,20 +19,17 @@ const MenuDropdownMenu = ({item, setIsOpen, isOpen, feedback, setShowForm}) => {
       else setShowForm(false);
     }
   };
-
-  // console.log('MenuDropdownMenu', item.links)
-
+console.log('MenuDropdownMenu', item)
   return (
     <div className={style['header-dropdown']}>
       <Link
         href={item.href}
-
         className={`${style['header-dropdown__title']} ${
           isOpen ? style['header-dropdown__title--open'] : ""
         }`}
       >
         {item.title}
-        {!!item?.links > 0 && <span  onClick={handleToggle} className={`
+        {!!item?.data && <span  onClick={handleToggle} className={`
         ${style['header-dropdown__rectangle']}
         ${
           isOpen ? style['header-dropdown__rectangle--open'] : ""
@@ -46,8 +43,7 @@ const MenuDropdownMenu = ({item, setIsOpen, isOpen, feedback, setShowForm}) => {
         }`}
         style={{maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : 0}}
       >
-        {item?.links === 'action'  && <></>}
-        {item?.links === 'simple'  && <ProjectListMenuDropdown projectList={item.links.menuList}/>}
+        {!!item?.data && <ProjectListMenuDropdown projectList={item.data.links.menuList}/>}
         {/*{items?.menuList?.length > 0 && items.menuList.map((item, index) => {*/}
         {/*  if (item.type === 'action') {*/}
         {/*    return <></>*/}

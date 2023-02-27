@@ -1,707 +1,449 @@
-export const menuItems = [
+export const menu = [
   {
     id: 1,
     title: "seo",
     showInFooter: true,
+    href: "/seo",
+    data: {
+      feedback: {
+        url: '/'
+      },
+      links: {
+        type: "actions",
+        menuList: [
+          {
+            id: 1,
+            title: "seo services",
+              href: '/seo',
+            data: {
+              title: "OUR SEO SERVICES",
+              text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
+            }
+          },
+          {
+            id: 2,
+            title: "e-commerce seo",
+              href: '/',
+            data: {
+              title: "OUR E-COMMERCE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 3,
+            title: "on-page seo",
+              href: '/',
+            data: {
+              title: "OUR ON-PAGE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 4,
+            title: "keywords research",
+            href: '/',
+            data: {
+              title: "OUR KEYWORDS RESEARCH",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 5,
+            title: "content marketing",
+            href: '/',
+            data: {
+              title: "OUR CONTENT MARKETING",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 6,
+            title: "mobile seo",
+            href: '/',
+            data: {
+              title: "OUR MOBILE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 7,
+            title: "international seo",
+            href: '/',
+            data: {
+              title: "OUR INTERNATIONAL SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          }
+        ]
+      },
+    }
   },
   {
     id: 2,
     title: "smm",
     showInFooter: true,
+    href: '/smm',
+    data: {
+      feedback: {
+        url: '/'
+      },
+      links: {
+        type: "actions",
+        menuList: [
+          {
+            id: 1,
+            title: "smm services",
+            href: '/',
+            data: {
+              title: "OUR SOCIAL MEDIA OPTIMIZATION SERVICES",
+              text: "Our Search Engine Optimization (SEO) services will provide your business with everything it will need to get your brand the online presence it deserves on Google’s search results. SEO is the marketing foundation of nearly every successful online business!"
+            }
+          },
+          {
+            id: 2,
+            title: "facebook management",
+            href: '/',
+            data: {
+              title: "OUR FACEBOOK MANAGEMENT",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 3,
+            title: "instagram management",
+            href: '/',
+            data: {
+              title: "OUR INSTAGRAM MANAGEMENT",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 4,
+            title: "linkedin management",
+            href: '/',
+            data: {
+              title: "OUR LINKEDIN MANAGEMENT",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 5,
+            title: "twitter management",
+            href: '/',
+            data: {
+              title: "OUR TWITTER MANAGEMENT",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 6,
+            title: "youtube management",
+            href: '/',
+            data: {
+              title: "OUR YOUTUBE MANAGEMENT",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 7,
+            title: "pinterest management",
+            href: '/',
+            data: {
+              title: "OUR PINTEREST MANAGEMENT",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          }
+        ]
+      },
+    }
+
   },
   {
     id: 3,
-    title: "web development"
+    title: "web development",
+    href: '/web-development',
+    data: {
+      feedback: {
+        url: '/'
+      },
+      links: {
+        type: "actions",
+        menuList: [
+          {
+            id: 1,
+            title: "seo services",
+            href: '/seo',
+            data: {
+              title: "OUR SEO SERVICES",
+              text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
+            }
+          },
+          {
+            id: 2,
+            title: "e-commerce seo",
+            href: '/',
+            data: {
+              title: "OUR E-COMMERCE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 3,
+            title: "on-page seo",
+            href: '/',
+            data: {
+              title: "OUR ON-PAGE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 4,
+            title: "keywords research",
+            href: '/',
+            data: {
+              title: "OUR KEYWORDS RESEARCH",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 5,
+            title: "content marketing",
+            href: '/',
+            data: {
+              title: "OUR CONTENT MARKETING",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 6,
+            title: "mobile seo",
+            href: '/',
+            data: {
+              title: "OUR MOBILE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 7,
+            title: "international seo",
+            href: '/',
+            data: {
+              title: "OUR INTERNATIONAL SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          }
+        ]
+      },
+    }
+
   },
   {
     id: 4,
-    title: "niches"
+    title: "niches",
+    href: '/niches',
+    data: {
+      feedback: {
+        url: '/'
+      },
+      links: {
+        type: "actions",
+        menuList: [
+          {
+            id: 1,
+            title: "seo services",
+            href: '/seo',
+            data: {
+              title: "OUR SEO SERVICES",
+              text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
+            }
+          },
+          {
+            id: 2,
+            title: "e-commerce seo",
+            href: '/',
+            data: {
+              title: "OUR E-COMMERCE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 3,
+            title: "on-page seo",
+            href: '/',
+            data: {
+              title: "OUR ON-PAGE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 4,
+            title: "keywords research",
+            href: '/',
+            data: {
+              title: "OUR KEYWORDS RESEARCH",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 5,
+            title: "content marketing",
+            href: '/',
+            data: {
+              title: "OUR CONTENT MARKETING",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 6,
+            title: "mobile seo",
+            href: '/',
+            data: {
+              title: "OUR MOBILE SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          },
+          {
+            id: 7,
+            title: "international seo",
+            href: '/',
+            data: {
+              title: "OUR INTERNATIONAL SEO",
+              text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
+            }
+          }
+        ]
+      },
+    }
+
   },
   {
     id: 5,
-    title: "projects"
+    title: "projects",
+    href: '/projects',
+    data: {
+      links: {
+        type: "simple",
+        menuList: [
+          {
+            title: "planet 925",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "yodoggo",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity to give it everything we’ve got as an agency. Our tried and tested approach."
+          },
+          {
+            title: "charter jets",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "surgery",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          }
+        ],
+        moreLink: {
+          href: "/projects",
+          title: "more projects"
+        }
+      },
+    }
+
   },
   {
     id: 6,
-    title: "company"
+    title: "company",
+    href: '/company',
+    data: {
+      links: {
+        type: "simple",
+        menuList: [
+          {
+            title: "about",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "certifications",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "Carrer",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+        ]
+      },
+    }
+
   },
   {
     id: 7,
-    title: "blog"
+    title: "blog",
+    href: '/blog',
+    data: {
+      links: {
+        type: "simple",
+        menuList: [
+          {
+            title: "all",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "seo basic",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "internal optimization",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "external optimization",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "Content",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "social signals",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "tools for seo",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "online store",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+          {
+            title: "web analytics",
+            href: '/',
+            description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
+          },
+        ]
+      },
+    }
+
   },
   {
     id: 8,
     title: "contacts",
-    link: {
-      href: "/contacts"
-    }
+    href: "/contacts"
   }
-]
-
-export const pageLinks = [
-  {
-    title: "SEO",
-    href: "/seo",
-    feedback: {
-      url: '/'
-    },
-    childPage: [
-      {
-        title: "SEO Services",
-        href: "/seo/",
-        childPage: [
-          {
-            title: "SEO for Healthcare Providers",
-            href: "/seo/healthcare",
-          },
-          {
-            title: "SEO for SAAS Industry",
-            href: "/seo/saas",
-          },
-          {
-            title: "SEO for B2B Companies",
-            href: "/seo/b2b",
-          },
-          {
-            title: "SEO for Crypto",
-            href: "/seo/crypto",
-          },
-          {
-            title: "SEO for Finanical Services Industry",
-            href: "/seo/finances",
-          },
-          {
-            title: "SEO for Real Estate Industry",
-            href: "/seo/real-estate",
-          },
-          {
-            title: "SEO for Franchises",
-            href: "/seo/franchise",
-          }
-        ]
-      },
-      {
-        title: "e-commerce seo",
-        href: "/seo/e-commerce",
-        childPage: [
-          {
-            title: "WooCommerce SEO",
-            href: "/seo/woocommerce-seo",
-          },
-          {
-            title: "Shopify SEO",
-            href: "/seo/shopify-seo",
-          },
-          {
-            title: "Magento SEO",
-            href: "/seo/magento-seo",
-          },
-          {
-            title: "Amazon SEO",
-            href: "/seo/amazon-seo",
-          },
-        ]
-      },
-      {
-        title: "on-page seo",
-        href: "/seo/on-page",
-      },
-      {
-        title: "keywords research",
-        href: "/seo/keywords-research",
-      },
-      {
-        title: "content marketing",
-        href: "/seo/content-marketing",
-      },
-      {
-        title: "mobile seo",
-        href: "/seo/mobile",
-      },
-      {
-        title: "international seo",
-        href: "/seo/international",
-      },
-    ]
-  },
-  {
-    title: "SMM",
-    href: "/smm",
-    feedback: {
-      url: ''
-    },
-    childPage: [
-      {
-        title: "SMM Services",
-        href: "/smm",
-      },
-      {
-        title: "facebook management",
-        href: "/smm/facebook-management",
-      },
-      {
-        title: "instagram management",
-        href: "/smm/instagram-management",
-      },
-      {
-        title: "linkedin management",
-        href: "/smm/linkedin-management",
-      },
-      {
-        title: "twitter management",
-        href: "/smm/twitter-management",
-      },
-      {
-        title: "youtube management",
-        href: "/smm/youtube-management",
-      },
-      {
-        title: "pinterest management",
-        href: "/smm/pinterest-management",
-      },
-    ]
-  },
-  {
-    title: "WEB Development",
-    href: "/web-development",
-    feedback: {
-      url: ''
-    },
-    childPage: [
-      {
-        title: "Website Design",
-        href: "/web-design",
-      },
-      {
-        title: "Website Development Services",
-        href: "/web-development",
-        childPage: [
-          {
-            title: "Developing Website on Wordpress",
-            href: "/wordpress-development",
-          },
-          {
-            title: "Woocommerce Development",
-            href: "/woocommerce-development",
-          }
-        ]
-      },
-      {
-        title: "Website Maintenance Services",
-        href: "/website-maintenance",
-      },
-      {
-        title: "Website Speed Optimization",
-        href: "/website-speed-optimization",
-      },
-    ]
-  },
-  {
-    title: "niches",
-    href: "/niches",
-    childPage: [
-      {
-        title: "E-commerce SEO",
-        href: "/seo/e-commerce",
-        childPage: [
-          {
-            title: "WooCommerce SEO",
-            href: "/seo/woocommerce-seo",
-          },
-          {
-            title: "Shopify SEO",
-            href: "/seo/shopify-seo",
-          },
-          {
-            title: "Magento SEO",
-            href: "/seo/magento-seo",
-          },
-          {
-            title: "Amazon SEO",
-            href: "/seo/amazon-seo",
-          },
-        ]
-      },
-      {
-        title: "SEO for Healthcare Providers",
-        href: "/seo/healthcare",
-      },
-      {
-        title: "SEO for SAAS Industry",
-        href: "/seo/saas",
-      },
-      {
-        title: "SEO for B2B Companies",
-        href: "/seo/b2b",
-      },
-      {
-        title: "SEO for Crypto",
-        href: "/seo/crypto",
-      },
-      {
-        title: "SEO for Finanical Services Industry",
-        href: "/seo/finances",
-      },
-      {
-        title: "SEO for Real Estate Industry",
-        href: "/seo/real-estate",
-      },
-      {
-        title: "SEO for Franchises",
-        href: "/seo/franchise",
-      }
-    ]
-  },
-  {
-    title: "projects",
-    href: "/projects",
-    childPage: []
-  },
-  {
-    title: "Company",
-    href: "/company",
-    childPage: [
-      {
-        title: "About Us",
-        href: "/company/about-us",
-      },
-      {
-        title: "Career",
-        href: "/company/career",
-      }
-    ]
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-    childPage: []
-  },
-  {
-    title: "Contacts",
-    href: "/contacts",
-    childPage: []
-  }
-
-]
-export const rightSideData = [
-  {
-    id: 1,
-    type: "actions",
-    menuList: [
-      {
-        id: 1,
-        title: "seo services",
-        link: {
-          href: '/seo'
-        },
-        data: {
-          title: "OUR SEO SERVICES",
-          text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
-        }
-      },
-      {
-        id: 2,
-        title: "e-commerce seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR E-COMMERCE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 3,
-        title: "on-page seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR ON-PAGE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 4,
-        title: "keywords research",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR KEYWORDS RESEARCH",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 5,
-        title: "content marketing",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR CONTENT MARKETING",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 6,
-        title: "mobile seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR MOBILE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 7,
-        title: "international seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR INTERNATIONAL SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      }
-    ]
-  },
-  {
-    id: 2,
-    type: "actions",
-    menuList: [
-      {
-        id: 1,
-        title: "smm services",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR SOCIAL MEDIA OPTIMIZATION SERVICES",
-          text: "Our Search Engine Optimization (SEO) services will provide your business with everything it will need to get your brand the online presence it deserves on Google’s search results. SEO is the marketing foundation of nearly every successful online business!"
-        }
-      },
-      {
-        id: 2,
-        title: "facebook management",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR FACEBOOK MANAGEMENT",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 3,
-        title: "instagram management",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR INSTAGRAM MANAGEMENT",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 4,
-        title: "linkedin management",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR LINKEDIN MANAGEMENT",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 5,
-        title: "twitter management",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR TWITTER MANAGEMENT",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 6,
-        title: "youtube management",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR YOUTUBE MANAGEMENT",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 7,
-        title: "pinterest management",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR PINTEREST MANAGEMENT",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      }
-    ]
-  },
-  {
-    id: 3,
-    type: "actions",
-    menuList: [
-      {
-        id: 1,
-        title: "seo services",
-        link: {
-          href: '/seo'
-        },
-        data: {
-          title: "OUR SEO SERVICES",
-          text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
-        }
-      },
-      {
-        id: 2,
-        title: "e-commerce seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR E-COMMERCE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 3,
-        title: "on-page seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR ON-PAGE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 4,
-        title: "keywords research",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR KEYWORDS RESEARCH",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 5,
-        title: "content marketing",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR CONTENT MARKETING",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 6,
-        title: "mobile seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR MOBILE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 7,
-        title: "international seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR INTERNATIONAL SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      }
-    ]
-  },
-  {
-    id: 4,
-    type: "actions",
-    menuList: [
-      {
-        id: 1,
-        title: "seo services",
-        link: {
-          href: '/seo'
-        },
-        data: {
-          title: "OUR SEO SERVICES",
-          text: "Customized SEO-optimization solutions that are designed to get your brand noticed in the social media sphere. Each social media platform has its own vibe that you need to respect."
-        }
-      },
-      {
-        id: 2,
-        title: "e-commerce seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR E-COMMERCE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 3,
-        title: "on-page seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR ON-PAGE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 4,
-        title: "keywords research",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR KEYWORDS RESEARCH",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 5,
-        title: "content marketing",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR CONTENT MARKETING",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 6,
-        title: "mobile seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR MOBILE SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      },
-      {
-        id: 7,
-        title: "international seo",
-        link: {
-          href: '/'
-        },
-        data: {
-          title: "OUR INTERNATIONAL SEO",
-          text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, adipisci, alias, amet animi asperiores atque autem beatae commodi consequatur culpa cumque cupiditate delectus deleniti deserunt dignissimos doloremque doloribus eius enim eos esse est et eum ex excepturi expedita explicabo facilis fuga fugiat fugit harum hic id illum impedit in incidunt inventore ipsa ipsum iste iure iusto labore laboriosam laborum laudantium libero magnam magni maiores max"
-        }
-      }
-    ]
-  },
-  {
-    id: 5,
-    type: "simple",
-    list: [
-      {
-        title: "planet 925",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "yodoggo",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity to give it everything we’ve got as an agency. Our tried and tested approach."
-      },
-      {
-        title: "charter jets",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "surgery",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      }
-    ],
-    moreLink: {
-      href: "/projects",
-      title: "more projects"
-    }
-  },
-  {
-    id: 6,
-    type: "simple",
-    list: [
-      {
-        title: "about",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "certifications",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "Carrer",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-    ]
-  },
-  {
-    id: 7,
-    type: "simple",
-    list: [
-      {
-        title: "all",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "seo basic",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "internal optimization",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "external optimization",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "Content",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "social signals",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "tools for seo",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "online store",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-      {
-        title: "web analytics",
-        description: "Some description of the project. Working with ambitious clients gives us the oppor tu nity."
-      },
-    ]
-  },
 ]
 
 export const footerMenu = [
@@ -940,7 +682,7 @@ export const footerMenu = [
         title: "web analytics",
         href: "/web-analytics"
       }
-      ]
+    ]
   },
   {
     title: "Company",
@@ -960,6 +702,6 @@ export const footerMenu = [
         title: "career",
         href: "/career"
       }
-      ]
+    ]
   }
 ]

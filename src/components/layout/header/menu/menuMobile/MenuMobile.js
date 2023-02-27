@@ -7,13 +7,13 @@ import {rightSideData} from "@/store/slices/menuSlice/data";
 import menu from "@/mocData/menu";
 
 const MenuMobile = ({active}) => {
-  const data = menu
-  const [isOpen, setIsOpen] = useState()
+  const menu = useSelector(state => state.menu.menu)
+  const [isOpen, setIsOpen] = useState( '')
   const [showForm, setShowForm] = useState(false)
 
   return (
     <div className={`top-menu top-menu__mobile ${active && 'top-menu_active'}`}>
-      {data?.length > 0 && data.map((item, index) => (
+      {menu?.length > 0 && menu.map((item, index) => (
         <MenuDropdownMenu
           feedback={item.feedback}
           isOpen={isOpen === item.title}

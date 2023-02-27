@@ -7,7 +7,7 @@ import ActionsMobileBlock from "@/components/layout/header/menu/menuDesktop/Menu
 import Link from "next/link";
 import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 
-const ActionsBlock = ({list}) => {
+const ActionsBlock = ({list, feedback}) => {
   const [currentItem, setCurrentItem] = useState(list[0].id)
   const [currentData, setCurrentData] = useState(list[0])
   const dispatch = useDispatch()
@@ -52,7 +52,7 @@ const ActionsBlock = ({list}) => {
         </div>
       </div>
       <div className={'action-block__desktop'}>
-        <ActionsBlockForm title={list[0].title}/>
+        <ActionsBlockForm feedback={feedback} title={list[0].title}/>
       </div>
       <ActionsMobileBlock currentData={currentData}/>
     </div>
