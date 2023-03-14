@@ -90,6 +90,15 @@
   position: relative;
 
   &__form {
+    @media (max-width: $mobile) {
+      padding: 0 16px;
+
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
     label, span {
       font-size: 20px;
     }
@@ -97,6 +106,7 @@
     div:nth-child(2) {
       margin-bottom: 32px;
     }
+
 
     @media (max-width: 530px) {
       margin-top: 32px;
@@ -186,6 +196,7 @@
   }
 
   &__title {
+    display: inline-block;
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 19px;

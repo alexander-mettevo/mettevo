@@ -13,7 +13,7 @@ const AuthorBlogInfo = ({info}) => {
         <div className={style['author__link-row']}>
           {
             info.social?.length > 0 && info.social.map((item, index) => (
-              <Link className={`${style['author__link']} underline-link`} href={item.href} target={'_blank'}>{item.title}</Link>
+              <Link className={`${style['author__link']} underline-link`} key={index + 'author__link'} href={item.href} target={'_blank'}>{item.title}</Link>
             ))
           }
         </div>

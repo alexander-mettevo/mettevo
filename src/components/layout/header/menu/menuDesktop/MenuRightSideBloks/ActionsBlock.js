@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import MenuBtnsList from "@/components/reusable/MenuBtnsList/MenuBtnsList";
-import ActionsBlockForm from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsBlockForm";
+import ActionsBlockForm from "@/components/layout/header/menu/menuDesktop/MenuRightSideBloks/Items/ActionsBlockForm";
 import {useDispatch} from "react-redux";
 import {switchMobileShowContent} from "@/store/slices/menuSlice/MenuSlice";
-import ActionsMobileBlock from "@/components/layout/header/menu/MenuRightSideBloks/Items/ActionsMobileBlock";
+import ActionsMobileBlock from "@/components/layout/header/menu/menuDesktop/MenuRightSideBloks/Items/ActionsMobileBlock";
 import Link from "next/link";
 import ArrowLink from "@/components/reusable/links/arrowLink/ArrowLink";
 
-const ActionsBlock = ({list}) => {
+const ActionsBlock = ({list, feedback}) => {
   const [currentItem, setCurrentItem] = useState(list[0].id)
   const [currentData, setCurrentData] = useState(list[0])
   const dispatch = useDispatch()
@@ -52,7 +52,7 @@ const ActionsBlock = ({list}) => {
         </div>
       </div>
       <div className={'action-block__desktop'}>
-        <ActionsBlockForm title={currentData.title}/>
+        <ActionsBlockForm feedback={feedback} title={list[0].title}/>
       </div>
       <ActionsMobileBlock currentData={currentData}/>
     </div>

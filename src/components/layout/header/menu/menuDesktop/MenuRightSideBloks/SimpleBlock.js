@@ -8,7 +8,7 @@ const SimpleBlock = ({list, moreLink}) => {
       <ul>
         {list?.length > 0 && list.map((item, index) => (
           <li key={index + 'simpleBlock'}>
-            <div className={'simple-block__title'}>{item.title}</div>
+            <Link href={item.href} className={'simple-block__title underline-link'}>{item.title}</Link>
             <div className={'simple-block__text'}>{item.description}</div>
           </li>
         ))}

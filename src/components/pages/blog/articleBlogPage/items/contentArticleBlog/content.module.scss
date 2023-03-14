@@ -1,0 +1,42 @@
+.content {
+
+  @include adaptiveValue('margin-top', 120, 60);
+
+  h2 {
+    font-weight: 500;
+
+    @include adaptiveValue('font-size', 60, 32);
+    @include adaptiveValue('line-height', 80, 40);
+    @include adaptiveValue('margin-bottom', 40, 20);
+  }
+
+  p {
+    margin-left: 30vw;
+
+    @include adaptiveValue('margin-bottom', 24, 14);
+    @include adaptiveValue('font-size', 20, 16);
+    @include adaptiveValue('line-height', 36, 26);
+
+    @media (max-width: $pc) {
+      @include adaptiveValue('margin-left', 400, 0);
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
+  }
+
+  [class~='is-layout-flex'] {
+    display: flex;
+    gap: 20px;
+  }
+
+  [class~='wp-element-caption'] {
+    margin-top: 23px;
+  }
+
+  [class~='wp-block-image'] {
+    @include adaptiveValue('margin-top', 80, 40);
+    @include adaptiveValue('margin-bottom', 80, 40);
+  }
+}

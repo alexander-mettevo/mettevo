@@ -1,6 +1,5 @@
 import React, {useRef, useState} from 'react';
 import Link from "next/link";
-import styles from "@/components/reusable/dropDownMenu/DropdownMenu.module.scss";
 
 const FooterDropdown = ({list, title}) => {
   const [isOpen, setIsOpen] = useState(false);

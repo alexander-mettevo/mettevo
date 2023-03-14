@@ -1,15 +1,11 @@
 import { HYDRATE } from "next-redux-wrapper";
 import { createSlice } from "@reduxjs/toolkit";
-import {footerMenu, menuItems, pageLinks, rightSideData} from "@/store/slices/menuSlice/data";
+import {footerMenu, menu, menuItems, pageLinks, rightSideData} from "@/store/slices/menuSlice/data";
 
 export const menuSlice = createSlice({
   name: "menu",
   initialState: {
-    menuItems,
-    rightSideData,
-    showContent: false,
-    mobileShowContent: false,
-    pageLinks,
+    menu,
     footerMenu
   },
   reducers: {

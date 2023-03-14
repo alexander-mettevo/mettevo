@@ -1,7 +1,9 @@
 import React from 'react';
-import SocialRows from "@/components/layout/header/menu/MenuRightSideBloks/Items/SocialRows";
+import SocialRows from "@/components/layout/header/menu/menuDesktop/MenuRightSideBloks/Items/SocialRows";
 
-const ActionsBlockForm = ({title}) => {
+const ActionsBlockForm = ({title, feedback}) => {
+  //todo реализовать отправку формы с помощью данных в параметре feedback
+
   return (
       <form className={'action-block__form'}>
         <div>

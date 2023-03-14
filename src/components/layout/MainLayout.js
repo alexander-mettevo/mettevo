@@ -1,9 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
 import FooterComponent from "@/components/layout/footer/FooterComponent";
 import HeaderComponent from "@/components/layout/header/HeaderComponent";
-import Menu from "@/components/layout/header/menu/Menu";
+import MenuDesktop from "@/components/layout/header/menu/menuDesktop/MenuDesktop";
 import MainComponent from "@/components/layout/main/Main";
 import dynamic from "next/dynamic";
+import MenuMobile from "@/components/layout/header/menu/menuMobile/MenuMobile";
 
 const CursorAnimation = dynamic(() =>
   import('@/components/layout/assets/cursotAnimation/CursorAnimation'), {
@@ -49,7 +50,8 @@ const MainLayout = ({children}) => {
       </div>
     </MainComponent>
     <FooterComponent/>
-    <Menu active={menuActive}/>
+    <MenuDesktop active={menuActive}/>
+    <MenuMobile active={menuActive}/>
     <CursorAnimation/>
   </div>
 </>
