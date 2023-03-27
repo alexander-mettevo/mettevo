@@ -11,21 +11,24 @@
     }
   }
 
-  &__form {
-    margin-right: 66px;
-    flex: 1;
-
-    @include adaptiveValue('margin-right', 66, 0);
-
-    @media (max-width: $tablet) {
-      margin-right: 0;
-      order: 2;
-      margin-top: 20px;
-    }
+  @media (max-width: $mobile) {
+    flex-direction: column;
   }
 
-  @media (max-width: $tablet) {
-    flex-direction: column;
+  &__form-wrapper {
+    flex: 1;
+
+    @include adaptiveValue("margin-left", 66, 0);
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $mobile) {
+      order: 2;
+      margin-top: 20px;
+      width: 100%;
+    }
   }
 }
 
@@ -33,20 +36,29 @@
   &__top {
     margin-bottom: 40px;
   }
+
+  &__title {
+    font-weight: 500;
+
+    @include adaptiveValue("margin-bottom", 16, 8);
+    @include adaptiveValue('font-size', 22, 18);
+    @include adaptiveValue('margin-bottom', 24, 16);
+  }
 }
 
 .form-services {
+  width: auto;
   padding: 40px;
-  @include adaptiveValue('font-size', 20, 16);
-  @include adaptiveValue('line-height', 19, 15);
+  @include adaptiveValue("font-size", 20, 16);
+  @include adaptiveValue("line-height", 19, 15);
 
   & > &__items-wrap {
-    @include adaptiveValue('margin-bottom', 28, 20);
+    @include adaptiveValue("margin-bottom", 28, 20);
     display: flex;
   }
 
   &__items-wrap {
-    @media (max-width: $tablet) {
+    @media (max-width: $mobile) {
       &_s {
         margin-bottom: 8px !important;
       }
@@ -57,10 +69,9 @@
     padding: 24px 16px;
   }
 
-
   &__block {
-    @include adaptiveValue('font-size', 20, 18);
-    @include adaptiveValue('line-height', 19, 17);
+    @include adaptiveValue("font-size", 20, 18);
+    @include adaptiveValue("line-height", 19, 17);
   }
 
   &__label {
@@ -68,7 +79,7 @@
     display: flex;
     white-space: nowrap;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $mobile) {
       &_fw {
         flex-wrap: wrap;
       }
@@ -92,15 +103,15 @@
   }
 
   &__input {
-    margin: 0;
+    // margin: 0;
     flex: 1 1 100%;
   }
 
   &__button {
     width: 100%;
     justify-content: center;
-  flex-wrap: wrap;
-    @include adaptiveValue('margin-top', 20, 0);
+    flex-wrap: wrap;
+    @include adaptiveValue("margin-top", 20, 0);
     span {
       white-space: nowrap;
       text-transform: lowercase;

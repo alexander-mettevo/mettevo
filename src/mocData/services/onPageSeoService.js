@@ -6,7 +6,7 @@ const onPageSeoService = {
   },
   different: [
     {
-      title: 'Prospect analysis',
+      title: 'Proven SEO & link building strategies customized to your goals',
       text: 'Every successful marketing strategy starts with understanding your customer at a granular level. Our SEO team begins by getting to know who you’re targeting.'
     },
     {

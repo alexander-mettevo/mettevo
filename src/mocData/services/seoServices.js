@@ -2,32 +2,33 @@ const seoServices = {
   url: 'seo services',
   title: 'SEO Services',
   info: {
-    text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
+    title: 'Proven SEO & link building strategies customized to your goals',
+    text: 'Technical SEO will drive more organic traffic to your website and help you consequently increase your sales.',
     list: [
-      {
-        title: 'e-commerce seo',
-        text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
-      },
-      {
-        title: 'on-page seo',
-        text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
-      },
-      {
-        title: 'keywords research',
-        text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
-      },
-      {
-        title: 'content marketing',
-        text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
-      },
-      {
-        title: 'mobile seo',
-        text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
-      },
-      {
-        title: 'international seo',
-        text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
-      },
+      // {
+      //   title: 'Proven SEO & link building strategies customized to your goals',
+      //   text: 'Technical SEO will drive more organic traffic to your website and help you consequently increase your sales.'
+      // },
+      // {
+      //   title: 'on-page seo',
+      //   text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
+      // },
+      // {
+      //   title: 'keywords research',
+      //   text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
+      // },
+      // {
+      //   title: 'content marketing',
+      //   text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
+      // },
+      // {
+      //   title: 'mobile seo',
+      //   text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
+      // },
+      // {
+      //   title: 'international seo',
+      //   text: 'Some description of the project. Working with ambitious clients gives us the oppor tu nity.'
+      // },
     ]
   },
   different: [

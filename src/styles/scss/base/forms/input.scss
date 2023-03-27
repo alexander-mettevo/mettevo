@@ -11,14 +11,14 @@ textarea {
 .input {
 	border-radius: 0 !important;
 	//display: block;
-	padding: 0 20px;
+	margin: 0 20px;
 	background: transparent;
 	border: none;
 	border-bottom: 1px solid #b9b9b9;
-	margin: 0 10px 32px;
+	// margin: 0 10px 32px;
 	font-size: 14px;
 	width: 30%;
-	min-width: 200px;
+	min-width: 180px;
 	color: var(--text-color);
 
 	&._form-focus {
@@ -33,6 +33,9 @@ textarea {
 	}
 	&:focus::placeholder {
 		opacity: 0;
+	}
+	&:focus {
+		outline: none;
 	}
 }
 

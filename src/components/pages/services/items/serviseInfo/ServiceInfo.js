@@ -6,8 +6,8 @@ import style from './services-info.module.scss'
 const ServiceInfo = ({title, info}) => {
   return (
     <div className={style['services-info']}>
-      <ServiceForm title={title}/>
       <ServiceText info={info}/>
+      <ServiceForm/>
     </div>
   );
 };
