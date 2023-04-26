@@ -1,7 +1,13 @@
 .service-text {
 
+  &__wrapper {
+  
+    @include adaptiveValue('margin-top', 36, 16);
+  }
+
   &__row {
     display: flex;
+
 
     & > div {
       flex: 0 0 50%;
@@ -45,4 +51,26 @@
   &__title {
     @include adaptiveValue('margin-bottom', 24, 16)
   }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    & > div:first-child {
+      width: 100%;
+      height: 100%;
+    }
+
+    [class~='title_2'] {
+      @include adaptiveValue('margin-bottom', 12, 8)
+    }
+  }
 }
+
+.card-text-service {
+  
+}
+

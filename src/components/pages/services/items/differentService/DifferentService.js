@@ -5,12 +5,13 @@ import style from './different.module.scss'
 const DifferentService = ({different}) => {
   return (
     <div className={'block-wrapper'}>
-      <h2 className={`block-title ${style['different__title']}`}>
-        WHAT MAKES mettevo SEO SERVICES DIFFERENT
+      <h2 className={`block-title block-title__center ${style['different__title']}`}>
+      Hit your most ambitious revenue goals with SEO
       </h2>
       <div className={style['different__row']}>
         {different.map((item, index) => (
           <div key={index + 'diff'} className={`${style['different__item']} ${style['item-different']}`}>
+            <div className={`${style['different__item']} ${style['item-different']}`}>
             <div className={style['item-different__top']}>
               <div className={style['item-different__image']}>
                 <DiffCryptoSvg/>
@@ -21,6 +22,8 @@ const DifferentService = ({different}) => {
               {item.text}
             </p>
           </div>
+         </div>
+          
           ))}
       </div>
     </div>

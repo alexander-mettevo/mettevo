@@ -1,26 +1,80 @@
 .different {
-  &__title{
-    @include adaptiveValue('margin-bottom', 80, 40);
+  &__title {
+    @include adaptiveValue("margin-bottom", 80, 40);
   }
 
   &__row {
     display: flex;
     justify-content: space-between;
 
-    @media (max-width:$tablet) {
+    @media (max-width: $tablet) {
       flex-wrap: wrap;
     }
   }
 
+  &__card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin: -150px;
+    float: left;
+    perspective: 500px;
+
+    &:hover {
+      & > div {
+        transform: rotateY(180deg);
+        transition: transform 0.5s;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+
+  &__front {
+  }
+
+  &__front,
+  &__back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    line-height: 300px;
+    color: #03446a;
+    text-align: center;
+    font-size: 60px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+  }
+
+  &__back {
+    background: #03446a;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
   &__item {
     flex: 0 0 23%;
+    border: 3px solid var(--opposite-bg-color);
+    border-radius: 20px;
+    padding: 5px;
 
-    @media (max-width:$tablet) {
+    @media (max-width: $tablet) {
       flex: 0 0 45%;
       margin-bottom: 40px;
     }
 
-    @media (max-width:$mobileSmall) {
+    @media (max-width: $mobileSmall) {
       flex: 0 0 100%;
     }
   }
@@ -33,13 +87,12 @@
     margin-bottom: 8px;
   }
 
-
   &__image {
     margin-right: 16px;
 
     svg {
-      @include adaptiveValue('width', 60, 40);
-      @include adaptiveValue('height', 60, 40);
+      @include adaptiveValue("width", 60, 40);
+      @include adaptiveValue("height", 60, 40);
     }
   }
 }

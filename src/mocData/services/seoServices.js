@@ -96,17 +96,19 @@ const seoServices = {
       }
     },
       {
-        component: 'bounce',
+        component: 'card',
         content: {
-          text: 'Free quote'
+          text: 'Monthly organic traffic growth',
+          value: '4000'
         }
       }
       ],
     [
       {
-        component: 'bounce',
+        component: 'card',
         content: {
-          text: 'Free quote'
+          text: 'Organic traffic growth in the highest season',
+          value: '70%'
         }
       },
       {
@@ -123,6 +125,13 @@ const seoServices = {
         content: {
           title: 'We Listen Before We Act',
           text: 'Before we start work on any client\'s website, we conduct an audit of the website by taking a look at the content and its presence on the World Wide Web. Our SEO professionals spend time getting to understand the work that has already been done and determine what areas are lacking. We put together a plan to ensure that each website is given a chance to succeed. We believe search engine optimization is not a "one size fits all" situation; each of our SEO campaigns are built specifically with that client in mind.'
+        }
+      },
+      {
+        component: 'card',
+        content: {
+          text: 'organic traffic growth',
+          value: '174%'
         }
       }
     ],
